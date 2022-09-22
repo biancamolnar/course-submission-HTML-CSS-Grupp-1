@@ -67,7 +67,10 @@ nav.navbar {
     li {
       border: none;
       min-width: max-content;
+
+      height: 100%;
     }
+
     ul.dropdown-menu {
       padding: 0;
       background-color:  #E6E6E6;

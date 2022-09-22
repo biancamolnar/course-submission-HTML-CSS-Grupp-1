@@ -10829,6 +10829,7 @@ nav.navbar a:hover:not(.navbar-brand) {
   nav.navbar li {
     border: none;
     min-width: max-content;
+    height: 100%;
   }
   nav.navbar ul.dropdown-menu {
     padding: 0;
