@@ -7,7 +7,6 @@ footer {
     font-size: 60px;
     text-align: center;
     font-family: Qwitcher Grypen;
-    margin: -15px;
 }
 
 .button {
@@ -19,10 +18,4 @@ footer {
 
 #p-footer {
     margin: 2px;
-}
-
-@media only screen and (max-width:600px) {
-    body {
-        background-color: olive;
-    }
 }
