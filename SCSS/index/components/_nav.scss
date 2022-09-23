@@ -1,3 +1,9 @@
+.logga {
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 2.5rem;
+  padding: 0.54rem;
+}
+
 nav.navbar {
   div.container-xxl {
     padding: 0;
@@ -17,6 +23,10 @@ nav.navbar {
     margin: 0;
     background-color: #c9c9c9;
     border-radius: 0;
+    border: none;
+    a:focus {
+      background-color: #c9c9c9;
+    }
     li:first-child {
       border-top: 1px solid #a0a0a1;
       border-bottom: none;
@@ -41,45 +51,36 @@ nav.navbar {
   a:hover:not(.navbar-brand) {
     background-color: #a4a5a7;
   }
-}
-
-.logga {
-  font-family: 'Qwitcher Grypen', cursive;
-  font-size: 2.5rem;
-}
-
-.produkter-dropdown {
-  .dropdown-menu {
-    border: none;
-    width: 100%;
-    background-color:  #E6E6E6;
+  .navbar-toggler:hover {
+    background-color: #bdbdbd;
   }
 }
 
 @media (min-width: 992px) { 
-  .produkter-dropdown {
-    text-align: center;
-    .dropdown-menu {
-      border: 1px solid #a0a0a1;
-    }
-  }
   nav.navbar {
     li {
       border: none;
       min-width: max-content;
-
-      height: 100%;
     }
-
     ul.dropdown-menu {
-      padding: 0;
       background-color:  #E6E6E6;
-      border-radius: 10px;
+      border-radius: 0 0 10px 10px;
+      width: 15rem;
+      border: 1px solid #a0a0a1;
+      li {
+        text-align: start;
+      }
+      a {
+        padding-left: 1rem;
+      }
       li:first-child {
         border: none;
-      }
+      } 
       li:nth-child(2) {
         border: none;
+      }
+      li:last-child a{
+        border-radius:  0 0 5px 5px;
       }
     }
   }
