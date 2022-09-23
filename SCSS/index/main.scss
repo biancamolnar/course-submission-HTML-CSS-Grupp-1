@@ -1,3 +1,72 @@
 @use '../../node_modules/bootstrap/scss/bootstrap.scss';
+@use 'base/typography';
 @use 'components/nav';
 @use '../om\ oss/components/footer.scss';
+@use 'abstracts/colors.scss' as c;
+
+.sid-intro-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .carousel-container {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+
+.kort-container {
+  background-color: c.$dark-page-background;
+  padding: 3rem 0 3rem 0;
+  .kort-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .kort {
+    border: 1px solid c.$border-color;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.5);
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.6rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    .knapp-wrapper {
+      margin-bottom: 1rem;
+    }
+    a {
+      background-color: c.$blå-knapp;
+      color: white;
+      font-size: 1rem;
+      text-decoration: none;
+      padding: 1rem;
+      border-radius: 10px;
+      &:hover, &:focus{
+        background-color: c.$blå-knapp-hover;
+      }
+      &:focus {
+        outline-offset: -0.1rem;
+        outline-style: solid;
+        outline-width: 2px;
+        outline-color: c.$blå-knapp-outline;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) { 
+  h1 {
+    margin-right: 2rem;
+    font-size: 4rem;
+  }
+}
+

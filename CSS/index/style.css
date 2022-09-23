@@ -10765,6 +10765,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2.sid-intro {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 350;
+  color: rgb(84, 84, 84);
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 350;
+}
+
 .logga {
   font-family: "Qwitcher Grypen", cursive;
   font-size: 2.5rem;
@@ -10868,6 +10886,72 @@ footer {
 
 #p-footer {
   margin: 2px;
+}
+
+.sid-intro-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sid-intro-flex .carousel-container {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.kort-container {
+  background-color: #DCDCDC;
+  padding: 3rem 0 3rem 0;
+}
+.kort-container .kort-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.kort-container .kort {
+  border: 1px solid #939494;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  width: 90%;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.kort-container .kort img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+}
+.kort-container .kort p {
+  margin-bottom: 2rem;
+}
+.kort-container .kort .knapp-wrapper {
+  margin-bottom: 1rem;
+}
+.kort-container .kort a {
+  background-color: #1D88EA;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.kort-container .kort a:hover, .kort-container .kort a:focus {
+  background-color: #1665af;
+}
+.kort-container .kort a:focus {
+  outline-offset: -0.1rem;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #000000;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    margin-right: 2rem;
+    font-size: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
