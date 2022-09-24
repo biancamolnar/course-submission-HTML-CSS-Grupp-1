@@ -16,49 +16,10 @@
 .kort-container {
   background-color: c.$dark-page-background;
   padding: 3rem 0;
+  @include mixin.kort(90%, 45%, 23%);
   .kort-flex {
     @include mixin.flex-center;
     flex-wrap: wrap;
-  }
-  .kort {
-    border: 1px solid c.$border-color;
-    background-color: white;
-    border-radius: 10px;
-    width: 90%;
-    padding: 1rem;
-    text-align: center;
-    margin: 1rem 0;
-    box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.5);
-    img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.6rem;
-    }
-    h3 {
-      font-size: 1.3rem;
-    }
-    p {
-      margin-bottom: 2rem;
-    }
-    .knapp-wrapper {
-      @include mixin.flex-center;
-    }
-    a {
-      background-color: c.$blå-knapp;
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      border-radius: 10px;
-      &:hover, &:focus{
-        background-color: c.$blå-knapp-hover;
-      }
-      &:focus {
-        outline-offset: -0.1rem;
-        outline-style: solid;
-        outline-width: 2px;
-        outline-color: c.$blå-knapp-outline;
-      }
-    }
   }
 }
 
@@ -86,9 +47,6 @@
     .kort-flex {
       justify-content: space-around;
     }
-    .kort {
-      width: 45%;
-    } 
   }
   .inspiration-flex img {
       width: 29%;
@@ -97,9 +55,6 @@
 }
 
 @media (min-width: 1300px) { 
-  .kort-container .kort {
-    width: 23%;
-  } 
   .inspiration-flex img {
     width: 22%;
     margin: 1rem;

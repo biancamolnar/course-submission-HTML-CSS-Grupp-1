@@ -10917,12 +10917,6 @@ footer {
   background-color: #DCDCDC;
   padding: 3rem 0;
 }
-.kort-container .kort-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .kort-container .kort {
   border: 1px solid #939494;
   background-color: white;
@@ -10965,6 +10959,22 @@ footer {
   outline-width: 2px;
   outline-color: #000000;
 }
+@media (min-width: 670px) {
+  .kort-container .kort {
+    width: 45%;
+  }
+}
+@media (min-width: 1300px) {
+  .kort-container .kort {
+    width: 23%;
+  }
+}
+.kort-container .kort-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 .inspiration-container {
   padding: 3rem 0;
@@ -10991,18 +11001,12 @@ footer {
   .kort-container .kort-flex {
     justify-content: space-around;
   }
-  .kort-container .kort {
-    width: 45%;
-  }
   .inspiration-flex img {
     width: 29%;
     margin: 1rem;
   }
 }
 @media (min-width: 1300px) {
-  .kort-container .kort {
-    width: 23%;
-  }
   .inspiration-flex img {
     width: 22%;
     margin: 1rem;
