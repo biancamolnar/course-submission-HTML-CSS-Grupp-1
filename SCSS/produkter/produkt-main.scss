@@ -2,4 +2,26 @@
 @use '../index/components/_nav.scss';
 @use '../om oss/components/_footer.scss';
 
+.checklist-top {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    }
 
+.checklist-top-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#produkter {
+    margin: 1.5rem;
+    font-size: 38px;
+}
+
+@media (min-width: 992px) { 
+    
+    .checklist-top-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

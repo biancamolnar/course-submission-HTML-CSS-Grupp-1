@@ -10936,6 +10936,7 @@ textarea.form-control-lg {
 }
 
 nav.navbar {
+  z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -11035,4 +11036,27 @@ footer {
 
 #p-footer {
   margin: 2px;
+}
+
+.checklist-top {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.checklist-top-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#produkter {
+  margin: 1.5rem;
+  font-size: 38px;
+}
+
+@media (min-width: 992px) {
+  .checklist-top-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=produkt-main.css.map */
