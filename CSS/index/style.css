@@ -10923,16 +10923,20 @@ footer {
   border-radius: 10px;
   margin-bottom: 0.6rem;
 }
+.kort-container .kort h3 {
+  font-size: 1.3rem;
+}
 .kort-container .kort p {
   margin-bottom: 2rem;
 }
 .kort-container .kort .knapp-wrapper {
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .kort-container .kort a {
   background-color: #1D88EA;
   color: white;
-  font-size: 1rem;
   text-decoration: none;
   padding: 1rem;
   border-radius: 10px;
@@ -10947,10 +10951,21 @@ footer {
   outline-color: #000000;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 670px) {
   h1 {
-    margin-right: 2rem;
+    margin-right: 1vw;
     font-size: 4rem;
+  }
+  .kort-container .kort-flex {
+    justify-content: space-around;
+  }
+  .kort-container .kort {
+    width: 45%;
+  }
+}
+@media (min-width: 1300px) {
+  .kort-container .kort {
+    width: 23%;
   }
 }
 
