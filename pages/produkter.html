@@ -7,7 +7,7 @@
     <meta name="keywords" content="produkter, blommor, buketter, krukväxter, inredning, bröllop, event, begravningsbinderier, florist för en dag">
     <meta name="description" content="Sveriges bästa och billigaste blommor!">
     <meta name="author" content="Emma Gabrielsson">
-    <title>Blomstersidan Produkter</title>
+    <title>Blomstersidans Produkter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
@@ -84,9 +84,7 @@
             </div>
           </div>
       </div>
-    </header>
-    <main>
-      <div class="rubrik">
+      <div class="rubrik-top">
         <h1 id="produkter">Produkter</h1>
         <form class="search-container" id="form" role="search">
           <input type="search" name="q" class="input" id="query" placeholder="sök produkter.." aria label="sök igenom produktsidans innehåll">
@@ -95,6 +93,35 @@
           </button>
         </form>
       </div>
+      <p id="produkt-starttext">Här finner du produkter för alla tillfällen och högtider. 
+        Har du svårt att välja så finns alltid vårat presentkort att köpa eller våra florist-experter att rådfråga. 
+        Våra snittblommor och krukväxter är av högsta kvalitet och vi arbetar 
+        med kvalitetsäkrade märken som ska vara hållbara och bra för både människa och miljö, 
+        som t.ex. Fair trade och Svenskt sigill.</p>
+    </header>
+    <main>
+      <article id="competition">
+        <h2>Tävla och få chansen att vinna ett presentkort på 500 kr!</h2>
+        <p>Fyll i tävlingsformuläret nedan så är du med i utlottningen av presentkortet. 
+          Dragningen sker i slutet av månaden och din vinst meddelas via e-mail. När du deltar i tävlingen 
+          godkänner du även att du registreras för prenumereration på vårt nyhetsbrev. Lycka till!</p>
+        <h5 id="question-one">1. Vilken teknik är denna bukett bunden med?</h5>
+        <img id="dekoration-stilart" src="" alt="En bild av en blomdekoration som visar en viss typ av teknik/stilart där blommorna placeras mot mitten." type="img/jpg">
+        <form class="competition-form">
+          <label for="radial" name="radial">Radial</label>
+          <input id="radial" title="Radial teknik" type="radio" value="Radial">
+          <label for="paralell" name="paralell">Paralell</label>
+          <input id="paralell" title="paralell teknik" type="radio" value="Paralell">
+          <label for="email">Konatktuppgifter:</label>
+          
+          <input required id="email" type="email" placeholder="Skriv din e-mail här..">
+          <input id="skicka" type="submit" value="Skicka">
+        </form>
+      </article>
+      <article class="buketter">
+        <h2 id="buketter">Buketter</h2>
+      </article>
+
     </main>
     <footer class="text-center text-lg-start border-top border-secondary bottom mt-5">
         <div class="container text-center text-md-start">

@@ -11049,22 +11049,23 @@ footer {
   flex-direction: column;
 }
 
-.rubrik {
+.rubrik-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 #produkter {
-  margin: 0 1rem 0.25rem 2rem;
+  margin: 0 1rem 0.25rem 1.5rem;
   font-size: 36px;
 }
 
 .search-container {
   display: flex row;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   border-radius: 5px;
 }
 
@@ -11095,6 +11096,38 @@ footer {
   background-color: #a4a5a7;
 }
 
+#produkt-starttext {
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.buketter {
+  background-color: #E6E6E6;
+}
+
+#buketter {
+  padding: 3rem 1.5rem 3rem 1.5rem;
+}
+
+#competition {
+  max-width: 30rem;
+  padding: 3rem 1.5rem 3rem 1.5rem;
+  text-align: center;
+  display: flex column;
+}
+
+.competition-form {
+  padding: 3rem 1.5rem 3rem 1.5rem;
+  display: flex row;
+}
+
+#compete-label {
+  font-style: italic;
+}
+
+#question-one {
+  padding-top: 10px;
+}
+
 @media (min-width: 992px) {
   .checklist-top-content {
     flex-direction: row;
@@ -11108,5 +11141,15 @@ footer {
   }
   .search-container {
     margin-right: 6rem;
+  }
+  #produkt-starttext {
+    padding: 0 6rem 2rem 6rem;
+  }
+  #buketter {
+    padding-left: 6rem;
+  }
+  #competition {
+    padding: 0;
+    margin: 0rem 0rem 0rem 6rem;
   }
 }/*# sourceMappingURL=produkt-main.css.map */
