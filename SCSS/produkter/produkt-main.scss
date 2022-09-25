@@ -31,7 +31,6 @@
 .search-container {
     display: flex row;
     margin-right: 1.5rem;
-    border-radius: 5px;
 }
 
  .input {
@@ -54,7 +53,83 @@
 }
 
 #produkt-starttext {
-    padding: 0 1.5rem 2rem 1.5rem;
+    padding: 0 1.5rem 1rem 1.5rem;
+}
+/*
+main>aside {
+    background-color: white;
+    max-width: 30rem;
+    padding: 0 1.5rem 0 1.5rem;
+    text-align: center;
+    position: relative;
+    float: right;
+}
+*/
+main>aside {
+    background-color: white;
+    max-width: 30rem;
+    padding: 0 1.5rem 0 1.5rem;
+    text-align: center;
+    display: flex column;
+    justify-content: center;
+    align-items: center;
+}
+.text-anim {
+    padding: 5px 20px 10px 20px;
+    font-size: 18px;
+    color: red;
+    position: relative;
+    display: inline;
+    animation: move-roll 4s linear alternate infinite;
+}
+
+@keyframes move-roll {
+    0% {left:-20%; color:rgb(255, 153, 0);}
+    25% {color: rgb(255, 153, 0);}
+    50% {color: red}
+    75% {color: rgb(255, 153, 0);}
+    100% {left:20%; color: red}
+}
+
+.fieldset {
+    display: flex column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#p-fyll {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.competition-form {
+    padding: 10px 1.5rem 10px 1.5rem;
+    font-size: 16px;
+    img {
+        width: 20rem;
+    }
+}
+
+.question {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#svar-kommentar {
+    width: 20rem;
+    height: 6rem;
+}
+
+#email {
+    width: 20rem;
+    padding: 3px;
+}
+
+.button-blue {
+    background-color: v.$background-submit;
+}
+
+.do-fill {
+    color: v.$red-fill;
 }
 
 .buketter {
@@ -63,25 +138,6 @@
 
 #buketter {
     padding: 3rem 1.5rem 3rem 1.5rem;
-}
-
-#competition {
-    max-width: 30rem;
-    padding: 3rem 1.5rem 3rem 1.5rem;
-    text-align: center;
-    display: flex column;
-}
-
-.competition-form {
-    padding: 3rem 1.5rem 3rem 1.5rem;
-    display: flex row;
-}
-
-#compete-label {
-    font-style: italic; 
-}
-#question-one {
-    padding-top: 10px;
 }
 
 @media (min-width: 992px) { 
@@ -103,10 +159,8 @@
     }
     #buketter {
         padding-left: 6rem;
-    }
-    #competition {
-        padding: 0;
-        margin: 0rem 0rem 0rem 6rem;
-    }
-    
+    }/*
+    main>aside {
+        padding: 2rem 6rem 2rem 6rem;
+    }*/
 }

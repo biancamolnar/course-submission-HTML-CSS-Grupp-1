@@ -100,24 +100,37 @@
         som t.ex. Fair trade och Svenskt sigill.</p>
     </header>
     <main>
-      <article id="competition">
-        <h2>Tävla och få chansen att vinna ett presentkort på 500 kr!</h2>
-        <p>Fyll i tävlingsformuläret nedan så är du med i utlottningen av presentkortet. 
-          Dragningen sker i slutet av månaden och din vinst meddelas via e-mail. När du deltar i tävlingen 
-          godkänner du även att du registreras för prenumereration på vårt nyhetsbrev. Lycka till!</p>
-        <h5 id="question-one">1. Vilken teknik är denna bukett bunden med?</h5>
-        <img id="dekoration-stilart" src="" alt="En bild av en blomdekoration som visar en viss typ av teknik/stilart där blommorna placeras mot mitten." type="img/jpg">
-        <form class="competition-form">
-          <label for="radial" name="radial">Radial</label>
-          <input id="radial" title="Radial teknik" type="radio" value="Radial">
-          <label for="paralell" name="paralell">Paralell</label>
-          <input id="paralell" title="paralell teknik" type="radio" value="Paralell">
-          <label for="email">Konatktuppgifter:</label>
-          
-          <input required id="email" type="email" placeholder="Skriv din e-mail här..">
-          <input id="skicka" type="submit" value="Skicka">
+      <aside>
+      <fieldset class="fieldset">
+        <p class="text-anim">TÄVLING!</p>
+        <p class="text-anim">TÄVLING!</p>
+        <p class="text-anim">TÄVLING!</p>
+        <h3>Här är chansen att vinna ett presentkort på 500 kr!</h3>
+        <p id="p-fyll">Fyll i tävlingsformuläret nedan så är du med i utlottningen av presentkortet. 
+          Dragningen sker i slutet av månaden och din vinst meddelas via e-mail. Fler rätt, ger större chans att vinna.
+          När du deltar i tävlingen godkänner du även registrering för prenumereration på vårt nyhetsbrev. Lycka till!</p>
+        <form class="competition-form" action="mailto:emma.gabrielsson@utb.ecutbildning.se" method="get">
+          <img src="../img/produkt/blomdekoration-teknik.jpg" alt="En bild av en blomdekoration som visar en viss typ av teknik/stilart där blommorna placeras mot mitten. Innehåller vita blommor som liknar små stjärnor, blommor med spetsig topp och taggar och ... " type="img/jpg"><br><br>
+          <label class="question" for="teknik">1. Vilken teknik används i dekorationen på bilden ovanför?</label><br>
+          <input class="teknik" name="teknik" title="välj" type="radio" value="radial"> Radial<br>
+          <input class="teknik" name="teknik" title="välj" type="radio" value="paralell"> Paralell<br><br>
+          <label class="question" for="snittblommor">2. Vilka blommor finns med i dekorationen utav följande val?</label><br>
+          <input class="check" name="snittblommor" title="välj" type="checkbox" value="alstro"> Alstromeria<br>
+          <input class="check" name="snittblommor" title="välj" type="checkbox" value="fontängräs"> Fontängräs<br>
+          <input class="check" name="snittblommor" title="välj" type="checkbox" value="stjärngräs"> Stjärngräs<br>
+          <input class="check" name="snittblommor" title="välj" type="checkbox" value="veronika"> Veronika<br>
+          <input class="check" name="snittblommor" title="välj" type="checkbox" value="gerbera"> Gerbera<br>
+          <input class="check" name="snittblommor" title="välj" type="checkbox" value="rosor"> Rosor<br>
+          <input class="check" name="snittblommor" title="välj" type="checkbox" value="tistel"> Tistel<br><br>   
+          <label class="question" for="svar-kommentar">3. Antalet rosor har olika betydelse, vad betyder 4 st rosor?</label>
+          <textarea id="svar-kommentar" name="svar-kommentar" placeholder="skriv här.."></textarea><br><br>
+          <label class="question" for="email">4. Kontaktuppgifter:<span class="do-fill">*</span></label><br>
+          <input required pattern=".+@.+\..+" id="email" name="email" type="email" placeholder="Skriv din e-mail här.."><br><br>
+          <input class="button-blue" title="klicka för att radera dina svar" type="reset" value="Radera">
+          <input class="button-blue" title="klicka för att skicka in dina svar" type="submit" value="Skicka">
         </form>
-      </article>
+      </fieldset>
+      </aside>
       <article class="buketter">
         <h2 id="buketter">Buketter</h2>
       </article>
