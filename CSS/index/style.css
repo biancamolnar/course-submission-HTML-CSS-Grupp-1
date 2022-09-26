@@ -10931,6 +10931,10 @@ footer {
   text-align: center;
   margin: 1rem 0;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.25s;
+}
+.kort-container .kort:hover {
+  transform: scale(1.04);
 }
 .kort-container .kort img {
   width: 100%;
@@ -10941,7 +10945,7 @@ footer {
   font-size: 1.3rem;
 }
 .kort-container .kort p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .kort-container .kort .knapp-wrapper {
   display: flex;
