@@ -42,7 +42,7 @@ h1 {
 
 }
 
-.vision > h2 {
+h2, h3 {
     text-align: center;
     margin: 20px 0 40px 0;
 }
@@ -83,6 +83,44 @@ h1 {
     border-radius: 5px;
   }
 
+  .personal {
+    background-color: #E6E6E6;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    padding: 30px;
+    margin: 30px;
+
+  }
+  .grid-container {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .grid-item > img {
+    width:50%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 0 10px 0;
+    padding: 10px 0 10px 0;
+  }
+  
+  .grid-item {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px 0 0 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.grid-item > p {
+    font-size: 20px;
+}
+
 footer {
     background-color: rgb(231, 228, 228);
     color: black;
@@ -105,6 +143,12 @@ footer {
     margin: 2px;
 }
 
+@media (max-width: 1000px) {
+    .grid-container {
+         grid-template-columns: auto auto;
+     }
+ }
+
 @media (max-width: 700px) {
     .flex-container {
         flex-direction: column;
@@ -115,8 +159,29 @@ footer {
     .vision {
         margin: 10px 0 10px 0;
     }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-item {
+        justify-items: auto;
+        padding: 10px 0 10px 20px;
+        margin: 0;
+    }
+
+    .grid-item > img {
+        float: left;
+        margin: 0 0 0 5px;
+        max-width: 100px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-item > h4, p {
+        justify-items: auto;
+        padding: 10px 0 0 0;
+    }
 }
-
-
-  
 
