@@ -2,6 +2,7 @@
 Designade wireframe footer och navbar som används på alla sidor.
 Skapade wireframes för index och nyhetssidan.
 Kodade tillsammans med Emma navbaren som används på alla sidorna.
+Kodat och styleat index sidan.
 
 # Emma
 Designade wireframe footer och navbar som används på alla sidor.
