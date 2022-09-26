@@ -11043,8 +11043,7 @@ footer {
   padding: 20px 20px 0px 20px;
   text-align: center;
 }
-
-.checklist-top-content {
+.checklist-top div.checklist-top-content {
   display: flex;
   flex-direction: column;
 }
@@ -11057,41 +11056,34 @@ footer {
   width: 100%;
   margin-bottom: 15px;
 }
-
-#produkter {
+.rubrik-top #produkter {
   margin: 0 1rem 0.25rem 1.5rem;
   font-size: 36px;
 }
-
-.search-container {
+.rubrik-top .search-container {
   display: flex row;
   margin-right: 1.5rem;
 }
-
-.input {
+.rubrik-top .search-container .input {
   width: 150px;
   padding: 0.5rem;
 }
-
-::-moz-placeholder {
+.rubrik-top .search-container ::-moz-placeholder {
   border: 2px;
 }
-
-:-ms-input-placeholder {
+.rubrik-top .search-container :-ms-input-placeholder {
   border: 2px;
 }
-
-::placeholder {
+.rubrik-top .search-container ::placeholder {
   border: 2px;
 }
-
-#search {
+.rubrik-top .search-container #search {
   background-color: #E6E6E6;
   width: 44px;
   height: 44px;
   padding: 8px;
 }
-#search:hover {
+.rubrik-top .search-container #search:hover {
   background-color: #a4a5a7;
 }
 
@@ -11099,16 +11091,6 @@ footer {
   padding: 0 1.5rem 1rem 1.5rem;
 }
 
-/*
-main>aside {
-    background-color: white;
-    max-width: 30rem;
-    padding: 0 1.5rem 0 1.5rem;
-    text-align: center;
-    position: relative;
-    float: right;
-}
-*/
 main > aside {
   background-color: white;
   max-width: 30rem;
@@ -11119,93 +11101,87 @@ main > aside {
   align-items: center;
 }
 
-.text-anim {
-  padding: 5px 20px 10px 20px;
+.fieldset {
+  display: flex column;
+  padding: 15px;
+  border: 1px solid;
+  background-image: url("../../img/produkt/background-nature2.jpg");
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.fieldset .text-anim {
+  padding: 10px 15px 15px 15px;
   font-size: 18px;
   color: red;
   position: relative;
   display: inline;
-  -webkit-animation: move-roll 4s linear alternate infinite;
-          animation: move-roll 4s linear alternate infinite;
+  -webkit-animation: move-roll 2s linear alternate infinite;
+          animation: move-roll 2s linear alternate infinite;
 }
-
 @-webkit-keyframes move-roll {
   0% {
-    left: -20%;
-    color: rgb(255, 153, 0);
-  }
-  25% {
-    color: rgb(255, 153, 0);
-  }
-  50% {
+    left: -9%;
     color: red;
   }
-  75% {
-    color: rgb(255, 153, 0);
+  50% {
+    color: rgb(255, 128, 0);
   }
   100% {
-    left: 20%;
+    left: 9%;
     color: red;
   }
 }
-
 @keyframes move-roll {
   0% {
-    left: -20%;
-    color: rgb(255, 153, 0);
-  }
-  25% {
-    color: rgb(255, 153, 0);
+    left: -9%;
+    color: red;
   }
   50% {
-    color: red;
-  }
-  75% {
-    color: rgb(255, 153, 0);
+    color: rgb(255, 128, 0);
   }
   100% {
-    left: 20%;
+    left: 9%;
     color: red;
   }
 }
-.fieldset {
-  display: flex column;
-  font-family: Georgia, "Times New Roman", Times, serif;
+.fieldset div {
+  padding: 15px 10px 10px 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 253, 253, 0.722);
 }
-
-#p-fyll {
+.fieldset h3 {
+  padding-top: 10px;
+}
+.fieldset #p-fyll {
   font-style: italic;
-  font-size: 16px;
+  padding: 5px 10px 0px 10px;
+  font-size: 14px;
 }
-
-.competition-form {
+.fieldset .competition-form {
   padding: 10px 1.5rem 10px 1.5rem;
   font-size: 16px;
 }
-.competition-form img {
+.fieldset .competition-form img {
   width: 20rem;
+  border: 2px solid;
+  border-radius: 5px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.229);
 }
-
-.question {
+.fieldset .competition-form .question {
   font-weight: bold;
   font-size: 16px;
 }
-
-#svar-kommentar {
+.fieldset .competition-form #svar-kommentar {
   width: 20rem;
   height: 6rem;
 }
-
-#email {
+.fieldset .competition-form #email {
   width: 20rem;
   padding: 3px;
 }
-
-.button-blue {
+.fieldset .competition-form .button-blue {
   background-color: #1D88EA;
 }
-
-.do-fill {
+.fieldset .competition-form .do-fill {
   color: rgb(254, 90, 90);
 }
 
@@ -11226,18 +11202,18 @@ main > aside {
     width: 250px;
   }
   #produkter {
-    margin: 0 1rem 0.25rem 6rem;
+    padding-left: 4.5rem;
   }
   .search-container {
-    margin-right: 6rem;
+    padding-right: 4.5rem;
   }
   #produkt-starttext {
     padding: 0 6rem 2rem 6rem;
   }
   #buketter {
     padding-left: 6rem;
-  } /*
-main>aside {
-    padding: 2rem 6rem 2rem 6rem;
-}*/
+  }
+  main > aside {
+    margin: 0 4.5rem 0 4.5rem;
+  }
 }/*# sourceMappingURL=produkt-main.css.map */
