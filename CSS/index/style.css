@@ -10771,7 +10771,7 @@ h1 {
   text-align: center;
 }
 
-h2.sid-intro {
+.main-underrubrik {
   text-align: center;
   font-size: 1.3rem;
   font-weight: 350;
@@ -10788,12 +10788,12 @@ h3 {
   font-weight: 350;
 }
 
-p.viktig {
+.underrubrik {
   font-size: 1.2rem;
   font-weight: 350;
 }
 @media (min-width: 670px) {
-  p.viktig {
+  .underrubrik {
     font-size: 1.3rem;
   }
 }
@@ -10988,6 +10988,11 @@ footer {
   .kort-container .kort {
     width: 23%;
   }
+}
+.kort-container .sektion-intro-titel {
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 .kort-container .kort-flex {
   display: flex;

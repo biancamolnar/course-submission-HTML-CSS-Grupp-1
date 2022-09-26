@@ -17,6 +17,9 @@
   background-color: c.$dark-page-background;
   padding: 3rem 0;
   @include mixin.kort(90%, 45%, 23%);
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+  }
   .kort-flex {
     @include mixin.flex-center;
     flex-wrap: wrap;
