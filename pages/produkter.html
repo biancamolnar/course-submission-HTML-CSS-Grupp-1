@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
 </head>
 <body>
-    <header>
       <nav class="navbar navbar-expand-lg p-0">
         <div class="container-xxl">
           <a class="navbar-brand d-lg-none logga py-2 ps-3" href="index.html">Blomstersidan</a>
@@ -96,12 +95,11 @@
         Våra snittblommor och krukväxter är av högsta kvalitet och vi arbetar 
         med kvalitetsäkrade märken som ska vara hållbara och bra för både människa och miljö, 
         som t.ex. Fair trade och Svenskt sigill.</p>
-    </header>
     <main>
       <aside>
         <div>
         <fieldset class="fieldset">
-        <div>
+        <div id="link">
         <p class="text-anim">TÄVLING!</p>
         <p class="text-anim">TÄVLING!</p>
         <p class="text-anim">TÄVLING!</p>
@@ -125,69 +123,185 @@
           <label class="question" for="svar-kommentar">3. Antalet rosor har olika betydelse, vad betyder 4 st rosor?</label>
           <textarea id="svar-kommentar" name="svar-kommentar" placeholder="skriv här.."></textarea><br><br>
           <label class="question" for="email">4. Kontaktuppgifter:<span class="do-fill">*</span></label><br>
-          <input required pattern=".+@.+\..+" id="email" name="email" type="email" placeholder="Skriv din e-mail här.."><br><br>
-          <input class="button-blue" title="klicka för att radera dina svar" type="reset" value="Radera">
-          <input class="button-blue" title="klicka för att skicka in dina svar" type="submit" value="Skicka">
+          <input required pattern=".+@.+\..+" class="email" id="email" name="email" type="email" placeholder="Skriv din e-mail här.."><br><br>
+          <input class="button-blue" title="återställ formulär" type="reset" value="Radera">
+          <input class="button-blue" title="skicka in dina svar" type="submit" value="Skicka">
         </form>
         </fieldset>
         </div>
       </aside>
       <article class="buketter">
         <h2 id="buketter">Buketter</h2>
-        <div class="produkt-container">
-          <div class="row p-2 border-bottom-0 border rounded-top border-bg-color">
-            <div class="d-flex flex-row p-3 text-center">
-                <div class="p-2 col-4 border">
+            <div class="kort-container p-3">
+                <div class="kort p-2 border">
                     <img src="../img//produkt/bukett1.jpg" class="card-img-top" alt="En bild av en presentinslagen bukett i orange cellofan med blandade blommor">
                     <div class="card-body">
                         <h5 class="card-title">Present-inslagen bukett</h5>
                         <p class="card-text">En färgsprakande bukett som gör vem som helst glad!</p>
-                        <a href="#" class="btn btn-success">Köp för 450;-</a>
+                        <a href="../pages/under-uppbyggnad.html" class="btn btn-success">Köp för 450;-</a>
                     </div>
                 </div>
-                <div class="p-2 col-4 border">
+                <div class="kort p-2 border">
                     <img src="../img/produkt/bukett2.jpg" class="card-img-top" alt="En bukett med röda liljor som någon håller fram i handen framför en vit bakgrund">
                     <div class="card-body">
                         <h5 class="card-title">Bukett med liljor</h5>
                         <p class="card-text">En stilren bukett med kungligt röda liljor.</p>
-                        <a href="#" class="btn btn-success">Köp för 225;-</a>
+                        <a href="../pages/under-uppbyggnad.html" class="btn btn-success">Köp för 225;-</a>
                     </div>
                 </div>
-                <div class="p-2 col-4 border">
+                <div class="kort p-2 border">
                     <img col="" src="../img//produkt/dekoration2.jpg" class="card-img-top" alt="En bild av en dekoration med blandade blommor i pastellfärger">
                     <div class="card-body">
                         <h5 class="card-title">Dekoration</h5>
                         <p class="card-text">En ljuvlig bordsdekoration i aprikosa toner.</p>
-                        <a href="#" class="btn btn-success">Köp för 375;-</a>
+                        <a href="../pages/under-uppbyggnad.html" class="btn btn-success">Köp för 375;-</a>
                     </div>
                 </div>
+                <div class="kort p-2 border">
+                  <img src="../img//produkt/bukett1.jpg" class="card-img-top" alt="En bild av en presentinslagen bukett i orange cellofan med blandade blommor">
+                  <div class="card-body">
+                      <h5 class="card-title">Present-inslagen bukett</h5>
+                      <p class="card-text">En färgsprakande bukett som gör vem som helst glad!</p>
+                      <a href="../pages/under-uppbyggnad.html" class="btn btn-success">Köp för 450;-</a>
+                  </div>
+              </div>
+              <div class="kort p-2 border">
+                  <img src="../img/produkt/bukett2.jpg" class="card-img-top" alt="En bukett med röda liljor som någon håller fram i handen framför en vit bakgrund">
+                  <div class="card-body">
+                      <h5 class="card-title">Bukett med liljor</h5>
+                      <p class="card-text">En stilren bukett med kungligt röda liljor.</p>
+                      <a href="../pages/under-uppbyggnad.html" class="btn btn-success">Köp för 225;-</a>
+                  </div>
+              </div>
+              <div class="kort p-2 border">
+                  <img col="" src="../img//produkt/dekoration2.jpg" class="card-img-top" alt="En bild av en dekoration med blandade blommor i pastellfärger">
+                  <div class="card-body">
+                      <h5 class="card-title">Dekoration</h5>
+                      <p class="card-text">En ljuvlig bordsdekoration i aprikosa toner.</p>
+                      <a href="../pages/under-uppbyggnad.html" class="btn btn-success">Köp för 375;-</a>
+                  </div>
+              </div>
+                <div class="kort p-2 border">
+                    <img src="../img//produkt/bukett1.jpg" class="card-img-top" alt="En bild av en presentinslagen bukett i orange cellofan med blandade blommor">
+                    <div class="card-body">
+                        <h5 class="card-title">Present-inslagen bukett</h5>
+                        <p class="card-text">En färgsprakande bukett som gör vem som helst glad!</p>
+                        <a href="../pages/under-uppbyggnad.html" class="btn btn-success">Köp för 450;-</a>
+                    </div>
+                </div>
+                <div class="kort p-2 border">
+                    <img src="../img/produkt/bukett2.jpg" class="card-img-top" alt="En bukett med röda liljor som någon håller fram i handen framför en vit bakgrund">
+                    <div class="card-body">
+                        <h5 class="card-title">Bukett med liljor</h5>
+                        <p class="card-text">En stilren bukett med kungligt röda liljor.</p>
+                        <a href="../pages/under-uppbyggnad.html" class="btn btn-success">Köp för 225;-</a>
+                    </div>
+                </div>
+                <div class="kort p-2 border">
+                    <img col="" src="../img//produkt/dekoration2.jpg" class="card-img-top" alt="En bild av en dekoration med blandade blommor i pastellfärger">
+                    <div class="card-body">
+                        <h5 class="card-title">Dekoration</h5>
+                        <p class="card-text">En ljuvlig bordsdekoration i aprikosa toner.</p>
+                        <a href="../pages/under-uppbyggnad.html" class="btn btn-success">Köp för 375;-</a>
+                    </div>
+                </div>
+              </div>
             </div>
-            </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
       </article>
       <article class="plants">
         <h2 id="plants">Krukväxter & Inredning</h2>
 
       </article>
       <article class="event">
-        <h2 id="event">Bröllop & Event</h2>
-
-
+        <fieldset class="wedding">
+          <h2 id="event">Bröllop & Event</h2>
+          <p>Önskar du mer information om bordsdukningar, arrangemang, dekorationer, tårtblommor, brudbuketter, corsage, tärnbuketter osv.
+            Boka ett kostnadsfritt möte med oss där du får diskutera allt kring hur ditt bröllop kan utsmyckas eller hur företagsträffen kan bli minnesvärd, 
+            med en utbildad florist som är expert på området. Fyll i formuläret nedan så återkommer vi med förslag på datum och tid.</p>
+          <h4 id="booking-title">Mötesbokning</h4>
+          <form id="booking-form-event" action="mailto:emma.gabrielsson@utb.ecutbildning.se" method="get">
+            <label for="name">Namn:<span class="do-fill">*</span></label><br>
+            <input required type="text" id="name" name="name" placeholder="Skriv ditt tilltalsnamn här..."><br><br>
+            <label class="question-event" for="email">Kontaktuppgifter:<span class="do-fill">*</span></label><br>
+            <input required pattern=".+@.+\..+" class="email" name="email" type="email" placeholder="Skriv din e-mail här.."><br><br>
+            <label class="question-event" for="fokus">Välj ett fokusområde:<span class="do-fill">*</span></label><br>
+            <select requierd id="fokus" name="fokus" title="välj fokusområde">
+            <option value="bröllop">Bröllop</option>
+            <option value="sponsor">Sponsorbuketter</option>
+            <option value="företags-event">Företagsevent</option>
+            <option value="scenarr.">Scenarrangemang</option>
+            </select><br><br>
+            <label class="question-event" for="anteckningar">Anteckningar:</label><br>
+            <textarea id="anteckningar" name="anteckningar" placeholder="skriv särskilda önskemål här.."></textarea>  
+            <input class="button-blue" title="skicka in" type="submit" value="Skicka">
+          </form>
+          <div id="carouselExampleIndicators" class="karusell carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../img/produkt/brudbukett.jpg" alt="En bild av en brudbukett som är fokuserad i brudparets händer, i frostiga grå/vita toner med rosor, eucalypthus och barrväxter.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/produkt/dekorationsblommor.jpg" alt="En bild av en vit bröllopstårta med tre våningar som är dekorerad med rosor, chrysanthemum i vita och aprikosa toner, med slingrande murgröna runtom.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/produkt/dukning.jpg" alt="En bild av en bröllopsdukning på ett långbord med låga och runda blomdekorationer i varma pastellfärger med bland annat rosor. Glödlampor hänger ner från taket utefter bordet och ger stämningen en varm färg.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/produkt/bordsdukning.jpg" alt="En bild av en bordsdukning i ett mindre sällskap med runda blomdekorationer i rosa, lila och röda färger.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/produkt/brudbukett.jpg" alt="En bild av en brudbukett som är fokuserad i brudparets händer, i frostiga grå/vita toner med rosor, eucalypthus och barrväxter.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/produkt/dekorationsblommor.jpg" alt="En bild av en vit bröllopstårta med tre våningar som är dekorerad med rosor, chrysanthemum i vita och aprikosa toner, med slingrande murgröna runtom.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/produkt/dukning.jpg" alt="En bild av en bröllopsdukning på ett långbord med låga och runda blomdekorationer i varma pastellfärger med bland annat rosor. Glödlampor hänger ner från taket utefter bordet och ger stämningen en varm färg.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/produkt/bordsdukning.jpg" alt="En bild av en bordsdukning i ett mindre sällskap med runda blomdekorationer i rosa, lila och röda färger.">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" title="gå tillbaka">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Tillbaka</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" title="välj nästa">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Nästa</span>
+            </a>
+          </div>
+        </fieldset>
       </article>
       <article class="begravning">
         <h2 id="begravning">Begravningsbinderier</h2>
 
 
       </article>
-
+      <article id="florist">
+        <h4>Florist för en kväll!</h4>
+        <p>Har du eller någon du känner kreativa fingrar och vill lära dig göra en egen 
+          blomsterdekoration med rätt tekniker och färger/former, så kan du anmäla ditt intresse här nedan genom att fylla i din e-mail. 
+          Får vi in tillräckligt många intresseanmälningar kommer vi starta en kurs i höst där ni kommer bli inbjudna. Vi står för kunskapen, 
+          så ni behöver bara betala för det materialet som ni väljer att använda under kurstillfället. Hoppas vi ses!!</p>
+          <form action="mailto:emma.gabrielsson@utb.ecutbildning.se" method="get">
+            <input class="check" name="snittblommor" type="checkbox" checked title="vald" value="intresse-kurs">Intresserad av kursen<br>
+            <input required pattern=".+@.+\..+" class="intresse-kurs" name="intresse-kurs" type="email" placeholder="Skriv din e-mail här.."><br><br>
+            <input class="button-blue" title="skicka in" type="submit" value="Skicka">
+          </form>
+          <p class="link-end">Glöm inte att delta i vår tävling <a href="#link">HÄR</a> för att få chansen att vinna ett 
+          presentkort på 500 kr!</p>
+      </article>
     </main>
     <footer class="text-center text-lg-start border-top border-secondary bottom mt-5">
         <div class="container text-center text-md-start">

@@ -22,7 +22,7 @@
         stroke: black;
         stroke-dasharray: 100%;
         stroke-dashoffset: 10%;
-        animation: load 3s linear reverse infinite;
+        animation: load 3s linear alternate infinite;
     }
     @keyframes load {
         to {
@@ -170,7 +170,88 @@ main>aside {
 }
 
 #buketter, #plants, #event, #begravning {
-    padding: 3rem 1.5rem 3rem 1.5rem;
+    padding: 3rem 1.5rem 0rem 1.5rem;
+}
+
+.kort-container {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    .kort {
+        border: 1px solid v.$background-gray-hover;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }      
+    }
+}
+
+.event {
+    background-color: v.$background-gray;
+}
+
+.wedding {
+    border: 2px solid black;
+    margin: 1.5rem;
+    background-image: url("../../img/produkt/form-background.jpg");
+    p, h4 {
+        margin: 1.5rem;
+    }
+    form {
+        padding:0 1.5rem 1.5rem 1.5rem;
+        .do-fill {
+            color: v.$red-fill;
+        }
+        .email, #name, #fokus {
+            width: 250px;
+        }
+        #anteckningar {
+            width: 250px;
+            height: 120px;
+        }
+        .button-blue {
+            margin-left: 1.5rem;
+            background-color: v.$background-submit;
+        }
+    }
+    .karusell {
+        margin: 1.5rem;
+        img {
+            max-width: 700px;
+            border: 2px solid black;
+        }
+    }
+}
+
+#florist {
+    margin: 1.5rem;
+    text-align: center;
+    form .button-blue {
+        margin-bottom: 20px;
+    }
+}
+.link-end {
+    font-weight: bold;
+    a:link {
+        color: red;
+    }
+    a:visited {
+        color: green;
+    }
+    a:hover {
+        color: hotpink;
+    }
+    a:active {
+        color: blue;
+    }
 }
 
 @media (min-width: 992px) { 
