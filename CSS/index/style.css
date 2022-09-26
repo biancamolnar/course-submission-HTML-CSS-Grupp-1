@@ -10924,6 +10924,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.sid-intro-flex .underrubrik {
+  display: block;
+}
 .sid-intro-flex .carousel-container {
   border-radius: 15px;
   overflow: hidden;
@@ -10994,6 +10997,10 @@ footer {
   margin-bottom: 1rem;
   width: 100%;
 }
+.kort-container .sektion-intro-titel .underrubrik {
+  display: block;
+  margin-top: 0.5rem;
+}
 .kort-container .kort-flex {
   display: flex;
   justify-content: center;
@@ -11012,7 +11019,13 @@ footer {
 }
 .inspiration-container .sektion-intro-titel {
   text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
   padding: 0 1rem;
+}
+.inspiration-container .sektion-intro-titel .underrubrik {
+  display: block;
+  margin-top: 0.5rem;
 }
 .inspiration-container img {
   width: 80%;
@@ -11033,6 +11046,10 @@ footer {
   text-align: center;
   margin-bottom: 1rem;
   width: 100%;
+}
+.faq-section .sektion-intro-titel .underrubrik {
+  display: block;
+  margin-top: 0.5rem;
 }
 .faq-section .accordion {
   width: 95%;
@@ -11056,6 +11073,10 @@ footer {
   text-align: center;
   margin-bottom: 1rem;
   width: 100%;
+}
+.florist-sektion .sektion-intro-titel .underrubrik {
+  display: block;
+  margin-top: 0.5rem;
 }
 .florist-sektion figure {
   width: 90%;

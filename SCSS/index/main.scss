@@ -7,6 +7,9 @@
 
 .sid-intro-flex {
   @include mixin.flex-center;
+  .underrubrik {
+    display: block;
+  }
   .carousel-container {
     border-radius: 15px;
     overflow: hidden;
@@ -33,7 +36,7 @@
     flex-wrap: wrap;
   }
   .sektion-intro-titel {
-    text-align: center;
+    @include mixin.intro-titel;
     padding: 0 1rem;
   }
   img {
