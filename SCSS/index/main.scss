@@ -1,2 +1,122 @@
 @use '../../node_modules/bootstrap/scss/bootstrap.scss';
+@use 'base/typography';
 @use 'components/nav';
+@use '../om\ oss/components/footer.scss';
+@use 'abstracts/colors.scss' as c;
+@use 'abstracts/mixin';
+
+.sid-intro-flex {
+  @include mixin.flex-center;
+  .underrubrik {
+    display: block;
+  }
+  .carousel-container {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+
+.kort-container {
+  background-color: c.$dark-page-background;
+  padding: 3rem 0;
+  @include mixin.kort(90%, 45%, 23%);
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+  }
+  .kort-flex {
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+}
+
+.inspiration-container {
+  padding: 3rem 0;
+  .inspiration-flex {
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+    padding: 0 1rem;
+  }
+  img {
+    width: 80%;
+    margin: 1rem 0;
+  }
+}
+
+.faq-section {
+  background-color: c.$dark-page-background;
+  padding: 3rem 0;
+  .faq-flex {
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+  }
+  .accordion {
+    width: 95%;
+    border: 1px solid c.$border-color;
+    border-radius: 6px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.florist-sektion {
+  padding: 3rem 0;
+  .florist-flex {
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+  }
+  figure {
+    width: 90%;
+    margin: 1rem 0;
+    img {
+    border-radius: 50%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 670px) { 
+  h1 {
+    margin-right: 1vw;
+    font-size: 4rem;
+  }
+  .kort-container {
+    .kort-flex {
+      justify-content: space-around;
+    }
+  }
+  .inspiration-flex img {
+      width: 29%;
+      margin: 1rem;
+    }
+  .florist-flex {
+    justify-content: center;
+    figure {
+      width: 32%;
+      margin: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1300px) { 
+  .inspiration-flex img {
+    width: 22%;
+    margin: 1rem;
+  }
+  .florist-flex figure {
+    width: 20%;
+  }
+}
+
+
+
