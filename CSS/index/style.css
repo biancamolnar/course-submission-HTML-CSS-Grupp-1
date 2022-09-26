@@ -10821,6 +10821,7 @@ figcaption {
 }
 
 nav.navbar {
+  z-index: 1;
   position: sticky;
   top: 0;
   background-color: #E6E6E6;
