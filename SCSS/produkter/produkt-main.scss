@@ -3,6 +3,43 @@
 @use '../om oss/components/_footer.scss';
 @use 'variabler.scss' as v;
 
+.under-uppbyggnad {
+    margin: 2rem 0 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    svg {
+        width: 40px;
+        height: 40px;
+        border: 3px solid yellow;
+    }
+    svg rect {
+        width: 34px;
+        height: 34px;
+        fill: none;
+        stroke-width: 10px;
+        stroke: black;
+        stroke-dasharray: 100%;
+        stroke-dashoffset: 10%;
+        animation: load 3s linear reverse infinite;
+    }
+    @keyframes load {
+        to {
+            stroke-dashoffset: 250%;
+        }
+    }
+    h1 {
+        text-align: center;
+        padding: 10px;
+    }
+    #under-uppbyggnad {
+        max-width: 70%;
+        border: 10px solid v.$yellow-alert;
+        outline: 5px solid v.$red-alert;
+    }
+}
+
 .checklist-top {
     margin: 20px;
     padding: 20px 20px 0px 20px;
