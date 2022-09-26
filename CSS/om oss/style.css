@@ -1,3 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.bildlänk {
+    width:100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.bildlänk:hover {
+    box-shadow: 0 0 3px 2px grey;
+}
+
+.backgrund {
+    background-color: #E6E6E6;
+    padding: 5px;
+    margin: 10px 0 0 0;
+}
+
+.vision {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: white;
+    margin: 60px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px lightgrey;
+
+}
+
+.vision > h2 {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.read-more-state {
+    display: none;
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Visa mer';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Visa mindre';
+  }
+  
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
 footer {
     background-color: rgb(231, 228, 228);
     color: black;
@@ -19,3 +104,19 @@ footer {
 #p-footer {
     margin: 2px;
 }
+
+@media (max-width: 700px) {
+    .flex-container {
+        flex-direction: column;
+        gap: 5px;
+        margin: 5px;
+    }
+
+    .vision {
+        margin: 10px 0 10px 0;
+    }
+}
+
+
+  
+
