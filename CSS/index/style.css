@@ -11016,6 +11016,7 @@ footer {
 .faq-section .sektion-intro-titel {
   text-align: center;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .faq-section .accordion {
   width: 95%;
@@ -11024,6 +11025,26 @@ footer {
 }
 .faq-section p {
   margin: 0;
+}
+
+.florist-sektion {
+  padding: 3rem 0;
+}
+.florist-sektion .florist-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.florist-sektion .sektion-intro-titel {
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.florist-sektion img {
+  width: 90%;
+  margin: 1rem 0;
+  border-radius: 50%;
 }
 
 @media (min-width: 670px) {
@@ -11038,11 +11059,21 @@ footer {
     width: 29%;
     margin: 1rem;
   }
+  .florist-flex {
+    justify-content: center;
+  }
+  .florist-flex img {
+    width: 32%;
+    margin: 1rem;
+  }
 }
 @media (min-width: 1300px) {
   .inspiration-flex img {
     width: 22%;
     margin: 1rem;
+  }
+  .florist-flex img {
+    width: 20%;
   }
 }
 
