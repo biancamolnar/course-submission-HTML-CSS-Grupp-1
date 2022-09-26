@@ -68,10 +68,14 @@
   .sektion-intro-titel {
     @include mixin.intro-titel;
   }
-  img {
+  figure {
     width: 90%;
     margin: 1rem 0;
+    img {
     border-radius: 50%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    }
   }
 }
 
@@ -91,7 +95,7 @@
     }
   .florist-flex {
     justify-content: center;
-    img {
+    figure {
       width: 32%;
       margin: 1rem;
     }
@@ -103,7 +107,7 @@
     width: 22%;
     margin: 1rem;
   }
-  .florist-flex img {
+  .florist-flex figure {
     width: 20%;
   }
 }
