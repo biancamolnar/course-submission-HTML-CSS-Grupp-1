@@ -11133,16 +11133,6 @@ footer {
   padding: 0 1.5rem 1rem 1.5rem;
 }
 
-main > aside {
-  background-color: white;
-  max-width: 30rem;
-  padding: 0 1.5rem 0 1.5rem;
-  text-align: center;
-  display: flex column;
-  justify-content: center;
-  align-items: center;
-}
-
 .fieldset {
   display: flex column;
   padding: 15px;
@@ -11227,11 +11217,22 @@ main > aside {
   color: rgb(254, 90, 90);
 }
 
+main > aside {
+  background-color: white;
+  max-width: 30rem;
+  padding: 0 1.5rem 0 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  display: flex column;
+  justify-content: center;
+  align-items: center;
+}
+
 .buketter {
   background-color: #E6E6E6;
 }
 
-#buketter {
+#buketter, #plants, #event, #begravning {
   padding: 3rem 1.5rem 3rem 1.5rem;
 }
 
@@ -11252,10 +11253,13 @@ main > aside {
   #produkt-starttext {
     padding: 0 6rem 2rem 6rem;
   }
-  #buketter {
+  #buketter, #plants, #event, #begravning {
     padding-left: 6rem;
   }
   main > aside {
-    margin: 0 4.5rem 0 4.5rem;
+    margin: 0 4.5rem 1.5 4.5rem;
+  }
+  main > article {
+    margin: 0 4.5rem 1.5 4.5rem;
   }
 }/*# sourceMappingURL=produkt-main.css.map */
