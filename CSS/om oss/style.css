@@ -3,48 +3,58 @@
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: center;
-    margin: 40px 0 40px 0;
+    margin: 3rem 0 3rem 0;
+}
+
+.länk-section {
+    margin: 0 2rem 0 2rem;
+    border: 0.1rem solid grey;
+    border-radius: 0.8rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem lightgrey;
 }
 
 .flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin: 30px;
+    gap: 3.5rem;
+    margin: 2.5rem;
 }
 
 .bildlänk {
     width:100%;
     max-width: 500px;
     height: auto;
+    padding: 0.6rem;
+    border: 0.1rem solid lightgrey;
+    border-radius: 0.8rem;
 }
 
 .bildlänk:hover {
-    box-shadow: 0 0 3px 2px grey;
+    box-shadow: 0 0 0.2rem 0.1rem grey;
 }
 
 .backgrund {
     background-color: #E6E6E6;
-    padding: 5px;
-    margin: 10px 0 0 0;
+    padding: 0.5rem;
+    margin: 1rem 0 0 0;
 }
 
 .vision {
-    border: 1px solid grey;
-    border-radius: 5px;
+    border: 0.1rem solid grey;
+    border-radius: 0.5rem;
     background-color: white;
-    margin: 60px;
-    padding: 10px;
-    box-shadow: 4px 4px 4px lightgrey;
+    margin: 4rem;
+    padding: 0.8rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem lightgrey;
 
 }
 
 h2, h3 {
     text-align: center;
-    margin: 20px 0 40px 0;
+    margin: 1.5rem 0 2.8rem 0;
 }
 
 .read-more-state {
@@ -86,16 +96,16 @@ h2, h3 {
   .personal {
     background-color: #E6E6E6;
     border: 1px solid gray;
-    border-radius: 10px;
+    border-radius: 00.8rem;
     box-shadow: 2px 2px 2px lightgrey;
-    padding: 30px;
-    margin: 30px;
+    padding: 2.5rem;
+    margin: 2.5rem;
 
   }
   .grid-container {
     display: grid;
-    column-gap: 30px;
-    row-gap: 30px;
+    column-gap: 2.2rem;
+    row-gap: 2.2rem;
     grid-template-columns: auto auto auto auto;
   }
 
@@ -104,21 +114,21 @@ h2, h3 {
     max-width: 200px;
     height: auto;
     border-radius: 50%;
-    margin: 0 0 10px 0;
-    padding: 10px 0 10px 0;
+    margin: 0 0 0.8rem 0;
+    padding: 0.8rem 0 0.7rem 0;
   }
   
   .grid-item {
     background-color: white;
     border: 1px solid grey;
-    border-radius: 10px;
-    padding: 20px 0 0 0;
-    font-size: 30px;
+    border-radius: 0.8rem;
+    padding: 1.6rem 0 0 0;
+    font-size: 2.5rem;
     text-align: center;
   }
 
 .grid-item > p {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .newsletter {
@@ -126,7 +136,7 @@ h2, h3 {
 }
 
 h5 {
-    padding: 0 0 10px 0;
+    padding: 0 0 0.8rem 0;
 }
 
 footer {
@@ -158,14 +168,28 @@ footer {
  }
 
 @media (max-width: 700px) {
+
+    .länk-section {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
     .flex-container {
         flex-direction: column;
-        gap: 5px;
-        margin: 5px;
+        gap: 0.3rem;
+        margin: 0.3rem;
+    }
+
+    .bildlänk {
+        border:none;
+    }
+
+    .bildlänk:hover {
+        box-shadow: none;
     }
 
     .vision {
-        margin: 10px 0 10px 0;
+        margin: 0.8rem 0 0.8rem 0;
     }
 
     .grid-container {
@@ -175,13 +199,13 @@ footer {
 
     .grid-item {
         justify-items: auto;
-        padding: 10px 0 10px 20px;
+        padding: 0.7rem 0 0.7rem 1.3rem;
         margin: 0;
     }
 
     .grid-item > img {
         float: left;
-        margin: 0 0 0 5px;
+        margin: 0 0 0 0.4rem;
         max-width: 100px;
         padding: 0;
         margin: 0;
@@ -189,7 +213,23 @@ footer {
 
     .grid-item > h4, p {
         justify-items: auto;
-        padding: 10px 0 0 0;
+        padding: 0.7rem 0 0 0;
     }
+
+    fieldset {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="submit" i] {
+        margin: 0.6rem;
+    }
+
+    label {
+        margin: 0.6rem;
+    }
+    
 }
 
