@@ -8,12 +8,18 @@
 .sid-intro-flex {
   @include mixin.flex-center;
   flex-wrap: wrap;
-  @include mixin.kort(90%, 60%, 30%);
+  @include mixin.kort(90%, 28%, 30%);
   h1 {
     padding: 0 3rem;
   }
   .kort {
     margin: 1rem 1rem;
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
   }
   .underrubrik {
     display: block;
@@ -27,8 +33,26 @@
       font-size: 4rem;
       padding: 0 20rem;
     }
+    .kort h2 {
+      height: 6rem;
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .sid-intro-flex .kort h2 {
+    height: 5rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .sid-intro-flex .kort h2 {
+    height: 3rem;
   }
 }
 
 @media (min-width: 1300px) {
+  .sid-intro-flex .kort h2 {
+    height: 2.5rem;
+  }
 }
