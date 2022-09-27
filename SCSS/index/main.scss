@@ -5,6 +5,7 @@
 @use 'abstracts/colors.scss' as c;
 @use 'abstracts/mixin';
 
+
 .sid-intro-flex {
   @include mixin.flex-center;
   .underrubrik {
@@ -20,6 +21,7 @@
   background-color: c.$dark-page-background;
   padding: 3rem 0;
   @include mixin.kort(90%, 45%, 23%);
+  scroll-margin-top: 6.3rem;
   .sektion-intro-titel {
     @include mixin.intro-titel;
   }
