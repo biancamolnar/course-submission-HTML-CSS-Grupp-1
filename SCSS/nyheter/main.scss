@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   @include mixin.kort(90%, 28%, 30%);
   h1 {
-    padding: 0 3rem;
+    width: 100%;
   }
   .kort {
     margin: 1rem 1rem;
