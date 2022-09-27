@@ -7,15 +7,26 @@
 
 .sid-intro-flex {
   @include mixin.flex-center;
+  flex-wrap: wrap;
+  @include mixin.kort(90%, 60%, 30%);
+  h1 {
+    padding: 0 3rem;
+  }
+  .kort {
+    margin: 1rem 1rem;
+  }
   .underrubrik {
     display: block;
   }
 }
 
 @media (min-width: 670px) {
-  h1 {
-    margin-right: 1vw;
-    font-size: 4rem;
+  .sid-intro-flex {
+    h1 {
+      margin-right: 1vw;
+      font-size: 4rem;
+      padding: 0 20rem;
+    }
   }
 }
 

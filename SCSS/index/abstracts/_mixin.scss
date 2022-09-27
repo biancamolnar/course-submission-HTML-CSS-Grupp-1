@@ -1,4 +1,4 @@
-@use '../abstracts/colors' as c;
+@use "../abstracts/colors" as c;
 
 @mixin flex-center {
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-@mixin kort ($width-s, $width-md, $width-lg) {
+@mixin kort($width-s, $width-md, $width-lg) {
   .kort {
     border: 1px solid c.$border-color;
     background-color: white;
@@ -25,6 +25,7 @@
       border-radius: 10px;
       margin-bottom: 0.6rem;
     }
+    h2,
     h3 {
       font-size: 1.3rem;
     }
@@ -40,7 +41,8 @@
       text-decoration: none;
       padding: 1rem;
       border-radius: 10px;
-      &:hover, &:focus{
+      &:hover,
+      &:focus {
         background-color: c.$blå-knapp-hover;
       }
       &:focus {
@@ -50,12 +52,12 @@
         outline-color: c.$blå-knapp-outline;
       }
     }
-    @media (min-width: 670px) { 
-        width: $width-md;
+    @media (min-width: 670px) {
+      width: $width-md;
     }
-    @media (min-width: 1300px) { 
-        width: $width-lg;
-      } 
+    @media (min-width: 1300px) {
+      width: $width-lg;
+    }
   }
 }
 
