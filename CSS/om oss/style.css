@@ -12,6 +12,7 @@ h1 {
     border: 0.1rem solid grey;
     border-radius: 0.8rem;
     box-shadow: 0.2rem 0.2rem 0.2rem lightgrey;
+    background-color: #E6E6E6;
 }
 
 .flex-container {
@@ -27,8 +28,9 @@ h1 {
     max-width: 500px;
     height: auto;
     padding: 0.6rem;
-    border: 0.1rem solid lightgrey;
+    border: 0.1rem solid grey;
     border-radius: 0.8rem;
+    background-color: white;
 }
 
 .bildlänk:hover {
@@ -156,9 +158,23 @@ footer {
     margin: -30px;
 }
 
-#p-footer {
+.footer-titel {
+    font-size: 1.15rem;
+    margin: 0 0 1rem 0;
+}
+
+.p-footer {
     margin: 2px;
 }
+
+.p-footer > a {
+    color: #1D88EA;
+}
+
+#stockholm {
+    margin: 1.5rem 0 0 0;
+}
+
 
 @media (max-width: 1000px) {
     .grid-container {
@@ -234,5 +250,25 @@ footer {
     label {
         margin: 0.6rem;
     }
+
+    .button {
+        position: relative;
+        width: 2.5rem;
+        top: -14px;
+        margin: -30px;
+    }
+
+    .footer-titel {
+        margin: 1rem 0 0.5rem 0;
+    }
+
+    .p-footer {
+        padding: 0.05rem;
+    }
+
+    #stockholm {
+        margin: 0.8rem 0 0 0;
+    }
+
 }
 
