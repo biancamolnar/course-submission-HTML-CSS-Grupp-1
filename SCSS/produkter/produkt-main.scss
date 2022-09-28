@@ -216,13 +216,16 @@ main aside {
                 transition: transform 3s ease;  
             }
             :hover {
-            -ms-transform: scale(1.6);
-            -webkit-transform: scale(1.6);
-            transform: scale(1.6); 
+                -ms-transform: scale(1.7);
+                -webkit-transform: scale(1.7);
+                transform: scale(1.7); 
             }
         }
         .card-body {
-            margin: 15px 15px 30px 15px;
+            margin: 15px 15px 20px 15px;
+            p.k-text {
+                margin-bottom: 50px;
+            }
         }    
         .buy-btn {
             padding: 10px;
@@ -236,6 +239,10 @@ main aside {
             background-color: rgb(16, 140, 16);
         }
     }
+}
+
+article.plants {
+    background-color: white;
 }
 
 .event {
@@ -348,15 +355,15 @@ div.minibild-container {
         width: 250px;
     }
     #alla-produkter {
-        padding-left: 4.5rem;
+        padding-left: 3rem;
     }
     .search-container {
-        padding-right: 4.5rem;
+        padding-right: 3rem;
     }
     #produkt-starttext {
-        padding: 0 6rem 2rem 6rem;
+        padding: 0 5rem 2rem 5rem;
     }
-    #buketter, #plants, #event, #begravning {
+    #plants, #event, #begravning {
         padding-left: 3rem;
     }
     main {
@@ -371,7 +378,7 @@ div.minibild-container {
     }
     .kort-container {
         .kort {
-            width: 245px;
+            width: 250px;
         }
     }
     .bukett-lg {
@@ -382,5 +389,7 @@ div.minibild-container {
     #florist {
         padding: 4rem 7rem 2rem 7rem;
     }
-
+    article.plants {
+        padding: 1rem 2rem 3rem 2rem;
+    }
 }
