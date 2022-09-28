@@ -259,11 +259,12 @@ footer {
     }
 
     .footer-titel {
-        margin: 1rem 0 0.5rem 0;
+        margin: 0.7rem 0 0.3rem 0;
     }
 
     .p-footer {
-        padding: 0.05rem;
+        padding: 0rem;
+        margin: 0.1rem;
     }
 
     #stockholm {
