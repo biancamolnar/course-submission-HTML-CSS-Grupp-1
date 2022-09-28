@@ -37,6 +37,7 @@
         max-width: 70%;
         border: 10px solid v.$yellow-alert;
         outline: 5px solid v.$red-alert;
+        box-shadow: v.$img2-shadow;
     }
 }
 @media (min-width: 992px) {
