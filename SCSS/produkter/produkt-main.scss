@@ -3,42 +3,6 @@
 @use '../om oss/components/_footer.scss';
 @use 'variabler.scss' as v;
 
-.under-uppbyggnad {
-    margin: 2rem 0 4rem 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    svg {
-        width: 40px;
-        height: 40px;
-        border: 3px solid yellow;
-    }
-    svg rect {
-        width: 34px;
-        height: 34px;
-        fill: none;
-        stroke-width: 10px;
-        stroke: black;
-        stroke-dasharray: 100%;
-        stroke-dashoffset: 10%;
-        animation: load 3s linear alternate infinite;
-    }
-    @keyframes load {
-        to {
-            stroke-dashoffset: 250%;
-        }
-    }
-    h1 {
-        text-align: center;
-        padding: 10px;
-    }
-    #under-uppbyggnad {
-        max-width: 70%;
-        border: 10px solid v.$yellow-alert;
-        outline: 5px solid v.$red-alert;
-    }
-}
 
 .checklist-top {
     margin: 0px 20px 20px 20px;
@@ -68,7 +32,7 @@
             padding: 0.5rem;
          }
         
-         ::placeholder {
+        ::placeholder {
             border: 2px;
          }
         
@@ -294,7 +258,7 @@ article.plants {
                 background-color: v.$background-submit;
             }
         }
-        .wedding-inner-gallery {
+        div.wedding-inner-gallery {
             width: 100%;
             .karusell {
                 margin: 1.5rem;
@@ -311,7 +275,6 @@ article.plants {
                 background-color: transparent;
                 margin: 1.5rem;
                 border: none;
-                background-color: v.$background-opacity-form2;
                 img.minibild {
                     border: 1px solid black;
                     width: 23%;
@@ -412,14 +375,15 @@ article.plants {
         flex-direction: row;
         margin: 4.5rem;
         .wedding-inner {
-            float: center;
             width: 100%;
+            display: grid;
+            place-items: center;
         }
-        div#meet-form-container {
+        #meet-form-container {
             max-width: 400px;
         }
     }
-    .begravning div.kort-container {
+    .begravning .kort-container {
         padding: 0 4.5rem 3rem 4.5rem;
     }
     #florist {
