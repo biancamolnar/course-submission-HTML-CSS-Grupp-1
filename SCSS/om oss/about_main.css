@@ -11017,7 +11017,7 @@ nav.navbar .navbar-toggler:hover {
   }
 }
 footer {
-  background-color: #E6E6E6;
+  background-color: rgb(231, 228, 228);
   color: black;
 }
 
@@ -11027,13 +11027,45 @@ footer {
   font-family: Qwitcher Grypen;
 }
 
-.button {
+.totop {
   position: relative;
   width: 50px;
   top: -14px;
   margin: -30px;
 }
 
-#p-footer {
-  margin: 2px;
+.footer-titel {
+  font-size: 1.15rem;
+  margin: 0 0 1rem 0;
+}
+
+.p-footer {
+  margin: 0.5rem;
+}
+
+.p-footer > a {
+  color: #1D88EA;
+}
+
+#stockholm {
+  margin: 1.5rem 0 0 0;
+}
+
+@media (max-width: 700px) {
+  .totop {
+    position: relative;
+    width: 2.5rem;
+    top: -14px;
+    margin: -30px;
+  }
+  .footer-titel {
+    margin: 0.7rem 0 0.3rem 0;
+  }
+  .p-footer {
+    padding: 0rem;
+    margin: 0.1rem;
+  }
+  #stockholm {
+    margin: 0.8rem 0 0 0;
+  }
 }/*# sourceMappingURL=about_main.css.map */

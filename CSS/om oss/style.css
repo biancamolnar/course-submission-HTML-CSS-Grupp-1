@@ -140,42 +140,6 @@ h5 {
     padding: 0 0 0.8rem 0;
 }
 
-footer {
-    background-color: rgb(231, 228, 228);
-    color: black;
-}
-
-#logo {
-    font-size: 60px;
-    text-align: center;
-    font-family: Qwitcher Grypen;
-}
-
-.button {
-    position: relative;
-    width: 50px;
-    top: -14px;
-    margin: -30px;
-}
-
-.footer-titel {
-    font-size: 1.15rem;
-    margin: 0 0 1rem 0;
-}
-
-.p-footer {
-    margin: 2px;
-}
-
-.p-footer > a {
-    color: #1D88EA;
-}
-
-#stockholm {
-    margin: 1.5rem 0 0 0;
-}
-
-
 @media (max-width: 1000px) {
     .grid-container {
          grid-template-columns: auto auto;
@@ -250,26 +214,5 @@ footer {
     label {
         margin: 0.6rem;
     }
-
-    .button {
-        position: relative;
-        width: 2.5rem;
-        top: -14px;
-        margin: -30px;
-    }
-
-    .footer-titel {
-        margin: 0.7rem 0 0.3rem 0;
-    }
-
-    .p-footer {
-        padding: 0rem;
-        margin: 0.1rem;
-    }
-
-    #stockholm {
-        margin: 0.8rem 0 0 0;
-    }
-
 }
 
