@@ -9,7 +9,7 @@ footer {
     font-family: Qwitcher Grypen;
 }
 
-.button {
+.totop {
     position: relative;
     width: 50px;
     top: -14px;
@@ -22,7 +22,7 @@ footer {
 }
 
 .p-footer {
-    margin: 2px;
+    margin: 0.5rem;
 }
 
 .p-footer > a {
@@ -34,7 +34,7 @@ footer {
 }
 
 @media (max-width: 700px) {
-    .button {
+    .totop {
         position: relative;
         width: 2.5rem;
         top: -14px;
