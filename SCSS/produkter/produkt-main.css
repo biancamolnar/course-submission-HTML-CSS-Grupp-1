@@ -11161,22 +11161,19 @@ main aside {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-top: 3rem;
-  background-image: url("../../img/produkt/background-nature2.jpg");
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  background-image: url("../../img/produkt/back-aside.jpg");
   width: 100%;
-  height: 60%;
 }
-main aside div {
-  padding: 0 1.5rem 0 1.5rem;
+main aside div.back-field {
+  padding: 1.5rem 1.5rem 0 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  display: flex column;
   justify-content: center;
-  align-items: center;
 }
 main aside .fieldset {
   max-width: 30rem;
-  padding: 15px;
   background-color: transparent;
 }
 main aside .fieldset .text-anim {
@@ -11215,9 +11212,9 @@ main aside .fieldset .text-anim {
   }
 }
 main aside .fieldset div {
-  padding: 15px 10px 10px 10px;
+  padding: 15px;
   border-radius: 5px;
-  background-color: rgba(255, 253, 253, 0.826);
+  background-color: rgba(255, 253, 253, 0.901);
 }
 main aside .fieldset h3 {
   padding-top: 10px;
@@ -11239,8 +11236,7 @@ main aside .fieldset .competition-form img {
 }
 main aside .fieldset .competition-form div {
   background-color: transparent;
-  padding: 0;
-  margin: 0;
+  padding: 5px;
 }
 main aside .fieldset .competition-form .question {
   font-weight: bold;
@@ -11264,7 +11260,7 @@ main aside .fieldset .competition-form .teknik {
   margin: 3px;
 }
 main aside .fieldset .competition-form .check {
-  margin: 5px 3px 8px 5px;
+  margin: 10px 3px 10px 10px;
 }
 main aside .fieldset .competition-form #email {
   width: 20rem;
@@ -11286,6 +11282,10 @@ main aside .fieldset .competition-form .do-fill {
 #produkter, #buketter, #plants, #event, #begravning {
   padding: 3rem 1.5rem 0rem 1.5rem;
   scroll-margin-top: 6rem;
+}
+
+#buketter, #plants, #begravning {
+  text-align: center;
 }
 
 .kort-container {
@@ -11361,7 +11361,6 @@ article.plants {
   margin: 1.5rem;
 }
 .wedding div.wedding-inner {
-  min-width: 100%;
   background-color: rgba(255, 253, 253, 0.901);
 }
 .wedding div.wedding-inner form {
@@ -11387,38 +11386,42 @@ article.plants {
   height: 120px;
 }
 .wedding div.wedding-inner form .button-blue {
-  justify-content: space-around;
-  align-items: space-around;
+  margin: 5.6rem 0 0 30px;
+  position: absolute;
   background-color: #1D88EA;
 }
-.wedding div.wedding-inner .karusell {
-  margin: 1rem;
-  max-width: 700px;
+.wedding div.wedding-inner .wedding-inner-gallery {
+  width: 100%;
 }
-.wedding div.wedding-inner .karusell img {
+.wedding div.wedding-inner .wedding-inner-gallery .karusell {
+  margin: 1.5rem;
+}
+.wedding div.wedding-inner .wedding-inner-gallery .karusell img {
+  width: 100%;
   border: 1px solid black;
 }
 .wedding div.wedding-inner .minibild-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 100%;
+  background-color: transparent;
   margin: 1.5rem;
   border: none;
   background-color: rgba(255, 253, 253, 0.901);
 }
-.wedding div.wedding-inner .minibild-container .minibild {
+.wedding div.wedding-inner .minibild-container img.minibild {
   border: 1px solid black;
-  max-width: 30%;
+  width: 23%;
 }
 
-/*
-@media (min-width: 670px) {
-    .minibild-container .minibild {
-        width: 40%;
-    }
+.begravning {
+  background-color: white;
 }
-*/
+.begravning div.kort-container {
+  justify-content: space-between;
+  padding: 1rem;
+}
+
 #florist {
   padding: 1.5rem;
   text-align: center;
@@ -11475,18 +11478,16 @@ article.plants {
   #produkt-starttext {
     padding: 0 5rem 2rem 5rem;
   }
-  #plants, #event, #begravning {
-    padding-left: 3rem;
-  }
   main {
     background-color: #E6E6E6;
   }
   main aside {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    position: relative;
-    margin-top: 4.5rem;
+    padding-bottom: auto;
+    justify-content: flex-start;
+  }
+  main aside .fieldset {
+    display: block;
   }
   .kort-container .kort {
     width: 250px;
@@ -11501,9 +11502,17 @@ article.plants {
   }
   .wedding {
     flex-direction: row;
+    margin: 4.5rem;
   }
   .wedding .wedding-inner {
-    width: 50%;
+    float: center;
+    width: 100%;
+  }
+  .wedding div#meet-form-container {
+    max-width: 400px;
+  }
+  .begravning div.kort-container {
+    padding: 0 4.5rem 3rem 4.5rem;
   }
   #florist {
     padding: 4rem 7rem 2rem 7rem;

@@ -93,21 +93,18 @@ main aside {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-top: 3rem;
-    background-image: url("../../img/produkt/background-nature2.jpg");
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    background-image: url("../../img/produkt/back-aside.jpg");
     width: 100%;
-    height: 60%;
-    div {
-        padding: 0 1.5rem 0 1.5rem;
+    div.back-field {
+        padding: 1.5rem 1.5rem 0 1.5rem;
         margin-bottom: 1.5rem;
         text-align: center;
-        display: flex column;
         justify-content: center;
-        align-items: center;
     }
     .fieldset {
         max-width: 30rem;
-        padding: 15px;
         background-color: transparent;
         .text-anim {
             padding: 10px 15px 15px 15px;
@@ -123,9 +120,9 @@ main aside {
             100% {left:9%; color: v.$red-alert}
         }    
         div {
-            padding: 15px 10px 10px 10px;
+            padding: 15px;
             border-radius: 5px;
-            background-color: v.$background-opacity-form;
+            background-color: v.$background-opacity-form2;
         }
         h3 {
             padding-top: 10px;
@@ -146,8 +143,7 @@ main aside {
             }
             div {
                 background-color: transparent;
-                padding: 0;
-                margin: 0;
+                padding: 5px;
             }
             .question {
                 font-weight: bold;
@@ -165,7 +161,7 @@ main aside {
                 margin: 3px;
             }
             .check {
-                margin: 5px 3px 8px 5px;
+                margin: 10px 3px 10px 10px;
             }
             #email {
                 width: 20rem;
@@ -190,6 +186,10 @@ main aside {
 #produkter, #buketter, #plants, #event, #begravning {
     padding: 3rem 1.5rem 0rem 1.5rem;
     scroll-margin-top: 6rem;
+}
+
+#buketter, #plants, #begravning {
+    text-align: center;
 }
 
 .kort-container {
@@ -266,7 +266,6 @@ article.plants {
         margin: 1.5rem;
     }
     div.wedding-inner {
-        min-width: 100%;
         background-color: v.$background-opacity-form2;
         form {
             padding:0 1.5rem 1.5rem 1.5rem;
@@ -290,41 +289,45 @@ article.plants {
                 height: 120px;
             }
             .button-blue {
-                justify-content: space-around;
-                align-items: space-around;
+                margin: 5.6rem 0 0 30px;
+                position: absolute;
                 background-color: v.$background-submit;
             }
         }
-        .karusell {
-            margin: 1rem;
-            max-width: 700px;
-            img {
-                border: 1px solid black;
+        .wedding-inner-gallery {
+            width: 100%;
+            .karusell {
+                margin: 1.5rem;
+                img {
+                    width: 100%;
+                    border: 1px solid black;
+                }
             }
-        }
-        .minibild-container {
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            max-width: 100%;
-            margin: 1.5rem;
-            border: none;
-            background-color: v.$background-opacity-form2;
-            .minibild {
-                border: 1px solid black;
-                max-width: 30%;
+            }
+            .minibild-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: transparent;
+                margin: 1.5rem;
+                border: none;
+                background-color: v.$background-opacity-form2;
+                img.minibild {
+                    border: 1px solid black;
+                    width: 23%;
+                }
             }
     }
 }
 
-}
-/*
-@media (min-width: 670px) {
-    .minibild-container .minibild {
-        width: 40%;
+.begravning {
+    background-color: white;
+    div.kort-container {
+        justify-content: space-between;
+        padding: 1rem;
     }
 }
-*/
+
 #florist {
     padding: 1.5rem;
     text-align: center;
@@ -381,17 +384,15 @@ article.plants {
     #produkt-starttext {
         padding: 0 5rem 2rem 5rem;
     }
-    #plants, #event, #begravning {
-        padding-left: 3rem;
-    }
     main {
         background-color: v.$background-gray;
         aside {
-            display: flex;
             flex-direction: row;
-            align-items: center;
-            position: relative;
-            margin-top: 4.5rem;
+            padding-bottom: auto;
+            justify-content: flex-start;
+            .fieldset {
+                display: block;
+            }
         }
     }
     .kort-container {
@@ -409,9 +410,17 @@ article.plants {
     }
     .wedding {
         flex-direction: row;
+        margin: 4.5rem;
         .wedding-inner {
-            width: 50%;
+            float: center;
+            width: 100%;
         }
+        div#meet-form-container {
+            max-width: 400px;
+        }
+    }
+    .begravning div.kort-container {
+        padding: 0 4.5rem 3rem 4.5rem;
     }
     #florist {
         padding: 4rem 7rem 2rem 7rem;
