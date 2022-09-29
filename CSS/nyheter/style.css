@@ -11194,6 +11194,43 @@ footer {
   margin-bottom: 1rem;
 }
 
+.nyhetsbrev-mail {
+  padding: 0 1rem;
+}
+.nyhetsbrev-mail .mail-flex {
+  padding: 3rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nyhetsbrev-mail .sektion-intro-titel {
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.nyhetsbrev-mail .sektion-intro-titel .underrubrik {
+  display: block;
+  margin-top: 0.5rem;
+}
+.nyhetsbrev-mail form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nyhetsbrev-mail .fråga {
+  width: 100%;
+}
+.nyhetsbrev-mail legend {
+  font-size: 1rem;
+  text-align: start;
+}
+.nyhetsbrev-mail .radio {
+  width: 100%;
+}
+
 @media (min-width: 670px) {
   .sid-intro-flex h1 {
     font-size: 4rem;
@@ -11299,6 +11336,9 @@ footer {
   .sid-intro-flex .kort h2 {
     height: 3rem;
   }
+  .bianca-grid-1 {
+    margin: 0 2rem;
+  }
 }
 @media (min-width: 1300px) {
   .sid-intro-flex .kort h2 {
@@ -11378,6 +11418,9 @@ footer {
     justify-items: center;
     align-items: center;
     margin-bottom: 3rem;
+  }
+  .bianca-artikel .bianca-grid-1:last-child {
+    margin-bottom: 0;
   }
   .bianca-artikel .bianca-grid-1 .img-container {
     overflow: hidden;

@@ -173,6 +173,33 @@
   }
 }
 
+.nyhetsbrev-mail {
+  padding: 0 1rem;
+  .mail-flex {
+    padding: 3rem 0.5rem;
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+  }
+  form {
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .fråga {
+    width: 100%;
+  }
+  legend {
+    font-size: 1rem;
+    text-align: start;
+  }
+  .radio {
+    width: 100%;
+  }
+}
+
 @media (min-width: 670px) {
   .sid-intro-flex {
     h1 {
@@ -288,6 +315,9 @@
   .sid-intro-flex .kort h2 {
     height: 3rem;
   }
+  .bianca-grid-1 {
+    margin: 0 2rem;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -371,6 +401,9 @@
       justify-items: center;
       align-items: center;
       margin-bottom: 3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
       .img-container {
         overflow: hidden;
         height: 100%;
