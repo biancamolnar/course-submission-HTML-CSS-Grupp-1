@@ -11251,13 +11251,13 @@ main aside .fieldset .competition-form .do-fill {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .kort-container .kort {
   margin: 15px;
   border: 2px solid #a4a5a7;
-  max-width: 43%;
+  width: 250px;
   min-height: 400px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -11291,6 +11291,53 @@ main aside .fieldset .competition-form .do-fill {
 }
 .kort-container .kort a:hover {
   background-color: rgb(16, 140, 16);
+}
+.kort-container .bg-gr {
+  background-color: #E6E6E6;
+  width: 350px;
+  min-height: 455px;
+}
+.kort-container .kort-lg {
+  margin: 15px;
+  border: 2px solid #a4a5a7;
+  width: 550px;
+  min-height: 455px;
+  background-color: #E6E6E6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.kort-container .kort-lg .zoom-img {
+  overflow: hidden;
+  width: 100%;
+}
+.kort-container .kort-lg .zoom-img img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: transform 3s ease;
+}
+.kort-container .kort-lg .zoom-img :hover {
+  transform: scale(1.7);
+}
+.kort-container .kort-lg .card-body {
+  margin: 15px 15px 20px 15px;
+}
+.kort-container .kort-lg .card-body p.k-text {
+  margin-bottom: 50px;
+}
+.kort-container .kort-lg .buy-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(15, 95, 15);
+}
+.kort-container .kort-lg a:hover {
+  background-color: rgb(16, 140, 16);
+}
+.kort-container .kort-lg video {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 article.plants {
@@ -11378,6 +11425,13 @@ article.plants {
   padding: 1rem;
 }
 
+#gravblomma-mp4 video {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #florist {
   padding: 1.5rem;
   text-align: center;
@@ -11441,6 +11495,7 @@ article.plants {
     flex-direction: row;
     padding-bottom: auto;
     justify-content: flex-start;
+    align-items: start;
   }
   main aside .fieldset {
     display: block;
@@ -11470,6 +11525,9 @@ article.plants {
   }
   .begravning .kort-container {
     padding: 0 4.5rem 3rem 4.5rem;
+  }
+  #gravblomma-mp4 video {
+    height: 500px;
   }
   #florist {
     padding: 4rem 7rem 2rem 7rem;

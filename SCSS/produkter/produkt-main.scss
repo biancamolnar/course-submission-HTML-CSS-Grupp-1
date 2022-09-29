@@ -162,12 +162,12 @@ main aside {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;  
     .kort {
         margin: 15px;
         border: 2px solid v.$background-gray-hover;
-        max-width: 43%;
+        width: 250px;
         min-height: 400px;
         background-color: white;
         box-shadow: v.$img-shadow;
@@ -202,6 +202,54 @@ main aside {
         }
         a:hover {
             background-color: rgb(16, 140, 16);
+        }
+    }
+    .bg-gr {
+        background-color: v.$background-gray;
+        width: 350px;
+        min-height: 455px;
+    }
+    .kort-lg {
+        margin: 15px;
+        border: 2px solid v.$background-gray-hover;
+        width: 550px;
+        min-height: 455px;
+        background-color: v.$background-gray;
+        box-shadow: v.$img-shadow;
+        .zoom-img {
+            overflow: hidden;
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid black;
+                transition: transform 3s ease;  
+            }
+            :hover {
+                -ms-transform: scale(1.7);
+                -webkit-transform: scale(1.7);
+                transform: scale(1.7); 
+            }
+        }
+        .card-body {
+            margin: 15px 15px 20px 15px;
+            p.k-text {
+                margin-bottom: 50px;
+            }
+        }    
+        .buy-btn {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(15, 95, 15);
+        }
+        a:hover {
+            background-color: rgb(16, 140, 16);
+        }
+        video {
+            object-fit: cover;
         }
     }
 }
@@ -291,6 +339,13 @@ article.plants {
     }
 }
 
+#gravblomma-mp4 video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
 #florist {
     padding: 1.5rem;
     text-align: center;
@@ -353,6 +408,7 @@ article.plants {
             flex-direction: row;
             padding-bottom: auto;
             justify-content: flex-start;
+            align-items: start;
             .fieldset {
                 display: block;
             }
@@ -385,6 +441,9 @@ article.plants {
     }
     .begravning .kort-container {
         padding: 0 4.5rem 3rem 4.5rem;
+    }
+    #gravblomma-mp4 video {
+        height: 500px;              
     }
     #florist {
         padding: 4rem 7rem 2rem 7rem;
