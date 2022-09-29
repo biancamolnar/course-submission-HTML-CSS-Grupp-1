@@ -11230,6 +11230,9 @@ footer {
 .nyhetsbrev-mail .radio {
   width: 100%;
 }
+.nyhetsbrev-mail .submit {
+  width: 100%;
+}
 
 @media (min-width: 670px) {
   .sid-intro-flex h1 {
@@ -11325,6 +11328,20 @@ footer {
   }
   .bianca-artikel .bianca-grid-1 .paragraf-2 {
     grid-column: span 2;
+  }
+  .nyhetsbrev-mail .fråga {
+    width: 44%;
+    margin-top: 1rem;
+  }
+  .nyhetsbrev-mail fieldset {
+    width: 44%;
+  }
+  .nyhetsbrev-mail .radio {
+    width: 100%;
+  }
+  .nyhetsbrev-mail .submit {
+    width: 91%;
+    margin: 0;
   }
 }
 @media (min-width: 720px) {

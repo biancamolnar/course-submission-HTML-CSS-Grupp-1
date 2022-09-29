@@ -380,44 +380,48 @@
     <section aria-label="Få vårat nyhetsbrev på mail" class="nyhetsbrev-mail">
       <div class="container-xxl mail-flex">
         <h2 class="sektion-intro-titel">Vill du få vårat nyhetsbrev på mail? <span class="underrubrik">Bara att fylla i formuläret</span></h2>
-        <form action="">
-          <div class="m-3 mb-1 mt-1 fråga">
+        <form action="mailto:example@mail.com">
+          <div class="m-3 mb-1 sm-mt-1 fråga">
             <label for="email" class="form-label" >Din mailadress *</label>
-            <input placeholder="namn@mail.com" required aria-required="true" type="email" class="form-control" id="email" >
+            <input placeholder="namn@mail.com" required aria-required="true" type="email" class="form-control" id="email" autocomplete="email" aria-describedby="email-error" aria-invalid="true">
           </div>
           <div class="m-3 mb-1  fråga">
             <label for="mobilnummer" class="form-label">Ditt mobilnummer *</label>
-            <input placeholder="070-123 45 67" required aria-required="true" type="tel" class="form-control" id="mobilnummer">
+            <input autocomplete="tel" placeholder="070-123 45 67" required aria-required="true" type="tel" class="form-control" id="mobilnummer">
           </div>
           <fieldset class="m-3 mb-1 fråga">
             <legend >Hur ofta vill du få nyhetsbrev? *</legend>
-            <div class="radio">
-              <input required aria-required="true" type="radio" id="stora" name="nyhetsbrev" value="Stora">
-              <label for="stora">Stora nyhetsbrevet (1ggr/månad)</label>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="stora" name="nyhetsbrev" value="Stora">
+              <label class="form-check-label" for="stora">Stora (1ggr/månad)</label>
             </div>
-            <div class="radio">
-              <input required aria-required="true" type="radio" id="mellan" name="nyhetsbrev" value="Mellan">
-              <label for="mellan">Stora + mellan (2ggr/månad)</label>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="mellan" name="nyhetsbrev" value="Mellan">
+              <label class="form-check-label" for="mellan">Stora + mellan (2ggr/månad)</label>
             </div>
-            <div class="radio">
-              <input required aria-required="true" type="radio" id="alla" name="nyhetsbrev" value="Allt">
-              <label for="alla">Alla nyhetsbrev (1ggr/vecka)</label>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="alla" name="nyhetsbrev" value="Allt">
+              <label class="form-check-label" for="alla">Alla nyhetsbrev (1ggr/vecka)</label>
             </div>
           </fieldset>
-          <fieldset class="m-3 mb-2 fråga">
+          <fieldset class="m-3 mb-1 fråga">
             <legend >Vill du också få specialerbjudanden? *</legend>
-            <div class="radio">
-              <input required aria-required="true" type="radio" id="ja" name="specialerbjudanden" value="Ja">
-              <label for="ja">Ja</label>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="ja" name="specialerbjudanden" value="Ja">
+              <label class="form-check-label" for="ja">Ja</label>
             </div>
-            <input required aria-required="true" type="radio" id="nej" name="specialerbjudanden" value="Nej">
-            <label for="nej">Nej</label>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="nej" name="specialerbjudanden" value="Nej">
+              <label class="form-check-label" for="nej">Nej</label>
+            </div>
           </fieldset>
-          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          <div class="submit m-3 mt-1 mb-0">
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          </div>
         </form>
       </div>
-  </div>
     </section>
+
     <!--Se över så att det är rätt nivå på headings i footern. Alltså att de inte skippar över några (h1-h6)-->
     <footer class="text-center text-lg-start border-top border-secondary bottom mt-3">
       <div class="container text-center text-md-start">

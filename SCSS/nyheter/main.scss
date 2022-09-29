@@ -198,6 +198,9 @@
   .radio {
     width: 100%;
   }
+  .submit {
+    width: 100%;
+  }
 }
 
 @media (min-width: 670px) {
@@ -301,6 +304,22 @@
       .paragraf-2 {
         grid-column: span 2;
       }
+    }
+  }
+  .nyhetsbrev-mail {
+    .fråga {
+      width: 44%;
+      margin-top: 1rem;
+    }
+    fieldset {
+      width: 44%;
+    }
+    .radio {
+      width: 100%;
+    }
+    .submit {
+      width: 91%;
+      margin: 0;
     }
   }
 }
