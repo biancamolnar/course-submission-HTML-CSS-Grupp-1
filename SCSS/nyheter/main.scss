@@ -182,6 +182,9 @@
   }
   .sektion-intro-titel {
     @include mixin.intro-titel;
+    img {
+      width: 3rem;
+    }
   }
   form {
     @include mixin.flex-center;
