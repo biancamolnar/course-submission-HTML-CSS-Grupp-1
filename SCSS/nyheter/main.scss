@@ -262,5 +262,24 @@
       margin-top: 1rem;
       grid-template-columns: repeat(2, 35.5rem);
     }
+    .kruk-grid-3 {
+      grid-template-columns: repeat(3, 23.66rem);
+      grid-template-rows: 11rem;
+      .img-container {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+      }
+      img {
+        object-fit: cover;
+      }
+      .paragraf-1 {
+        grid-column: span 2;
+      }
+      .paragraf-2 {
+        margin: 0;
+        grid-column: 1 / 2;
+      }
+    }
   }
 }

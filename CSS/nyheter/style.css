@@ -11264,6 +11264,25 @@ footer {
     margin-top: 1rem;
     grid-template-columns: repeat(2, 35.5rem);
   }
+  .kruk-artikel .kruk-grid-3 {
+    grid-template-columns: repeat(3, 23.66rem);
+    grid-template-rows: 11rem;
+  }
+  .kruk-artikel .kruk-grid-3 .img-container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  .kruk-artikel .kruk-grid-3 img {
+    object-fit: cover;
+  }
+  .kruk-artikel .kruk-grid-3 .paragraf-1 {
+    grid-column: span 2;
+  }
+  .kruk-artikel .kruk-grid-3 .paragraf-2 {
+    margin: 0;
+    grid-column: 1/2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
