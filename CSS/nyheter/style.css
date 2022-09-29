@@ -11131,6 +11131,68 @@ footer {
   grid-template-columns: 100%;
   justify-content: center;
 }
+.kruk-artikel .kruk-grid-4 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+.kruk-artikel .kruk-grid-4 .img-container {
+  overflow: hidden;
+  width: 100%;
+}
+.kruk-artikel .kruk-grid-4 img {
+  width: 100%;
+  object-fit: cover;
+}
+.kruk-artikel .kruk-grid-4 p {
+  margin-bottom: 0.5rem;
+}
+.kruk-artikel .kruk-grid-4 h3 {
+  margin-top: 0.5rem;
+}
+.kruk-artikel .kruk-grid-4 div:nth-child(2) {
+  margin-top: 0.5rem;
+}
+
+.bianca-artikel {
+  padding: 0 1rem;
+  background-color: #DCDCDC;
+}
+.bianca-artikel .bianca-flex {
+  padding: 3rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bianca-artikel .sektion-intro-titel {
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+.bianca-artikel .sektion-intro-titel .underrubrik {
+  display: block;
+  margin-top: 0.5rem;
+}
+.bianca-artikel h3 {
+  text-align: center;
+}
+.bianca-artikel p {
+  text-align: justify;
+}
+.bianca-artikel .bianca-grid-1 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+.bianca-artikel .bianca-grid-1 img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 670px) {
   .sid-intro-flex h1 {
     font-size: 4rem;
@@ -11209,6 +11271,23 @@ footer {
   .kruk-artikel .kruk-grid-3 .paragraf-2 {
     grid-column: span 1;
   }
+  .kruk-artikel .kruk-grid-4 {
+    grid-template-columns: 35rem;
+  }
+  .kruk-artikel .kruk-grid-4 .img-container {
+    width: 100%;
+  }
+  .bianca-artikel h3 {
+    text-align: start;
+  }
+  .bianca-artikel .bianca-grid-1 {
+    grid-template-columns: repeat(2, 17rem);
+    justify-content: center;
+    column-gap: 1rem;
+  }
+  .bianca-artikel .bianca-grid-1 .paragraf-2 {
+    grid-column: span 2;
+  }
 }
 @media (min-width: 720px) {
   .sid-intro-flex .kort h2 {
@@ -11282,6 +11361,32 @@ footer {
   .kruk-artikel .kruk-grid-3 .paragraf-2 {
     margin: 0;
     grid-column: 1/2;
+  }
+  .kruk-artikel .kruk-grid-4 {
+    grid-template-columns: 73rem;
+    grid-template-rows: 20rem;
+  }
+  .bianca-artikel h3 {
+    text-align: start;
+  }
+  .bianca-artikel .bianca-grid-1 {
+    grid-template-columns: repeat(2, 35.5rem);
+    grid-template-rows: 10rem 10rem;
+    column-gap: 2rem;
+  }
+  .bianca-artikel .bianca-grid-1 .img-container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    grid-row: span 2;
+  }
+  .bianca-artikel .bianca-grid-1 img.ros {
+    object-fit: contain;
+    position: relative;
+    top: -6rem;
+  }
+  .bianca-artikel .bianca-grid-1 .paragraf-2 {
+    grid-column: span 1;
   }
 }
 

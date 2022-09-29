@@ -117,6 +117,59 @@
   .kruk-grid-3 {
     @extend .kruk-grid-1;
   }
+  .kruk-grid-4 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    justify-content: center;
+    .img-container {
+      overflow: hidden;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      margin-top: 0.5rem;
+    }
+    div:nth-child(2) {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.bianca-artikel {
+  padding: 0 1rem;
+  background-color: c.$dark-page-background;
+  .bianca-flex {
+    padding: 3rem 0.5rem;
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+    margin-bottom: 2.5rem;
+  }
+  h3 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+  .bianca-grid-1 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    justify-content: center;
+    img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 @media (min-width: 670px) {
@@ -202,6 +255,25 @@
         grid-column: span 1;
       }
     }
+    .kruk-grid-4 {
+      grid-template-columns: 35rem;
+      .img-container {
+        width: 100%;
+      }
+    }
+  }
+  .bianca-artikel {
+    h3 {
+      text-align: start;
+    }
+    .bianca-grid-1 {
+      grid-template-columns: repeat(2, 17rem);
+      justify-content: center;
+      column-gap: 1rem;
+      .paragraf-2 {
+        grid-column: span 2;
+      }
+    }
   }
 }
 
@@ -279,6 +351,34 @@
       .paragraf-2 {
         margin: 0;
         grid-column: 1 / 2;
+      }
+    }
+    .kruk-grid-4 {
+      grid-template-columns: 73rem;
+      grid-template-rows: 20rem;
+    }
+  }
+  .bianca-artikel {
+    h3 {
+      text-align: start;
+    }
+    .bianca-grid-1 {
+      grid-template-columns: repeat(2, 35.5rem);
+      grid-template-rows: 10rem 10rem;
+      column-gap: 2rem;
+      .img-container {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        grid-row: span 2;
+      }
+      img.ros {
+        object-fit: contain;
+        position: relative;
+        top: -6rem;
+      }
+      .paragraf-2 {
+        grid-column: span 1;
       }
     }
   }
