@@ -11320,12 +11320,12 @@ main aside .fieldset .competition-form .do-fill {
 .kort-container .kort-lg .zoom-img img:hover {
   transform: scale(1.7);
 }
-.kort-container .kort-lg .card-body {
+.kort-container .kort-lg .card-body-lg {
   display: grid;
   place-items: center;
   margin: 15px 15px 20px 15px;
 }
-.kort-container .kort-lg .card-body p.k-text {
+.kort-container .kort-lg .card-body-lg p.k-text {
   margin-bottom: 20px;
 }
 .kort-container .kort-lg .buy-btn {
