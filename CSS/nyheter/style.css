@@ -10962,10 +10962,6 @@ footer {
   text-align: center;
   margin: 1rem 0;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.25s;
-}
-.sid-intro-flex .kort:hover {
-  transform: scale(1.04);
 }
 .sid-intro-flex .kort img {
   width: 100%;
