@@ -178,18 +178,20 @@ main aside {
                 width: 100%;
                 border-radius: 5px;
                 border: 1px solid black;
-                transition: transform 3s ease;  
-            }
-            :hover {
-                -ms-transform: scale(1.7);
-                -webkit-transform: scale(1.7);
-                transform: scale(1.7); 
+                transition: transform 3s ease; 
+                &:hover {
+                    -ms-transform: scale(1.7);
+                    -webkit-transform: scale(1.7);
+                    transform: scale(1.7); 
+                }
             }
         }
         .card-body {
+            display: grid;
+            place-items: center;
             margin: 15px 15px 20px 15px;
             p.k-text {
-                margin-bottom: 50px;
+                margin-bottom: 20px;
             }
         }    
         .buy-btn {
@@ -213,7 +215,7 @@ main aside {
         margin: 15px;
         border: 2px solid v.$background-gray-hover;
         width: 550px;
-        min-height: 455px;
+        min-height: 500px;
         background-color: v.$background-gray;
         box-shadow: v.$img-shadow;
         .zoom-img {
@@ -224,17 +226,19 @@ main aside {
                 border-radius: 5px;
                 border: 1px solid black;
                 transition: transform 3s ease;  
-            }
-            :hover {
-                -ms-transform: scale(1.7);
-                -webkit-transform: scale(1.7);
-                transform: scale(1.7); 
+                &:hover {
+                    -ms-transform: scale(1.7);
+                    -webkit-transform: scale(1.7);
+                    transform: scale(1.7); 
+                }
             }
         }
         .card-body {
+            display: grid;
+            place-items: center;
             margin: 15px 15px 20px 15px;
             p.k-text {
-                margin-bottom: 50px;
+                margin-bottom: 20px;
             }
         }    
         .buy-btn {
@@ -248,8 +252,9 @@ main aside {
         a:hover {
             background-color: rgb(16, 140, 16);
         }
-        video {
-            object-fit: cover;
+        iframe {
+            min-height: 455px;
+            width: 100%;
         }
     }
 }
@@ -274,10 +279,16 @@ article.plants {
     margin: 1rem;
     display: flex;
     flex-direction: column;
+    text-align: left;
     p, h4 {
         margin: 1.5rem;
     }
+    #wedding-inner {
+        display: grid;
+        place-content: end;
+    }
     div.wedding-inner {
+        padding-bottom: 2rem;
         background-color: v.$background-opacity-form2;
         form {
             padding:0 1.5rem 1.5rem 1.5rem;
@@ -315,7 +326,6 @@ article.plants {
                     border: 1px solid black;
                 }
             }
-            }
             .minibild-container {
                 display: flex;
                 justify-content: space-between;
@@ -328,13 +338,16 @@ article.plants {
                     width: 23%;
                 }
             }
+        }
     }
 }
 
 .begravning {
     background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
     div.kort-container {
-        justify-content: space-between;
         padding: 1rem;
     }
 }
@@ -418,6 +431,21 @@ article.plants {
         .kort {
             width: 250px;
         }
+        .bg-gr {
+            min-width: 350px;
+            min-height: 555px;
+        }
+        .kort-lg {
+            min-width: 550px;
+            min-height: 555px;
+        }
+        #iframe {
+            display: grid;
+            place-items: center;
+            iframe {
+                min-height: 555px;
+            }
+        }
     }
     .bukett-lg {
         display: flex;
@@ -432,18 +460,18 @@ article.plants {
         margin: 4.5rem;
         .wedding-inner {
             width: 100%;
-            display: grid;
-            place-items: center;
-        }
-        #meet-form-container {
-            max-width: 400px;
         }
     }
     .begravning .kort-container {
         padding: 0 4.5rem 3rem 4.5rem;
     }
-    #gravblomma-mp4 video {
+    #gravblomma-mp4 {
+        display: grid;
+        place-items: center;
+        video {
+        width: 95%;
         height: 500px;              
+        }
     }
     #florist {
         padding: 4rem 7rem 2rem 7rem;

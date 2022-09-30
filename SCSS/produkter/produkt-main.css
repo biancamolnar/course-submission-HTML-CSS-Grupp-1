@@ -11272,14 +11272,16 @@ main aside .fieldset .competition-form .do-fill {
   border: 1px solid black;
   transition: transform 3s ease;
 }
-.kort-container .kort .zoom-img :hover {
+.kort-container .kort .zoom-img img:hover {
   transform: scale(1.7);
 }
 .kort-container .kort .card-body {
+  display: grid;
+  place-items: center;
   margin: 15px 15px 20px 15px;
 }
 .kort-container .kort .card-body p.k-text {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .kort-container .kort .buy-btn {
   padding: 10px;
@@ -11301,7 +11303,7 @@ main aside .fieldset .competition-form .do-fill {
   margin: 15px;
   border: 2px solid #a4a5a7;
   width: 550px;
-  min-height: 455px;
+  min-height: 500px;
   background-color: #E6E6E6;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -11315,14 +11317,16 @@ main aside .fieldset .competition-form .do-fill {
   border: 1px solid black;
   transition: transform 3s ease;
 }
-.kort-container .kort-lg .zoom-img :hover {
+.kort-container .kort-lg .zoom-img img:hover {
   transform: scale(1.7);
 }
 .kort-container .kort-lg .card-body {
+  display: grid;
+  place-items: center;
   margin: 15px 15px 20px 15px;
 }
 .kort-container .kort-lg .card-body p.k-text {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .kort-container .kort-lg .buy-btn {
   padding: 10px;
@@ -11335,9 +11339,9 @@ main aside .fieldset .competition-form .do-fill {
 .kort-container .kort-lg a:hover {
   background-color: rgb(16, 140, 16);
 }
-.kort-container .kort-lg video {
-  -o-object-fit: cover;
-     object-fit: cover;
+.kort-container .kort-lg iframe {
+  min-height: 455px;
+  width: 100%;
 }
 
 article.plants {
@@ -11360,11 +11364,17 @@ article.plants {
   margin: 1rem;
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 .wedding p, .wedding h4 {
   margin: 1.5rem;
 }
+.wedding #wedding-inner {
+  display: grid;
+  place-content: end;
+}
 .wedding div.wedding-inner {
+  padding-bottom: 2rem;
   background-color: rgba(255, 253, 253, 0.901);
 }
 .wedding div.wedding-inner form {
@@ -11404,7 +11414,7 @@ article.plants {
   width: 100%;
   border: 1px solid black;
 }
-.wedding div.wedding-inner .minibild-container {
+.wedding div.wedding-inner div.wedding-inner-gallery .minibild-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11412,16 +11422,18 @@ article.plants {
   margin: 1.5rem;
   border: none;
 }
-.wedding div.wedding-inner .minibild-container img.minibild {
+.wedding div.wedding-inner div.wedding-inner-gallery .minibild-container img.minibild {
   border: 1px solid black;
   width: 23%;
 }
 
 .begravning {
   background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
 }
 .begravning div.kort-container {
-  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -11503,6 +11515,21 @@ article.plants {
   .kort-container .kort {
     width: 250px;
   }
+  .kort-container .bg-gr {
+    min-width: 350px;
+    min-height: 555px;
+  }
+  .kort-container .kort-lg {
+    min-width: 550px;
+    min-height: 555px;
+  }
+  .kort-container #iframe {
+    display: grid;
+    place-items: center;
+  }
+  .kort-container #iframe iframe {
+    min-height: 555px;
+  }
   .bukett-lg {
     display: flex;
     flex-direction: row-reverse;
@@ -11517,16 +11544,16 @@ article.plants {
   }
   .wedding .wedding-inner {
     width: 100%;
-    display: grid;
-    place-items: center;
-  }
-  .wedding #meet-form-container {
-    max-width: 400px;
   }
   .begravning .kort-container {
     padding: 0 4.5rem 3rem 4.5rem;
   }
+  #gravblomma-mp4 {
+    display: grid;
+    place-items: center;
+  }
   #gravblomma-mp4 video {
+    width: 95%;
     height: 500px;
   }
   #florist {
