@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Blommor, billiga, sverige, odling" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sveriges bästa och billigaste blommor!" />
+    <meta name="authour" content="Viggo Valfridsson" />
+    <title>Blomstersidan</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" />
+    <link rel="stylesheet" href="../CSS/nyheter/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <a href="#main" class="skip">Hoppa till huvudinnehåll</a>
+      <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-xxl">
+          <a class="navbar-brand d-lg-none logga py-2 ps-3" href="../index.html">Blomstersidan</a>
+          <button
+            class="navbar-toggler me-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0 align-items-center">
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link active logga" aria-current="page" href="../index.html">Blomstersidan</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="../index.html">Hem</a>
+              </li>
+              <li class="nav-item dropdown produkter-dropdown">
+                <a class="nav-link dropdown-toggle py-lg-4 px-lg-4" href="produkter.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Produkter </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="produkter.html">Alla produkter</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="produkter.html#buketter">Buketter</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="produkter.html#plants">Krukväxter & Inredning</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="produkter.html#event">Bröllop & Event</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="produkter.html#begravning">Begravningsbinderier</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-lg-4 px-lg-4" href="nyheter.html">Nyheter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-lg-4 px-lg-4" href="om%20oss.html">Om oss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-lg-4 px-lg-4" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-xxl my-5 page-intro">
+        <div class="sid-intro-flex">
+          <h1>
+            Blomstersidans Nyhetsbrev
+            <span class="underrubrik">I denna veckans upplaga!</span>
+          </h1>
+          <div class="kort kort-1">
+            <img src="../img/nyheter/viggos_inredningstips.jpg" alt="En hand som håller i en bukett med röda blommor." />
+            <h2>Viggos Inredningstips</h2>
+            <p class="kort-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolor ipsum earum facilis, ipsa libero quam harum qui repudiandae labore cumque quasi est,
+              nemo magnam.
+            </p>
+          </div>
+          <div class="kort kort-2">
+            <img src="../img/nyheter/plantera_om_krukväxter.jpg" alt="Tre krukor med olika växter står på en bänk framför en vit vägg." />
+            <h2>Emma Berättar Hur Man Planterar Om Krukväxter</h2>
+            <p class="kort-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolor ipsum earum facilis, ipsa libero quam harum qui repudiandae labore cumque quasi est,
+              nemo magnam.
+            </p>
+          </div>
+          <div class="kort kort-3">
+            <img src="../img/nyheter/biancas_favoritblommor.jpg" alt="En person i en bröllopsklänning som håller i en bukett med vita rosor." />
+            <h2>Biancas Favoritblommor</h2>
+            <p class="kort-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolor ipsum earum facilis, ipsa libero quam harum qui repudiandae labore cumque quasi est,
+              nemo magnam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <article class="inredning-artikel" id="main">
+        <div class="container-xxl inrednings-flex">
+          <h2 class="sektion-intro-titel">Viggos Inredningstips</h2>
+          <div class="inrednings-tips-grid-1">
+            <img
+              src="../img/nyheter/utomhus_blommor.jpg"
+              alt="En stenvägg, i stenväggen finns en blomsteraffär. Ingången till blomsteraffären är grön och gjord av trä. Det hänger en skylt med texten Articoli Religiosi och det står blommor utanför."
+            />
+            <div class="paragraf-1">
+              <h3 class="artikel-titel">Hur väljer man färg på blommor?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit rem adipisci labore magni deleniti facere. Odio perspiciatis, nulla
+                aut ea debitis veritatis sed soluta sunt non, fuga ut doloribus saepe, blanditiis consectetur fugit officiis exercitationem beatae ex.
+              </p>
+            </div>
+            <p class="paragraf-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum aliquid itaque corrupti, adipisci tenetur nostrum amet quis aut fugiat atque culpa
+              delectus facere necessitatibus, quibusdam cumque consectetur magnam architecto ipsum ad minus mollitia molestiae ipsam. Sint deleniti, reprehenderit
+              exercitationem deserunt placeat delectus natus, ipsam laudantium doloribus aliquid suscipit quidem, unde dolorem reiciendis sunt eos assumenda?
+            </p>
+          </div>
+          <div class="inrednings-tips-grid-2">
+            <div class="img-container">
+              <img
+                src="../img/nyheter/badrum_blommor.jpg"
+                alt="Ett grått badrum, handfatet och väggarna är gjorda av sten. Bredvid handfatet står det en vas med lila och bruna blommor."
+              />
+            </div>
+            <div>
+              <h3 class="artikel-titel">Blommor i badrummet?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod perferendis omnis nam modi atque. Assumenda neque perspiciatis nesciunt dolores tempore
+                praesentium voluptatum quasi corrupti cum, laborum, nemo unde, eos itaque? Natus possimus similique eaque, cum quibusdam provident assumenda nisi unde,
+                deserunt accusantium aut veritatis, ducimus totam repudiandae in ut adipisci excepturi! Facere perferendis magnam nobis ab dolores libero corrupti!
+              </p>
+            </div>
+            <div>
+              <h3 class="artikel-titel">Viktigt att tänka på</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod perferendis omnis nam modi atque. Assumenda neque perspiciatis nesciunt dolores tempore
+                praesentium voluptatum quasi corrupti cum, laborum, nemo unde, eos itaque? Natus possimus similique eaque, cum quibusdam provident assumenda nisi unde,
+                deserunt accusantium aut veritatis, ducimus totam repudiandae in ut adipisci excepturi! Facere perferendis magnam nobis ab dolores libero corrupti!
+              </p>
+            </div>
+            <div>
+              <h3 class="artikel-titel">Vanliga misstag</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repudiandae eveniet quibusdam libero accusantium maxime dolores qui excepturi ipsam
+                aperiam, recusandae praesentium quasi sint aut provident placeat quo consequatur iure odio vitae. Odio, cum necessitatibus. Eum minus error animi modi.
+              </p>
+            </div>
+            <div>
+              <h3 class="artikel-titel">Min favoritmetod</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repudiandae eveniet quibusdam libero accusantium maxime dolores qui excepturi ipsam
+                aperiam, recusandae praesentium quasi sint aut provident placeat quo consequatur iure odio vitae. Odio, cum necessitatibus. Eum minus error animi modi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="kruk-artikel">
+        <div class="container-xxl kruk-flex">
+          <h2 class="sektion-intro-titel">Emma Berättar Hur Man Planterar Om Krukväxter</h2>
+          <div class="kruk-grid-1">
+            <img src="../img/nyheter/Krukväxt.png" alt="En vit kruka framför en helt vit bakgrund. I krukan så växter det en växt med gröna blad" />
+            <div class="paragraf-1">
+              <h3 class="artikel-titel">Hur vet man när en krukväxt ska planteras om?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit rem adipisci labore magni deleniti facere. Odio perspiciatis, nulla
+                aut ea debitis veritatis sed soluta sunt non, fuga ut doloribus saepe, blanditiis consectetur fugit officiis exercitationem beatae ex.
+              </p>
+            </div>
+            <p class="paragraf-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum aliquid itaque corrupti, adipisci tenetur nostrum amet quis aut fugiat atque culpa
+              delectus facere necessitatibus, quibusdam cumque consectetur magnam architecto ipsum ad minus mollitia molestiae ipsam. Sint deleniti, reprehenderit
+              exercitationem deserunt placeat delectus natus, ipsam laudantium doloribus aliquid suscipit quidem, unde dolorem reiciendis sunt eos assumenda?
+            </p>
+          </div>
+          <div class="kruk-grid-2">
+            <div class="paragraf-1">
+              <h3 class="artikel-titel">Vilken jord ska man använda?</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse possimus commodi accusamus vero repellat hic, nobis labore consectetur earum nisi culpa
+                illo harum nesciunt repudiandae non dolore laudantium adipisci exercitationem. Sed consequatur perferendis ex, consequuntur, dolorem sequi, animi
+                doloremque adipisci dolorum voluptates incidunt ab debitis? Quis molestiae facere cumque sint inventore error sequi ipsa dolor incidunt sit
+              </p>
+            </div>
+            <div class="paragraf-2">
+              <h3 class="artikel-titel">Plast eller lera?</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse possimus commodi accusamus vero repellat hic, nobis labore consectetur earum nisi culpa
+                illo harum nesciunt repudiandae non dolore laudantium adipisci exercitationem. Sed consequatur perferendis ex, consequuntur, dolorem sequi, animi
+                doloremque adipisci dolorum voluptates incidunt ab debitis? Quis molestiae facere cumque sint inventore error sequi ipsa dolor incidunt sit dolor incidunt
+                sit dolor incidunt sit
+              </p>
+            </div>
+          </div>
+          <div class="kruk-grid-3">
+            <div class="img-container">
+              <img
+                src="../img/nyheter/plantera_om.png"
+                alt="På en påse ligger det tre trädgårdsverkyg en tom kruka och en annan kruka med jord. Från sidan sticker det in några gröna blad från en växt"
+              />
+            </div>
+            <div class="paragraf-1">
+              <h3 class="artikel-titel">1. Flytta Växten Ur Krukan</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse possimus commodi accusamus vero repellat hic, nobis labore consectetur earum nisi culpa
+                illo harum nesciunt repudiandae non dolore laudantium adipisci exercitationem. Sed consequatur perferendis ex, consequuntur, dolorem sequi, culpa illo
+                harum nesciunt repudiandae non
+              </p>
+            </div>
+            <div class="paragraf-2">
+              <h3 class="artikel-titel">2. Rensa Rötter</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse possimus commodi accusamus vero repellat hic, nobis labore consectetur earum nisi culpa
+                illo harum nesciunt repudiandae non dolore laudantium adipisci exercitationem. Sed consequatur perferendis ex, consequuntur, dolorem sequi,
+              </p>
+            </div>
+            <div class="paragraf-3">
+              <h3 class="artikel-titel">3. Välj Ny Kruka</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse possimus commodi accusamus vero repellat hic, nobis labore consectetur earum nisi culpa
+                illo harum nesciunt repudiandae non dolore laudantium adipisci exercitationem. Sed consequatur perferendis ex, consequuntur, dolorem sequi,
+              </p>
+            </div>
+            <div class="paragraf-4">
+              <h3 class="artikel-titel">4. Fyll Med Ny Jord</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse possimus commodi accusamus vero repellat hic, nobis labore consectetur earum nisi culpa
+                illo harum nesciunt repudiandae non dolore laudantium adipisci exercitationem. Sed consequatur perferendis ex, consequuntur, dolorem sequi,
+              </p>
+            </div>
+            <div class="paragraf-5">
+              <h3 class="artikel-titel">5. Skaka ur krukan</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse possimus commodi accusamus vero repellat hic, nobis labore consectetur earum nisi culpa
+                illo harum nesciunt repudiandae non dolore laudantium adipisci exercitationem. Sed consequatur perferendis ex, consequuntur, dolorem sequi,
+              </p>
+            </div>
+            <div class="paragraf-6">
+              <h3 class="artikel-titel">6. Tryck Ur Jorden</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse possimus commodi accusamus vero repellat hic, nobis labore consectetur earum nisi culpa
+                illo harum nesciunt repudiandae non dolore laudantium adipisci exercitationem. Sed consequatur perferendis ex, consequuntur, dolorem sequi,
+              </p>
+            </div>
+            <div class="paragraf-7">
+              <h3 class="artikel-titel">7. Vattna Nya Krukan</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse possimus commodi accusamus vero repellat hic, nobis labore consectetur earum nisi culpa
+                illo harum nesciunt repudiandae non dolore laudantium adipisci exercitationem. Sed consequatur perferendis ex, consequuntur, dolorem sequi,
+              </p>
+            </div>
+          </div>
+          <div class="kruk-grid-4">
+            <div class="img-container">
+              <img src="../img/nyheter/beskära_växter.jpg" alt="En blond kvinna med en röd flanellskjorta hukar sig framför en rad krukor med gröna växter." />
+            </div>
+            <div>
+              <h3 class="artikel-titel">Beskära Krukväxter</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod perferendis omnis nam modi atque. Assumenda neque perspiciatis nesciunt dolores tempore
+                praesentium voluptatum quasi corrupti cum, laborum, nemo unde, eos itaque? Natus possimus similique eaque, cum quibusdam provident assumenda nisi unde,
+                deserunt accusantium aut veritatis, ducimus totam repudiandae in ut adipisci excepturi! Facere perferendis magnam nobis ab dolores libero corrupti!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod perferendis omnis nam modi atque. Assumenda neque perspiciatis nesciunt dolores tempore
+                praesentium voluptatum quasi corrupti cum, laborum, nemo unde, eos itaque? Natus possimus similique eaque, cum quibusdam provident assumenda nisi unde,
+                deserunt accusantium aut veritatis, ducimus totam repudiandae in ut adipisci excepturi! Facere perferendis magnam nobis ab dolores libero corrupti!
+              </p>
+            </div>
+            <div>
+              <h3 class="artikel-titel">När ska man beskära?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod perferendis omnis nam modi atque. Assumenda neque perspiciatis nesciunt dolores tempore
+                praesentium voluptatum quasi corrupti cum, laborum, nemo unde, eos itaque? Natus possimus similique eaque, cum quibusdam provident assumenda nisi unde,
+                deserunt accusantium aut veritatis, ducimus totam repudiandae in ut adipisci excepturi! Facere perferendis magnam nobis ab dolores libero corrupti!
+              </p>
+            </div>
+            <div>
+              <h3 class="artikel-titel">Vilka växter bör beskäras?</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repudiandae eveniet quibusdam libero accusantium maxime dolores qui excepturi ipsam
+                aperiam, recusandae praesentium quasi sint aut provident placeat quo consequatur iure odio vitae. Odio, cum necessitatibus. Eum minus error animi modi.
+                aperiam, recusandae praesentium quasi sint aut provident placeat quo consequatur iure odio vitae. Odio, cum necessitatibus. Eum minus error animi modi.
+                aperiam, recusandae praesentium quasi sint aut provident placeat quo consequatur iure odio vitae. Odio, cum necessitatibus. Eum minus error animi modi.
+              </p>
+            </div>
+            <div>
+              <h3 class="artikel-titel">Hur fungerar det med rankande växter?</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repudiandae eveniet quibusdam libero accusantium maxime dolores qui excepturi ipsam
+                aperiam, recusandae praesentium quasi sint aut provident placeat quo consequatur iure odio vitae. Odio, cum necessitatibus. Eum minus error animi modi.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repudiandae eveniet quibusdam libero accusantium maxime dolores qui excepturi ipsam
+                aperiam, recusandae praesentium quasi sint aut provident placeat quo consequatur iure odio vitae. Odio, cum necessitatibus. Eum minus error animi modi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="bianca-artikel">
+        <div class="container-xxl bianca-flex">
+          <h2 class="sektion-intro-titel">Biancas Favoritblommor</h2>
+          <div class="bianca-grid bianca-grid-1">
+            <div class="img-container">
+              <img src="../img/nyheter/ros.jpg" alt="Ett foto på en gul ros taget ovanifrån. I bakgrunden ser man rosens löv och gräs på marken" />
+            </div>
+            <div class="paragraf-1">
+              <h3 class="artikel-titel">Rosor</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit rem adipisci labore magni deleniti facere. Odio perspiciatis, nulla
+                aut ea debitis veritatis sed soluta sunt non, fuga ut doloribus saepe, blanditiis consectetur fugit officiis exercitationem beatae ex. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit
+              </p>
+            </div>
+            <div class="paragraf-2">
+              <h3 class="artikel-titel">Hur väljer man rätt sort?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit rem adipisci labore magni deleniti facere. Odio perspiciatis, nulla
+                aut ea debitis veritatis sed soluta sunt non, fuga ut doloribus saepe, blanditiis consectetur fugit officiis exercitationem beatae ex.
+              </p>
+            </div>
+          </div>
+          <div class="bianca-grid bianca-grid-2">
+            <div class="img-container">
+              <img src="../img/nyheter/tulpan.jpg" alt="Ett foto på en gul ros taget ovanifrån. I bakgrunden ser man rosens löv och gräs på marken" />
+            </div>
+            <div class="paragraf-1">
+              <h3 class="artikel-titel">Tulpaner</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit rem adipisci labore magni deleniti facere. Odio perspiciatis, nulla
+                aut ea debitis veritatis sed soluta sunt non, fuga ut doloribus saepe, blanditiis consectetur fugit officiis exercitationem beatae ex. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit
+              </p>
+            </div>
+            <div class="paragraf-2">
+              <h3 class="artikel-titel">Hur väljer man rätt sort?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit rem adipisci labore magni deleniti facere. Odio perspiciatis, nulla
+                aut ea debitis veritatis sed soluta sunt non, fuga ut doloribus saepe, blanditiis consectetur fugit officiis exercitationem beatae ex.
+              </p>
+            </div>
+          </div>
+          <div class="bianca-grid bianca-grid-3">
+            <div class="img-container">
+              <img src="../img/nyheter/vallmo.jpg" alt="Ett foto på en gul ros taget ovanifrån. I bakgrunden ser man rosens löv och gräs på marken" />
+            </div>
+            <div class="paragraf-1">
+              <h3 class="artikel-titel">Vallmo</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit rem adipisci labore magni deleniti facere. Odio perspiciatis, nulla
+                aut ea debitis veritatis sed soluta sunt non, fuga ut doloribus saepe, blanditiis consectetur fugit officiis exercitationem beatae ex. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit
+              </p>
+            </div>
+            <div class="paragraf-2">
+              <h3 class="artikel-titel">Hur väljer man rätt sort?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae asperiores ea fugit rem adipisci labore magni deleniti facere. Odio perspiciatis, nulla
+                aut ea debitis veritatis sed soluta sunt non, fuga ut doloribus saepe, blanditiis consectetur fugit officiis exercitationem beatae ex.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <section aria-label="Få vårat nyhetsbrev på mail" class="nyhetsbrev-mail">
+      <div class="container-xxl mail-flex">
+        <h2 class="sektion-intro-titel">
+          <img src="../img/nyheter/formulär_svg.svg" alt="En svart ikon som ser ut som ett kuvert" /> Vill du få vårat nyhetsbrev på mail?
+          <span class="underrubrik">Bara att fylla i formuläret</span>
+        </h2>
+        <form action="mailto:example@mail.com">
+          <div class="m-3 mb-1 sm-mt-1 fråga">
+            <label for="email" class="form-label">Din mailadress *</label>
+            <input placeholder="namn@mail.com" required aria-required="true" type="email" class="form-control" id="email" autocomplete="email" aria-invalid="true" />
+          </div>
+          <div class="m-3 mb-1 fråga">
+            <label for="mobilnummer" class="form-label">Ditt mobilnummer *</label>
+            <input autocomplete="tel" placeholder="070-123 45 67" required aria-required="true" type="tel" class="form-control" id="mobilnummer" />
+          </div>
+          <fieldset class="m-3 mb-1 fråga">
+            <legend>Hur ofta vill du få nyhetsbrev? *</legend>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="stora" name="nyhetsbrev" value="Stora" />
+              <label class="form-check-label" for="stora">Stora (1ggr/månad)</label>
+            </div>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="mellan" name="nyhetsbrev" value="Mellan" />
+              <label class="form-check-label" for="mellan">Stora + mellan (2ggr/månad)</label>
+            </div>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="alla" name="nyhetsbrev" value="Allt" />
+              <label class="form-check-label" for="alla">Alla nyhetsbrev (1ggr/vecka)</label>
+            </div>
+          </fieldset>
+          <fieldset class="m-3 mb-1 fråga">
+            <legend>Vill du också få specialerbjudanden? *</legend>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="ja" name="specialerbjudanden" value="Ja" />
+              <label class="form-check-label" for="ja">Ja</label>
+            </div>
+            <div class="radio form-check">
+              <input class="form-check-input" required aria-required="true" type="radio" id="nej" name="specialerbjudanden" value="Nej" />
+              <label class="form-check-label" for="nej">Nej</label>
+            </div>
+          </fieldset>
+          <div class="submit m-3 mt-1 mb-0">
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--Se över så att det är rätt nivå på headings i footern. Alltså att de inte skippar över några (h1-h6)-->
+    <footer class="text-center text-lg-start border-top border-secondary bottom mt-3">
+      <div class="container text-center text-md-start">
+        <div class="d-flex justify-content-center">
+          <a class="buttonlink" href="#top"
+            ><img class="button" src="../img/footer/symbol-top.png" alt="Bild på en pil som pekar uppåt för att navigera till sidans topp"
+          /></a>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 text-center">
+            <h6 class="text-uppercase fw-bold m-2 p-2">Social media</h6>
+            <p id="p-footer">
+              <i class="fab fa-facebook-f"></i>
+              <a href="https://sv-se.facebook.com/" class="text-reset"><u>Facebook</u></a>
+            </p>
+            <p id="p-footer">
+              <i class="fab fa-instagram"></i>
+              <a href="https://www.instagram.com/" class="text-reset"><u>Instagram</u></a>
+            </p>
+            <p id="p-footer">
+              <i class="fab fa-tiktok"></i>
+              <a href="https://www.tiktok.com/sv-SE/" class="text-reset"><u>Tiktok</u></a>
+            </p>
+            <p id="p-footer">
+              <i class="fab fa-snapchat"></i>
+              <a href="https://www.snapchat.com/sv-SE" class="text-reset"><u>Snapchat</u></a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 text-center">
+            <h6 class="text-uppercase fw-bold m-2 p-2">Samarbeten</h6>
+            <p id="p-footer">Emmas begravningsbyrå</p>
+            <p id="p-footer">Bianca Photography</p>
+            <p id="p-footer">Viggos budbil</p>
+            <p id="p-footer">Liban weddingplaner</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto text-center">
+            <h6 class="text-uppercase fw-bold m-2 p-2">Adress</h6>
+            <p id="p-footer">Exempelgatan 10</p>
+            <p id="p-footer">111 11 Göteborg</p>
+            <br />
+            <p id="p-footer">Exempelstigen 10</p>
+            <p id="p-footer">222 22 Stockholm</p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 text-center">
+            <h6 class="text-uppercase fw-bold m-2 p-2">Blomstersidan</h6>
+            <p id="p-footer"><i class="fas fa-phone me-1"></i>031-123456</p>
+            <p id="p-footer">
+              <i class="fas fa-envelope me-1"></i><a href="mailto:info@blomstersidan.se" class="text-reset"><u>info@blomstersidan.se</u></a>
+            </p>
+            <p id="p-footer">Måndag-Fredag 9:00-18:00</p>
+            <p id="p-footer">Lördag 10:00-17:00</p>
+            <p id="p-footer">Söndag 11:00-16:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-1">
+        <p id="logo">Blomstersidan.</p>
+        <p>© Copyright Blomstersidan 2022</p>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
