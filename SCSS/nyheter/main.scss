@@ -4,6 +4,7 @@
 @use "../om\ oss/components/footer.scss";
 @use "../index/abstracts/colors" as c;
 @use "../index/abstracts/mixin";
+@use "../index/abstracts/animations";
 
 .sid-intro-flex {
   @include mixin.flex-center;
@@ -11,6 +12,9 @@
   @include mixin.kort(90%, 28%, 30%);
   h1 {
     width: 100%;
+    transform: scaleX(1);
+    margin-bottom: 1.5rem;
+    @include animations.grow-middle;
   }
   .kort {
     margin: 1rem 1rem;
