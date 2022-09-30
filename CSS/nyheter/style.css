@@ -11123,6 +11123,62 @@ footer {
   display: block;
   margin-top: 0.5rem;
 }
+@media (min-width: 670px) {
+  .inredning-artikel .sektion-intro-titel {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 1300) {
+  .inredning-artikel .sektion-intro-titel {
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
 .inredning-artikel .inrednings-tips-grid-1 {
   display: grid;
   grid-template-rows: auto;
@@ -11259,6 +11315,62 @@ footer {
 .kruk-artikel .sektion-intro-titel .underrubrik {
   display: block;
   margin-top: 0.5rem;
+}
+@media (min-width: 670px) {
+  .kruk-artikel .sektion-intro-titel {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 1300) {
+  .kruk-artikel .sektion-intro-titel {
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
 }
 .kruk-artikel .kruk-grid-1, .kruk-artikel .kruk-grid-3 {
   display: grid;
@@ -11459,6 +11571,62 @@ footer {
   display: block;
   margin-top: 0.5rem;
 }
+@media (min-width: 670px) {
+  .bianca-artikel .sektion-intro-titel {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 1300) {
+  .bianca-artikel .sektion-intro-titel {
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
 .bianca-artikel h3 {
   text-align: center;
 }
@@ -11471,43 +11639,6 @@ footer {
   grid-template-columns: 100%;
   justify-content: center;
   margin-bottom: 1rem;
-}
-.bianca-artikel .bianca-grid img {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.bianca-artikel .bianca-grid-1 {
-  animation: grow-from-top 0.35s;
-  animation-timing-function: ease-in;
-}
-@keyframes grow-from-top {
-  0% {
-    transform: scale(0);
-    transform-origin: top;
-    opacity: 10%;
-  }
-  25% {
-    transform: scale(0.25);
-    transform-origin: top;
-    opacity: 20%;
-  }
-  50% {
-    transform: scale(0.5);
-    transform-origin: top;
-    opacity: 50%;
-  }
-  75% {
-    transform: scale(0.75);
-    transform-origin: top;
-    opacity: 80%;
-  }
-  100% {
-    transform: scale(1);
-    transform-origin: top;
-    opacity: 100%;
-  }
-}
-.bianca-artikel .bianca-grid-2 {
   animation: grow-middle 0.35s;
   animation-timing-function: ease-in;
 }
@@ -11533,36 +11664,9 @@ footer {
     opacity: 100%;
   }
 }
-.bianca-artikel .bianca-grid-3 {
-  animation: grow-from-bot 0.35s;
-  animation-timing-function: ease-in;
-}
-@keyframes grow-from-bot {
-  0% {
-    transform: scale(0);
-    transform-origin: bottom;
-    opacity: 10%;
-  }
-  25% {
-    transform: scale(0.25);
-    transform-origin: bottom;
-    opacity: 20%;
-  }
-  50% {
-    transform: scale(0.5);
-    transform-origin: bottom;
-    opacity: 50%;
-  }
-  75% {
-    transform: scale(0.75);
-    transform-origin: bottom;
-    opacity: 80%;
-  }
-  100% {
-    transform: scale(1);
-    transform-origin: bottom;
-    opacity: 100%;
-  }
+.bianca-artikel .bianca-grid img {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .nyhetsbrev-mail {
@@ -11607,6 +11711,62 @@ footer {
 .nyhetsbrev-mail .sektion-intro-titel .underrubrik {
   display: block;
   margin-top: 0.5rem;
+}
+@media (min-width: 670px) {
+  .nyhetsbrev-mail .sektion-intro-titel {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 1300) {
+  .nyhetsbrev-mail .sektion-intro-titel {
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
 }
 .nyhetsbrev-mail .sektion-intro-titel img {
   width: 3rem;
@@ -11659,6 +11819,30 @@ footer {
 @media (min-width: 670px) {
   .sid-intro-flex h1 {
     font-size: 4rem;
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .sid-intro-flex .kort h2 {
     height: 6rem;
@@ -11695,17 +11879,17 @@ footer {
     }
   }
   .sid-intro-flex .kort-2 {
-    animation: grow-middle 0.35s;
+    animation: grow-middle-2 0.35s;
     animation-timing-function: ease-in;
   }
-  @keyframes grow-middle {
+  @keyframes grow-middle-2 {
     0% {
       transform: scale(0);
-      opacity: 10%;
+      opacity: 0%;
     }
     25% {
       transform: scale(0.25);
-      opacity: 20%;
+      opacity: 15%;
     }
     50% {
       transform: scale(0.5);
@@ -11758,6 +11942,30 @@ footer {
     column-gap: 1rem;
     justify-items: center;
     align-items: center;
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .inredning-artikel .inrednings-tips-grid-1 img {
     margin: 0;
@@ -11772,6 +11980,30 @@ footer {
     grid-template-columns: repeat(2, 16.5rem);
     row-gap: 1rem;
     column-gap: 2rem;
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .inredning-artikel .inrednings-tips-grid-2 .img-container {
     width: 100%;
@@ -11798,6 +12030,30 @@ footer {
     column-gap: 1rem;
     justify-items: center;
     align-items: center;
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .kruk-artikel .kruk-grid-1 img, .kruk-artikel .kruk-grid-3 img {
     margin: 0;
@@ -11811,6 +12067,30 @@ footer {
   .kruk-artikel .kruk-grid-2 {
     grid-template-columns: repeat(2, 16.5rem);
     column-gap: 2rem;
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .kruk-artikel .kruk-grid-2 .paragraf-2 h3 {
     margin-bottom: 1rem;
@@ -11818,12 +12098,60 @@ footer {
   .kruk-artikel .kruk-grid-3 {
     margin-top: 1.5rem;
     align-items: start;
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .kruk-artikel .kruk-grid-3 .paragraf-2 {
     grid-column: span 1;
   }
   .kruk-artikel .kruk-grid-4 {
     grid-template-columns: 35rem;
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .kruk-artikel .kruk-grid-4 .img-container {
     width: 100%;
@@ -11838,6 +12166,58 @@ footer {
   }
   .bianca-artikel .bianca-grid .paragraf-2 {
     grid-column: span 2;
+  }
+  .bianca-artikel .bianca-grid {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+  .nyhetsbrev-mail form {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .nyhetsbrev-mail .fråga {
     width: 44%;
@@ -11877,6 +12257,30 @@ footer {
   .inredning-artikel .inrednings-tips-grid-1 {
     grid-template-columns: 12rem 24rem 35rem;
     row-gap: 0;
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .inredning-artikel .inrednings-tips-grid-1 img {
     grid-row: 1/span 1;
@@ -11888,6 +12292,30 @@ footer {
   .inredning-artikel .inrednings-tips-grid-2 {
     margin-top: 2.5rem;
     grid-template-columns: repeat(2, 35.5rem);
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .inredning-artikel .inrednings-tips-grid-2 img {
     height: 15rem;
@@ -11898,6 +12326,30 @@ footer {
   .kruk-artikel .kruk-grid-1, .kruk-artikel .kruk-grid-3 {
     grid-template-columns: 12rem 24rem 35rem;
     row-gap: 0rem;
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .kruk-artikel .kruk-grid-1 img, .kruk-artikel .kruk-grid-3 img {
     grid-row: 1/span 1;
@@ -11910,10 +12362,58 @@ footer {
   .kruk-artikel .kruk-grid-2 {
     margin-top: 1rem;
     grid-template-columns: repeat(2, 35.5rem);
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .kruk-artikel .kruk-grid-3 {
     grid-template-columns: repeat(3, 23.66rem);
     grid-template-rows: 11rem;
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .kruk-artikel .kruk-grid-3 .img-container {
     overflow: hidden;
@@ -11933,6 +12433,30 @@ footer {
   .kruk-artikel .kruk-grid-4 {
     grid-template-columns: 73rem;
     grid-template-rows: 20rem;
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
   }
   .bianca-artikel h3 {
     text-align: start;
@@ -11965,6 +12489,94 @@ footer {
   }
   .bianca-artikel .bianca-grid .paragraf-2 {
     grid-column: span 1;
+  }
+  .bianca-artikel .bianca-grid-1 {
+    animation: grow-from-top 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-top {
+    0% {
+      transform: scale(0);
+      transform-origin: top;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: top;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: top;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: top;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: top;
+      opacity: 100%;
+    }
+  }
+  .bianca-artikel .bianca-grid-2 {
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+  .bianca-artikel .bianca-grid-3 {
+    animation: grow-from-bot 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-bot {
+    0% {
+      transform: scale(0);
+      transform-origin: bottom;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: bottom;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: bottom;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: bottom;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: bottom;
+      opacity: 100%;
+    }
   }
 }
 
