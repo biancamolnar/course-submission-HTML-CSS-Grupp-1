@@ -10788,6 +10788,10 @@ h3 {
   font-weight: 350;
 }
 
+h3.artikel-titel {
+  font-size: 1.3rem;
+}
+
 .underrubrik {
   font-size: 1.2rem;
   font-weight: 350;
@@ -10948,12 +10952,67 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.sid-intro-flex h1 {
+  animation: grow-middle 0.35s;
+  animation-timing-function: ease-in;
+}
+@keyframes grow-middle {
+  0% {
+    transform: scale(0);
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
 .sid-intro-flex .underrubrik {
   display: block;
 }
 .sid-intro-flex .carousel-container {
   border-radius: 15px;
   overflow: hidden;
+  animation: grow-from-right 0.35s;
+  animation-timing-function: ease-in;
+}
+@keyframes grow-from-right {
+  0% {
+    transform: scale(0);
+    transform-origin: right;
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    transform-origin: right;
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    transform-origin: right;
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    transform-origin: right;
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: right;
+    opacity: 100%;
+  }
 }
 
 .kort-container {
@@ -10970,16 +11029,13 @@ footer {
   text-align: center;
   margin: 1rem 0;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.25s;
-}
-.kort-container .kort:hover {
-  transform: scale(1.04);
 }
 .kort-container .kort img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 0.6rem;
 }
+.kort-container .kort h2,
 .kort-container .kort h3 {
   font-size: 1.3rem;
 }
@@ -11021,16 +11077,126 @@ footer {
   text-align: center;
   margin-bottom: 1rem;
   width: 100%;
+  animation: grow-middle 0.35s;
+  animation-timing-function: ease-in;
+}
+@keyframes grow-middle {
+  0% {
+    transform: scale(0);
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
 }
 .kort-container .sektion-intro-titel .underrubrik {
   display: block;
   margin-top: 0.5rem;
+}
+@media (min-width: 670px) {
+  .kort-container .sektion-intro-titel {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 1300) {
+  .kort-container .sektion-intro-titel {
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
 }
 .kort-container .kort-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.kort-container .kort {
+  animation: grow-middle 0.35s;
+  animation-timing-function: ease-in;
+  transition: transform 0.25s;
+}
+@keyframes grow-middle {
+  0% {
+    transform: scale(0);
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+.kort-container .kort:hover {
+  transform: scale(1.04);
 }
 
 .inspiration-container {
@@ -11046,15 +11212,119 @@ footer {
   text-align: center;
   margin-bottom: 1rem;
   width: 100%;
+  animation: grow-middle 0.35s;
+  animation-timing-function: ease-in;
   padding: 0 1rem;
+}
+@keyframes grow-middle {
+  0% {
+    transform: scale(0);
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
 }
 .inspiration-container .sektion-intro-titel .underrubrik {
   display: block;
   margin-top: 0.5rem;
 }
+@media (min-width: 670px) {
+  .inspiration-container .sektion-intro-titel {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 1300) {
+  .inspiration-container .sektion-intro-titel {
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
 .inspiration-container img {
   width: 80%;
   margin: 1rem 0;
+  animation: grow-middle 0.35s;
+  animation-timing-function: ease-in;
+}
+@keyframes grow-middle {
+  0% {
+    transform: scale(0);
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
 }
 
 .faq-section {
@@ -11071,15 +11341,119 @@ footer {
   text-align: center;
   margin-bottom: 1rem;
   width: 100%;
+  animation: grow-middle 0.35s;
+  animation-timing-function: ease-in;
+}
+@keyframes grow-middle {
+  0% {
+    transform: scale(0);
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
 }
 .faq-section .sektion-intro-titel .underrubrik {
   display: block;
   margin-top: 0.5rem;
 }
+@media (min-width: 670px) {
+  .faq-section .sektion-intro-titel {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 1300) {
+  .faq-section .sektion-intro-titel {
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
 .faq-section .accordion {
   width: 95%;
   border: 1px solid #939494;
   border-radius: 6px;
+  animation: grow-middle 0.35s;
+  animation-timing-function: ease-in;
+}
+@keyframes grow-middle {
+  0% {
+    transform: scale(0);
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
 }
 .faq-section p {
   margin: 0;
@@ -11098,14 +11472,118 @@ footer {
   text-align: center;
   margin-bottom: 1rem;
   width: 100%;
+  animation: grow-middle 0.35s;
+  animation-timing-function: ease-in;
+}
+@keyframes grow-middle {
+  0% {
+    transform: scale(0);
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
 }
 .florist-sektion .sektion-intro-titel .underrubrik {
   display: block;
   margin-top: 0.5rem;
 }
+@media (min-width: 670px) {
+  .florist-sektion .sektion-intro-titel {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 1300) {
+  .florist-sektion .sektion-intro-titel {
+    animation: grow-middle 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle {
+    0% {
+      transform: scale(0);
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+}
 .florist-sektion figure {
   width: 90%;
   margin: 1rem 0;
+  animation: grow-middle 0.35s;
+  animation-timing-function: ease-in;
+}
+@keyframes grow-middle {
+  0% {
+    transform: scale(0);
+    opacity: 10%;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 20%;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
 }
 .florist-sektion figure img {
   border-radius: 50%;
@@ -11114,16 +11592,202 @@ footer {
 }
 
 @media (min-width: 670px) {
-  h1 {
+  .sid-intro-flex h1 {
     margin-right: 1vw;
     font-size: 4rem;
   }
   .kort-container .kort-flex {
     justify-content: space-around;
   }
+  .kort-container .kort-1 {
+    animation: grow-from-left 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
+  }
+  .kort-container .kort-2 {
+    animation: grow-from-right 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-right {
+    0% {
+      transform: scale(0);
+      transform-origin: right;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: right;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: right;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: right;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: right;
+      opacity: 100%;
+    }
+  }
+  .kort-container .kort-3 {
+    animation: grow-from-left 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
+  }
+  .kort-container .kort-4 {
+    animation: grow-from-right 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-right {
+    0% {
+      transform: scale(0);
+      transform-origin: right;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: right;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: right;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: right;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: right;
+      opacity: 100%;
+    }
+  }
   .inspiration-flex img {
     width: 29%;
     margin: 1rem;
+  }
+  .inspiration-flex img:nth-child(odd) {
+    animation: grow-from-right 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-right {
+    0% {
+      transform: scale(0);
+      transform-origin: right;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: right;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: right;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: right;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: right;
+      opacity: 100%;
+    }
+  }
+  .inspiration-flex img:nth-child(even) {
+    animation: grow-from-left 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
   }
   .florist-flex {
     justify-content: center;
@@ -11131,6 +11795,191 @@ footer {
   .florist-flex figure {
     width: 32%;
     margin: 1rem;
+  }
+  .florist-flex figure:nth-child(even) {
+    animation: grow-from-left 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
+  }
+  .florist-flex figure:nth-child(odd) {
+    animation: grow-from-right 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-right {
+    0% {
+      transform: scale(0);
+      transform-origin: right;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: right;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: right;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: right;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: right;
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 756px) {
+  .inspiration-flex img:nth-child(3n-1) {
+    animation: grow-from-left-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left-2 {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
+  }
+  .inspiration-flex img:nth-child(3n) {
+    animation: grow-middle-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-middle-2 {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+  .inspiration-flex img:nth-child(3n+1) {
+    animation: grow-from-right-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-right-2 {
+    0% {
+      transform: scale(0);
+      transform-origin: right;
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: right;
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: right;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: right;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: right;
+      opacity: 100%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .sid-intro-flex h1 {
+    animation: grow-from-left 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
   }
 }
 @media (min-width: 1300px) {
@@ -11140,6 +11989,321 @@ footer {
   }
   .florist-flex figure {
     width: 20%;
+  }
+  .florist-flex figure:nth-child(2),
+.florist-flex figure:nth-child(3) {
+    animation: grow-from-left-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left-2 {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
+  }
+  .florist-flex figure:nth-child(4),
+.florist-flex figure:nth-child(5) {
+    animation: grow-from-right-2 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-right-2 {
+    0% {
+      transform: scale(0);
+      transform-origin: right;
+      opacity: 0%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: right;
+      opacity: 15%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: right;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: right;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: right;
+      opacity: 100%;
+    }
+  }
+  .kort-container .kort-flex {
+    justify-content: space-around;
+  }
+  .kort-container .kort-1 {
+    animation: grow-from-bot 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-bot {
+    0% {
+      transform: scale(0);
+      transform-origin: bottom;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: bottom;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: bottom;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: bottom;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: bottom;
+      opacity: 100%;
+    }
+  }
+  .kort-container .kort-2 {
+    animation: grow-from-left 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
+  }
+  .kort-container .kort-3 {
+    animation: grow-from-right 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-right {
+    0% {
+      transform: scale(0);
+      transform-origin: right;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: right;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: right;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: right;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: right;
+      opacity: 100%;
+    }
+  }
+  .kort-container .kort-4 {
+    animation: grow-from-bot 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-bot {
+    0% {
+      transform: scale(0);
+      transform-origin: bottom;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: bottom;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: bottom;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: bottom;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: bottom;
+      opacity: 100%;
+    }
+  }
+  .inspiration-flex img:nth-child(4n-2) {
+    animation: grow-from-left 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
+  }
+  .inspiration-flex img:nth-child(4n-1) {
+    animation: grow-from-left 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-left {
+    0% {
+      transform: scale(0);
+      transform-origin: left;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: left;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: left;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: left;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: left;
+      opacity: 100%;
+    }
+  }
+  .inspiration-flex img:nth-child(4n) {
+    animation: grow-from-right 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-right {
+    0% {
+      transform: scale(0);
+      transform-origin: right;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: right;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: right;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: right;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: right;
+      opacity: 100%;
+    }
+  }
+  .inspiration-flex img:nth-child(4n+1) {
+    animation: grow-from-right 0.35s;
+    animation-timing-function: ease-in;
+  }
+  @keyframes grow-from-right {
+    0% {
+      transform: scale(0);
+      transform-origin: right;
+      opacity: 10%;
+    }
+    25% {
+      transform: scale(0.25);
+      transform-origin: right;
+      opacity: 20%;
+    }
+    50% {
+      transform: scale(0.5);
+      transform-origin: right;
+      opacity: 50%;
+    }
+    75% {
+      transform: scale(0.75);
+      transform-origin: right;
+      opacity: 80%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: right;
+      opacity: 100%;
+    }
   }
 }
 

@@ -5,6 +5,7 @@
 - Kodade tillsammans med Emma navbaren som används på alla sidorna.
 - La till en skip link i navbaren och uppdaterade navbar styling.
 - Kodat och styleat index sidan.
+- Kodat och styleat nyheter.
 
 # Emma
 
