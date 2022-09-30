@@ -11151,34 +11151,6 @@ footer {
     }
   }
 }
-@media (min-width: 1300) {
-  .inredning-artikel .sektion-intro-titel {
-    animation: grow-middle 0.35s;
-    animation-timing-function: ease-in;
-  }
-  @keyframes grow-middle {
-    0% {
-      transform: scale(0);
-      opacity: 10%;
-    }
-    25% {
-      transform: scale(0.25);
-      opacity: 20%;
-    }
-    50% {
-      transform: scale(0.5);
-      opacity: 50%;
-    }
-    75% {
-      transform: scale(0.75);
-      opacity: 80%;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 100%;
-    }
-  }
-}
 .inredning-artikel .inrednings-tips-grid-1 {
   display: grid;
   grid-template-rows: auto;
@@ -11329,34 +11301,6 @@ footer {
     25% {
       transform: scale(0.25);
       opacity: 15%;
-    }
-    50% {
-      transform: scale(0.5);
-      opacity: 50%;
-    }
-    75% {
-      transform: scale(0.75);
-      opacity: 80%;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 100%;
-    }
-  }
-}
-@media (min-width: 1300) {
-  .kruk-artikel .sektion-intro-titel {
-    animation: grow-middle 0.35s;
-    animation-timing-function: ease-in;
-  }
-  @keyframes grow-middle {
-    0% {
-      transform: scale(0);
-      opacity: 10%;
-    }
-    25% {
-      transform: scale(0.25);
-      opacity: 20%;
     }
     50% {
       transform: scale(0.5);
@@ -11599,34 +11543,6 @@ footer {
     }
   }
 }
-@media (min-width: 1300) {
-  .bianca-artikel .sektion-intro-titel {
-    animation: grow-middle 0.35s;
-    animation-timing-function: ease-in;
-  }
-  @keyframes grow-middle {
-    0% {
-      transform: scale(0);
-      opacity: 10%;
-    }
-    25% {
-      transform: scale(0.25);
-      opacity: 20%;
-    }
-    50% {
-      transform: scale(0.5);
-      opacity: 50%;
-    }
-    75% {
-      transform: scale(0.75);
-      opacity: 80%;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 100%;
-    }
-  }
-}
 .bianca-artikel h3 {
   text-align: center;
 }
@@ -11725,34 +11641,6 @@ footer {
     25% {
       transform: scale(0.25);
       opacity: 15%;
-    }
-    50% {
-      transform: scale(0.5);
-      opacity: 50%;
-    }
-    75% {
-      transform: scale(0.75);
-      opacity: 80%;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 100%;
-    }
-  }
-}
-@media (min-width: 1300) {
-  .nyhetsbrev-mail .sektion-intro-titel {
-    animation: grow-middle 0.35s;
-    animation-timing-function: ease-in;
-  }
-  @keyframes grow-middle {
-    0% {
-      transform: scale(0);
-      opacity: 10%;
-    }
-    25% {
-      transform: scale(0.25);
-      opacity: 20%;
     }
     50% {
       transform: scale(0.5);

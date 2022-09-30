@@ -70,7 +70,4 @@
   @media (min-width: 670px) {
     @include animations.grow-middle-2;
   }
-  @media (min-width: 1300) {
-    @include animations.grow-middle;
-  }
 }
