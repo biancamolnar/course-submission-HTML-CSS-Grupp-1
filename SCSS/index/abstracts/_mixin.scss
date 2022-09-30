@@ -1,4 +1,5 @@
 @use "../abstracts/colors" as c;
+@use "../abstracts/animations";
 
 @mixin flex-center {
   display: flex;
@@ -65,34 +66,9 @@
   text-align: center;
   margin-bottom: 1rem;
   width: 100%;
+  @include animations.grow-middle;
   .underrubrik {
     display: block;
     margin-top: 0.5rem;
-  }
-}
-
-@mixin grow-middle {
-  animation: grow-middle 1s;
-  @keyframes grow-middle {
-    0% {
-      transform: scale(0);
-      opacity: 10%;
-    }
-    25% {
-      transform: scale(0.2);
-      opacity: 20%;
-    }
-    50% {
-      transform: scale(0.5);
-      opacity: 50%;
-    }
-    75% {
-      transform: scale(0.8);
-      opacity: 80%;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 100%;
-    }
   }
 }
