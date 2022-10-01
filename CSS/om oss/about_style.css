@@ -11047,8 +11047,8 @@ footer {
   color: #1D88EA;
 }
 
-#stockholm {
-  margin: 1.5rem 0 0 0;
+#Stockholm {
+    margin: 1.5rem 0 0 0;
 }
 
 @media (max-width: 700px) {
@@ -11065,48 +11065,194 @@ footer {
     padding: 0rem;
     margin: 0.1rem;
   }
-  #stockholm {
+  #Stockholm {
     margin: 0.8rem 0 0 0;
   }
 }
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
   font-size: 1.8rem;
-  font-weight: normal;
-  padding: 1.5rem 0 1rem 0;
+  padding: 2rem 4rem 2rem 2rem;
+}
+
+.länk-section {
+  margin: 0 2rem 0 2rem;
+  border: 0.1rem solid grey;
+  border-radius: 0.8rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem lightgrey;
+  background-color: #E6E6E6;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  margin: 2.5rem;
+}
+
+.bildlänk {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 0.6rem;
+  border: 0.1rem solid grey;
+  border-radius: 0.8rem;
+  background-color: white;
+}
+
+.bildlänk:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.backgrund {
+  background-color: #E6E6E6;
+  padding: 0.5rem;
+  margin: 1rem 0 0 0;
+}
+
+.vision {
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+  background-color: white;
+  margin: 4rem;
+  padding: 0.8rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem lightgrey;
+}
+
+.h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
   text-align: center;
 }
 
-.hållbarhet {
-  background-color: #e6e6e6;
-  padding: 2rem;
+svg {
+  width: 4rem;
+  padding: 0 0 0.5rem 0;
+}
+
+h3 {
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
+}
+
+.btn {
+  background-color: #1d88ea;
+}
+
+.personal {
+  background-color: #E6E6E6;
+  border: 1px solid gray;
+  border-radius: 0.8rem;
+  box-shadow: 2px 2px 2px lightgrey;
+  padding: 2.5rem;
+  margin: 2.5rem;
+}
+
+.grid-container {
+  display: grid;
+  -moz-column-gap: 2.2rem;
+       column-gap: 2.2rem;
+  row-gap: 2.2rem;
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-item > img {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 0 0.8rem 0;
+  padding: 0.8rem 0 0.7rem 0;
+}
+
+.grid-item {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 0.8rem;
+  padding: 1.6rem 0 0 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.grid-item > p {
+  font-size: 1.2rem;
 }
 
 .newsletter {
   text-align: center;
-  padding: 2rem 0 0 0;
 }
 
-h2 {
-  font-size: 1.25rem;
-  margin: 0 0 1.2rem 0;
+.newsletter > h5 {
+  padding: 0 0 0.8rem 0;
 }
 
 #prenumerera {
-  padding: 1px 6px;
   background-color: #1D88Ea;
 }
 
 #Stockholm {
-    margin: 1.5rem 0 0 0;
+  margin: 1.5rem 0 0 0;
 }
 
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
 @media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+  }
+  .länk-section {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
+  .flex-container {
+    flex-direction: column;
+    gap: 0.3rem;
+    margin: 0.3rem;
+  }
+  .bildlänk {
+    border: none;
+  }
+  .bildlänk:hover {
+    transform: none;
+  }
+  .vision {
+    margin: 0.8rem 0 0.8rem 0;
+  }
+  .personal {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-item {
+    justify-items: auto;
+    padding: 0.7rem 0 0.7rem 1.3rem;
+    margin: 0;
+  }
+  .grid-item > img {
+    float: left;
+    margin: 0 0 0 0.4rem;
+    max-width: 100px;
+    padding: 0;
+    margin: 0;
+  }
+  .grid-item > h4, p {
+    justify-items: auto;
+    padding: 0.7rem 0 0 0;
+  }
   fieldset {
     justify-content: center;
     display: flex;
@@ -11119,8 +11265,18 @@ h2 {
   label {
     margin: 0.6rem;
   }
+}
+@media (max-width: 374px) {
+  .personal {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border: none;
+  }
+  .grid-item {
+    margin: 0 0.3rem;
+  }
 
   #Stockholm {
     margin: 0.8rem 0 0 0;
   }
-}/*# sourceMappingURL=hallbarhet_main.css.map */
+}/*# sourceMappingURL=about_main.css.map */

@@ -11047,7 +11047,7 @@ footer {
   color: #1D88EA;
 }
 
-#stockholm {
+#Stockholm {
   margin: 1.5rem 0 0 0;
 }
 
@@ -11065,7 +11065,54 @@ footer {
     padding: 0rem;
     margin: 0.1rem;
   }
-  #stockholm {
+  #Stockholm {
     margin: 0.8rem 0 0 0;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+}
+
+.hållbarhet {
+  background-color: #e6e6e6;
+  padding: 2rem;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 0 0 1.2rem 0;
+}
+
+#prenumerera {
+  padding: 1px 6px;
+  background-color: #1D88Ea;
+}
+
+@media (max-width: 768px) {
+  fieldset {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type=submit i] {
+    margin: 0.6rem;
+  }
+  label {
+    margin: 0.6rem;
   }
 }/*# sourceMappingURL=hallbarhet_main.css.map */

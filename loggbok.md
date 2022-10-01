@@ -10,7 +10,8 @@ Kodade tillsammans med Viggo navbaren som används på alla sidorna.
 
 # Bianca 
 Designade wireframe footer och navbar som används på alla sidor.
-Skapade wireframe för om oss och historiasidan.
+Skapade wireframe för om oss, jobbsidan och historiasidan.
 Kodade footer som används på alla sidorna.
+Kodade om oss, jobbsidan, historiasidan och hållbarhetssidan.
 
 # Liban 

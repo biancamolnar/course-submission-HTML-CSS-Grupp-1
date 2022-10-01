@@ -11047,7 +11047,7 @@ footer {
   color: #1D88EA;
 }
 
-#stockholm {
+#Stockholm {
   margin: 1.5rem 0 0 0;
 }
 
@@ -11065,7 +11065,97 @@ footer {
     padding: 0rem;
     margin: 0.1rem;
   }
-  #stockholm {
+  #Stockholm {
     margin: 0.8rem 0 0 0;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+}
+
+.Bildspel {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 2rem 0;
+}
+
+#carouselExampleIndicators {
+  width: 700px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+main {
+  padding: 1rem 0 1rem 0;
+}
+
+.omHistoria {
+  padding: 2rem 5rem 1rem 5rem;
+  margin: 0 3rem 0 3rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  background-color: #e6e6e6;
+}
+
+.accordion {
+  margin: 0 0 2rem 0;
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  padding: 1rem 0 2.8rem 0;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin: 0 0 1.2rem 0;
+}
+
+#prenumerera {
+  padding: 1px 6px;
+  background-color: #1D88Ea;
+}
+
+@media (max-width: 768px) {
+  #carouselExampleIndicators {
+    box-shadow: none;
+  }
+  h2 {
+    padding: 0 0 2rem 0;
+  }
+  h3 {
+    text-align: center;
+  }
+  .omHistoria {
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
+  fieldset {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type=submit i] {
+    margin: 0.6rem;
+  }
+  label {
+    margin: 0.6rem;
   }
 }/*# sourceMappingURL=historia_main.css.map */
