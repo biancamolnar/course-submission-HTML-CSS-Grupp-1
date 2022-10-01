@@ -11083,7 +11083,6 @@ footer {
   scroll-margin-top: 6.3rem;
 }
 .rubrik-top .search-container {
-  display: flex row;
   margin-right: 1.5rem;
 }
 .rubrik-top .search-container .input {
@@ -11139,8 +11138,8 @@ main aside .fieldset .text-anim {
   color: red;
   position: relative;
   display: inline;
-  -webkit-animation: move-roll 2s linear alternate infinite;
-          animation: move-roll 2s linear alternate infinite;
+  -webkit-animation: move-roll 1.5s linear alternate infinite;
+          animation: move-roll 1.5s linear alternate infinite;
 }
 @-webkit-keyframes move-roll {
   0% {
@@ -11148,7 +11147,7 @@ main aside .fieldset .text-anim {
     color: red;
   }
   50% {
-    color: rgb(255, 128, 0);
+    color: rgb(255, 170, 0);
   }
   100% {
     left: 9%;
@@ -11161,7 +11160,7 @@ main aside .fieldset .text-anim {
     color: red;
   }
   50% {
-    color: rgb(255, 128, 0);
+    color: rgb(255, 170, 0);
   }
   100% {
     left: 9%;
@@ -11231,11 +11230,6 @@ main aside .fieldset .competition-form .do-fill {
   color: rgb(254, 90, 90);
 }
 
-.buketter {
-  background-color: #E6E6E6;
-  padding: 0 0.7rem 1rem 0.7rem;
-}
-
 #produkter, #buketter, #plants, #event, #begravning {
   padding: 3rem 1.5rem 0rem 1.5rem;
   scroll-margin-top: 6rem;
@@ -11243,6 +11237,11 @@ main aside .fieldset .competition-form .do-fill {
 
 #buketter, #plants, #begravning {
   text-align: center;
+}
+
+.buketter {
+  background-color: #E6E6E6;
+  padding: 0 0.7rem 1rem 0.7rem;
 }
 
 .kort-container {
@@ -11436,9 +11435,13 @@ article.plants {
 .begravning div.kort-container {
   padding: 1rem;
 }
-
-#gravblomma-mp4 video {
-  width: 100%;
+.begravning #gravblomma-mp4 {
+  padding-top: 2rem;
+  display: grid;
+  place-items: center;
+}
+.begravning #gravblomma-mp4 video {
+  width: 95%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -11504,59 +11507,51 @@ article.plants {
     background-color: #E6E6E6;
   }
   main aside {
-    flex-direction: row;
     padding-bottom: auto;
     justify-content: flex-start;
     align-items: start;
   }
-  main aside .fieldset {
-    display: block;
-  }
-  .kort-container .kort {
+  main .kort-container .kort {
     width: 250px;
   }
-  .kort-container .bg-gr {
+  main .kort-container .bg-gr {
     min-width: 350px;
     min-height: 555px;
   }
-  .kort-container .kort-lg {
+  main .kort-container .kort-lg {
     min-width: 550px;
     min-height: 555px;
   }
-  .kort-container #iframe {
+  main .kort-container #iframe {
     display: grid;
     place-items: center;
   }
-  .kort-container #iframe iframe {
-    min-height: 555px;
+  main .kort-container #iframe iframe {
+    min-height: 500px;
   }
-  .bukett-lg {
+  main .bukett-lg {
     display: flex;
     flex-direction: row-reverse;
     margin: 0 4.5rem 0 3rem;
   }
-  article.plants {
+  main article.plants {
     padding: 1rem 2rem 3rem 2rem;
   }
-  .wedding {
+  main .wedding {
     flex-direction: row;
     margin: 4.5rem;
   }
-  .wedding .wedding-inner {
+  main .wedding .wedding-inner {
     width: 100%;
   }
-  .begravning .kort-container {
+  main .begravning .kort-container {
     padding: 0 4.5rem 3rem 4.5rem;
   }
-  #gravblomma-mp4 {
-    display: grid;
-    place-items: center;
+  main .begravning #gravblomma-mp4 video {
+    width: 90%;
+    height: 300px;
   }
-  #gravblomma-mp4 video {
-    width: 95%;
-    height: 500px;
-  }
-  #florist {
+  main #florist {
     padding: 4rem 7rem 2rem 7rem;
   }
 }/*# sourceMappingURL=produkt-main.css.map */
