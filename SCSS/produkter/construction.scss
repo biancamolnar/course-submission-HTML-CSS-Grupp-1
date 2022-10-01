@@ -5,14 +5,13 @@
 
 .under-uppbyggnad {
     margin: 2rem 0 4rem 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    place-content: center;
+    place-items: center;
     svg {
         width: 40px;
         height: 40px;
-        border: 3px solid yellow;
+        border: 3px solid v.$yellow-alert;
     }
     svg rect {
         width: 34px;
@@ -31,15 +30,28 @@
     }
     h1 {
         text-align: center;
-        padding: 10px;
+        color:black;
+        margin-bottom: 10px;
     }
     #under-uppbyggnad-img {
         max-width: 70%;
+        margin-bottom: 30px;
         border: 10px solid v.$yellow-alert;
         outline: 5px solid v.$red-alert;
         box-shadow: v.$img2-shadow;
     }
+    .accordion-container {
+        width: 70%;
+        .accordion-button {
+            background-color: v.$yellow-alert;
+            color: black;
+        }
+        .accordion-body {
+            background-color: v.$yellow-light;
+        }
+    }
 }
+
 @media (min-width: 992px) {
     #under-uppbyggnad-img {
         width: 700px;

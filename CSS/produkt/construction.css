@@ -11061,497 +11061,63 @@ footer {
   margin: 2px;
 }
 
-.checklist-top {
-  margin: 0px 20px 20px 20px;
-  padding: 0 20px 0 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.rubrik-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 15px;
-}
-.rubrik-top #alla-produkter {
-  margin: 0 1rem 0.25rem 1.5rem;
-  font-size: 36px;
-  scroll-margin-top: 6.3rem;
-}
-.rubrik-top .search-container {
-  margin-right: 1.5rem;
-}
-.rubrik-top .search-container .input {
-  width: 150px;
-  padding: 0.5rem;
-}
-.rubrik-top .search-container ::-moz-placeholder {
-  border: 2px;
-}
-.rubrik-top .search-container :-ms-input-placeholder {
-  border: 2px;
-}
-.rubrik-top .search-container ::placeholder {
-  border: 2px;
-}
-.rubrik-top .search-container #search {
-  background-color: #E6E6E6;
-  width: 44px;
-  height: 44px;
-  padding: 8px;
-}
-.rubrik-top .search-container #search:hover {
-  background-color: #a4a5a7;
-}
-
-#produkt-starttext {
-  padding: 0 1.5rem 1.5rem 1.5rem;
-}
-
-main aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 2.5rem;
-  padding-bottom: 3rem;
-  background-image: url("../../img/produkt/back-aside.jpg");
-  width: 100%;
-}
-main aside div.back-field {
-  padding: 1.5rem 1.5rem 0 1.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  justify-content: center;
-}
-main aside .fieldset {
-  max-width: 30rem;
-  background-color: transparent;
-}
-main aside .fieldset .text-anim {
-  padding: 10px 15px 15px 15px;
-  font-size: 18px;
-  color: red;
-  position: relative;
-  display: inline;
-  -webkit-animation: move-roll 1.5s linear alternate infinite;
-          animation: move-roll 1.5s linear alternate infinite;
-}
-@-webkit-keyframes move-roll {
-  0% {
-    left: -9%;
-    color: red;
-  }
-  50% {
-    color: rgb(255, 170, 0);
-  }
-  100% {
-    left: 9%;
-    color: red;
-  }
-}
-@keyframes move-roll {
-  0% {
-    left: -9%;
-    color: red;
-  }
-  50% {
-    color: rgb(255, 170, 0);
-  }
-  100% {
-    left: 9%;
-    color: red;
-  }
-}
-main aside .fieldset div {
-  padding: 15px;
-  border-radius: 5px;
-  background-color: rgba(255, 253, 253, 0.901);
-}
-main aside .fieldset h3 {
-  padding-top: 10px;
-}
-main aside .fieldset #p-fyll {
-  font-style: italic;
-  padding: 5px 10px 0px 10px;
-  font-size: 16px;
-}
-main aside .fieldset .competition-form {
-  padding: 10px 1.5rem 10px 1.5rem;
-  font-size: 18px;
-}
-main aside .fieldset .competition-form img {
-  width: 20rem;
-  border: 2px solid;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-main aside .fieldset .competition-form div {
-  background-color: transparent;
-  padding: 5px;
-}
-main aside .fieldset .competition-form .question {
-  font-weight: bold;
-  font-size: 18px;
-  margin: 25px 0 5px 0;
-}
-main aside .fieldset .competition-form ::-moz-placeholder {
-  padding: 10px;
-}
-main aside .fieldset .competition-form :-ms-input-placeholder {
-  padding: 10px;
-}
-main aside .fieldset .competition-form ::placeholder {
-  padding: 10px;
-}
-main aside .fieldset .competition-form #svar-kommentar {
-  width: 20rem;
-  height: 6rem;
-}
-main aside .fieldset .competition-form .teknik {
-  margin: 3px;
-}
-main aside .fieldset .competition-form .check {
-  margin: 10px 3px 10px 10px;
-}
-main aside .fieldset .competition-form #email {
-  width: 20rem;
-  padding: 3px;
-}
-main aside .fieldset .competition-form .button-blue {
-  margin: 30px 15px 30px 15px;
-  background-color: #1D88EA;
-}
-main aside .fieldset .competition-form .do-fill {
-  color: rgb(254, 90, 90);
-}
-
-#produkter, #buketter, #plants, #event, #begravning {
-  padding: 3rem 1.5rem 0rem 1.5rem;
-  scroll-margin-top: 6rem;
-}
-
-#buketter, #plants, #begravning {
-  text-align: center;
-}
-
-.buketter {
-  background-color: #E6E6E6;
-  padding: 0 0.7rem 1rem 0.7rem;
-}
-
-.kort-container {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.kort-container .kort {
-  margin: 15px;
-  border: 2px solid #a4a5a7;
-  width: 250px;
-  min-height: 400px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.kort-container .kort .zoom-img {
-  overflow: hidden;
-  width: 100%;
-}
-.kort-container .kort .zoom-img img {
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid black;
-  transition: transform 3s ease;
-}
-.kort-container .kort .zoom-img img:hover {
-  transform: scale(1.7);
-}
-.kort-container .kort .card-body {
+.under-uppbyggnad {
+  margin: 2rem 0 4rem 0rem;
   display: grid;
-  place-items: center;
-  margin: 15px 15px 20px 15px;
-}
-.kort-container .kort .card-body p.k-text {
-  margin-bottom: 20px;
-}
-.kort-container .kort .buy-btn {
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid black;
-  text-decoration: none;
-  color: white;
-  background-color: rgb(15, 95, 15);
-}
-.kort-container .kort a:hover {
-  background-color: rgb(16, 140, 16);
-}
-.kort-container .bg-gr {
-  background-color: #E6E6E6;
-  width: 350px;
-  min-height: 455px;
-}
-.kort-container .kort-lg {
-  margin: 15px;
-  border: 2px solid #a4a5a7;
-  width: 550px;
-  min-height: 500px;
-  background-color: #E6E6E6;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.kort-container .kort-lg .zoom-img {
-  overflow: hidden;
-  width: 100%;
-}
-.kort-container .kort-lg .zoom-img img {
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid black;
-  transition: transform 3s ease;
-}
-.kort-container .kort-lg .zoom-img img:hover {
-  transform: scale(1.7);
-}
-.kort-container .kort-lg .card-body-lg {
-  display: grid;
-  place-items: center;
-  margin: 15px 15px 20px 15px;
-}
-.kort-container .kort-lg .card-body-lg p.k-text {
-  margin-bottom: 20px;
-}
-.kort-container .kort-lg .buy-btn {
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid black;
-  text-decoration: none;
-  color: white;
-  background-color: rgb(15, 95, 15);
-}
-.kort-container .kort-lg a:hover {
-  background-color: rgb(16, 140, 16);
-}
-.kort-container .kort-lg iframe {
-  min-height: 455px;
-  width: 100%;
-}
-
-article.plants {
-  background-color: white;
-  padding: 0 15px 30px 15px;
-}
-
-#plants {
-  padding-left: 16px;
-}
-
-.event {
-  background-color: #E6E6E6;
-  padding: 2rem 1rem 2rem 1rem;
-}
-
-.wedding {
-  background-image: url("../../img/produkt/form-background.jpg");
-  border: 2px solid black;
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-.wedding p, .wedding h4 {
-  margin: 1.5rem;
-}
-.wedding #wedding-inner {
-  display: grid;
-  place-content: end;
-}
-.wedding div.wedding-inner {
-  padding-bottom: 2rem;
-  background-color: rgba(255, 253, 253, 0.901);
-}
-.wedding div.wedding-inner form {
-  padding: 0 1.5rem 1.5rem 1.5rem;
-}
-.wedding div.wedding-inner form label, .wedding div.wedding-inner form input {
-  display: block;
-}
-.wedding div.wedding-inner form input, .wedding div.wedding-inner form select {
-  margin-bottom: 20px;
-}
-.wedding div.wedding-inner form textarea, .wedding div.wedding-inner form .button-blue {
-  display: inline-flex;
-}
-.wedding div.wedding-inner form .do-fill {
-  color: rgb(254, 90, 90);
-}
-.wedding div.wedding-inner form .email, .wedding div.wedding-inner form #name, .wedding div.wedding-inner form #fokus {
-  width: 250px;
-}
-.wedding div.wedding-inner form #anteckningar {
-  width: 250px;
-  height: 120px;
-}
-.wedding div.wedding-inner form .button-blue {
-  margin: 5.6rem 0 0 30px;
-  position: absolute;
-  background-color: #1D88EA;
-}
-.wedding div.wedding-inner div.wedding-inner-gallery {
-  width: 100%;
-}
-.wedding div.wedding-inner div.wedding-inner-gallery .karusell {
-  margin: 1.5rem;
-}
-.wedding div.wedding-inner div.wedding-inner-gallery .karusell img {
-  width: 100%;
-  border: 1px solid black;
-}
-.wedding div.wedding-inner div.wedding-inner-gallery .minibild-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  margin: 1.5rem;
-  border: none;
-}
-.wedding div.wedding-inner div.wedding-inner-gallery .minibild-container img.minibild {
-  border: 1px solid black;
-  width: 23%;
-}
-
-.begravning {
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-}
-.begravning div.kort-container {
-  padding: 1rem;
-}
-.begravning #gravblomma-mp4 {
-  padding-top: 2rem;
-  display: grid;
+  place-content: center;
   place-items: center;
 }
-.begravning #gravblomma-mp4 video {
-  width: 95%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.under-uppbyggnad svg {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgb(250, 250, 22);
 }
-
-#florist {
-  padding: 1.5rem;
+.under-uppbyggnad svg rect {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke-width: 10px;
+  stroke: black;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 10%;
+  -webkit-animation: load 3s linear alternate infinite;
+          animation: load 3s linear alternate infinite;
+}
+@-webkit-keyframes load {
+  to {
+    stroke-dashoffset: 250%;
+  }
+}
+@keyframes load {
+  to {
+    stroke-dashoffset: 250%;
+  }
+}
+.under-uppbyggnad h1 {
   text-align: center;
-  background-color: white;
-}
-#florist form {
-  display: inline-flex;
-  flex-direction: column;
-}
-#florist form .button-blue {
-  margin-bottom: 20px;
-}
-#florist form input {
+  color: black;
   margin-bottom: 10px;
 }
-#florist form .check {
-  width: 25px;
-  height: 25px;
-  position: relative;
-  margin-left: 95px;
+.under-uppbyggnad #under-uppbyggnad-img {
+  max-width: 70%;
+  margin-bottom: 30px;
+  border: 10px solid rgb(250, 250, 22);
+  outline: 5px solid red;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.488), 0 6px 20px 0 rgba(0, 0, 0, 0.597);
 }
-
-.link-end {
-  font-weight: bold;
+.under-uppbyggnad .accordion-container {
+  width: 70%;
 }
-.link-end a:link {
-  color: rgb(188, 4, 4);
+.under-uppbyggnad .accordion-container .accordion-button {
+  background-color: rgb(250, 250, 22);
+  color: black;
 }
-.link-end a:visited {
-  color: green;
-}
-.link-end a:hover {
-  color: hotpink;
-}
-.link-end a:active {
-  color: blue;
+.under-uppbyggnad .accordion-container .accordion-body {
+  background-color: rgba(233, 233, 158, 0.353);
 }
 
 @media (min-width: 992px) {
-  .checklist-top {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  #under-uppbyggnad-img {
+    width: 700px;
   }
-  .input {
-    width: 250px;
-  }
-  #alla-produkter {
-    padding-left: 3rem;
-  }
-  .search-container {
-    padding-right: 3rem;
-  }
-  #produkt-starttext {
-    padding: 0 5rem 2rem 5rem;
-  }
-  main {
-    background-color: #E6E6E6;
-  }
-  main aside {
-    padding-bottom: auto;
-    justify-content: flex-start;
-    align-items: start;
-  }
-  main .kort-container .kort {
-    width: 250px;
-  }
-  main .kort-container .bg-gr {
-    min-width: 350px;
-    min-height: 555px;
-  }
-  main .kort-container .kort-lg {
-    min-width: 550px;
-    min-height: 555px;
-  }
-  main .kort-container #iframe {
-    display: grid;
-    place-items: center;
-  }
-  main .kort-container #iframe iframe {
-    min-height: 500px;
-  }
-  main .bukett-lg {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 0 4.5rem 0 3rem;
-  }
-  main article.plants {
-    padding: 1rem 2rem 3rem 2rem;
-  }
-  main .wedding {
-    flex-direction: row;
-    margin: 4.5rem;
-  }
-  main .wedding .wedding-inner {
-    width: 100%;
-  }
-  main .begravning .kort-container {
-    padding: 0 4.5rem 3rem 4.5rem;
-  }
-  main .begravning #gravblomma-mp4 video {
-    width: 90%;
-    height: 300px;
-  }
-  main #florist {
-    padding: 4rem 7rem 2rem 7rem;
-  }
-}/*# sourceMappingURL=produkt-main.css.map */
+}/*# sourceMappingURL=construction.css.map */

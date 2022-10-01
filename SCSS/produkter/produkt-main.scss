@@ -207,13 +207,13 @@ main aside {
     }
     .bg-gr {
         background-color: v.$background-gray;
-        width: 350px;
+        width: 345px;
         min-height: 455px;
     }
     .kort-lg {
         margin: 15px;
         border: 2px solid v.$background-gray-hover;
-        width: 550px;
+        width: 510px;
         min-height: 500px;
         background-color: v.$background-gray;
         box-shadow: v.$img-shadow;
@@ -433,7 +433,6 @@ article.plants {
                 min-height: 555px;
             }
             .kort-lg {
-                min-width: 550px;
                 min-height: 555px;
             }
             #iframe {
