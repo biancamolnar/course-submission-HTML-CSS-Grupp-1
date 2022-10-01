@@ -11079,14 +11079,14 @@ footer {
 }
 .rubrik-top #alla-produkter {
   margin: 0 1rem 0.25rem 1.5rem;
-  font-size: 36px;
+  font-size: 30px;
   scroll-margin-top: 6.3rem;
 }
 .rubrik-top .search-container {
   margin-right: 1.5rem;
 }
 .rubrik-top .search-container .input {
-  width: 150px;
+  width: 145px;
   padding: 0.5rem;
 }
 .rubrik-top .search-container ::-moz-placeholder {
@@ -11338,9 +11338,11 @@ main aside .fieldset .competition-form .do-fill {
 .kort-container .kort-lg a:hover {
   background-color: rgb(16, 140, 16);
 }
-.kort-container .kort-lg iframe {
+.kort-container .kort-lg .beg-video {
   min-height: 455px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 article.plants {
@@ -11496,6 +11498,7 @@ article.plants {
   }
   #alla-produkter {
     padding-left: 3rem;
+    font-size: 36px;
   }
   .search-container {
     padding-right: 3rem;
@@ -11521,11 +11524,11 @@ article.plants {
   main .kort-container .kort-lg {
     min-height: 555px;
   }
-  main .kort-container #iframe {
+  main .kort-container #video-container {
     display: grid;
     place-items: center;
   }
-  main .kort-container #iframe iframe {
+  main .kort-container #video-container video.beg-video {
     min-height: 500px;
   }
   main .bukett-lg {

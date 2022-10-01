@@ -21,13 +21,13 @@
     margin-bottom: 15px;
     #alla-produkter {
         margin: 0 1rem 0.25rem 1.5rem;
-        font-size: 36px;
+        font-size: 30px;
         scroll-margin-top: 6.3rem;
     }
     .search-container {
         margin-right: 1.5rem;
         .input {
-            width: 150px;
+            width: 145px;
             padding: 0.5rem;
          }
         
@@ -251,9 +251,10 @@ main aside {
         a:hover {
             background-color: v.$background-buy-hover;
         }
-        iframe {
+        .beg-video {
             min-height: 455px;
             width: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -410,6 +411,7 @@ article.plants {
     }
     #alla-produkter {
         padding-left: 3rem;
+        font-size: 36px;
     }
     .search-container {
         padding-right: 3rem;
@@ -435,10 +437,10 @@ article.plants {
             .kort-lg {
                 min-height: 555px;
             }
-            #iframe {
+            #video-container {
                 display: grid;
                 place-items: center;
-                iframe {
+                video.beg-video {
                     min-height: 500px;
                 }
             }
