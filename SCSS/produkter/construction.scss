@@ -31,7 +31,7 @@
     h1 {
         text-align: center;
         color:black;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     #under-uppbyggnad-img {
         max-width: 70%;
@@ -45,9 +45,14 @@
         .accordion-button {
             background-color: v.$yellow-alert;
             color: black;
+            border: 1px solid v.$red-alert;
+            &:focus {
+                outline: 2.5px solid v.$red-alert;
+            }
         }
         .accordion-body {
             background-color: v.$yellow-light;
+            border: 0.5px solid v.$yellow-alert
         }
     }
 }

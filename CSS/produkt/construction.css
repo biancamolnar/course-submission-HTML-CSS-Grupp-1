@@ -11096,7 +11096,7 @@ footer {
 .under-uppbyggnad h1 {
   text-align: center;
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .under-uppbyggnad #under-uppbyggnad-img {
   max-width: 70%;
@@ -11111,9 +11111,14 @@ footer {
 .under-uppbyggnad .accordion-container .accordion-button {
   background-color: rgb(250, 250, 22);
   color: black;
+  border: 1px solid red;
+}
+.under-uppbyggnad .accordion-container .accordion-button:focus {
+  outline: 2.5px solid red;
 }
 .under-uppbyggnad .accordion-container .accordion-body {
   background-color: rgba(233, 233, 158, 0.353);
+  border: 0.5px solid rgb(250, 250, 22);
 }
 
 @media (min-width: 992px) {
