@@ -11050,15 +11050,50 @@ footer {
   font-family: Qwitcher Grypen;
 }
 
-.button {
+.totop {
   position: relative;
   width: 50px;
   top: -14px;
   margin: -30px;
 }
 
-#p-footer {
-  margin: 2px;
+.footer-titel {
+  font-size: 1.15rem;
+  margin: 0 0 1rem 0;
+}
+
+.p-footer {
+  margin: 0.5rem;
+}
+
+.p-footer > a {
+  color: #1D88EA;
+}
+
+#Stockholm {
+  margin: 1.5rem 0 0 0;
+}
+
+@media (max-width: 700px) {
+  .totop {
+    position: relative;
+    width: 2.5rem;
+    top: -14px;
+    margin: -30px;
+  }
+  .footer-titel {
+    margin: 0.7rem 0 0.3rem 0;
+  }
+  .p-footer {
+    padding: 0rem;
+    margin: 0.1rem;
+  }
+  #Stockholm {
+    margin: 0.8rem 0 0 0;
+  }
+}
+#main {
+  scroll-margin-top: 4.5rem;
 }
 
 .checklist-top {
@@ -11232,7 +11267,11 @@ main aside .fieldset .competition-form .do-fill {
 
 #produkter, #buketter, #plants, #event, #begravning {
   padding: 3rem 1.5rem 0rem 1.5rem;
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 4.5rem;
+}
+
+#event {
+  scroll-margin-top: 5rem;
 }
 
 #buketter, #plants, #begravning {
