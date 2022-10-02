@@ -4,13 +4,36 @@
   padding: 0.54rem;
 }
 
-nav.navbar {
+header {
+  position: sticky;
+  top: 0;
   z-index: 1;
+  .skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    background-color: #bebebe;
+    color: #1D88EA;
+    &:focus {
+      position: static;
+      display: block;
+      width: 100%;
+      height: auto;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 0.5rem;
+      outline: solid 2px #1D88EA;
+      outline-offset: -2px;
+    }
+  }
+}
+
+nav.navbar {
   div.container-xxl {
     padding: 0;
   }
-  position: sticky;
-  top: 0;
   background-color: #E6E6E6;
   border-bottom: 1px solid #a0a0a1;
   a:not(.navbar-brand, .logga) {

@@ -16,7 +16,8 @@
   </head>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg p-0">
+<<<<<<< HEAD
+    <nav class="navbar navbar-expand-lg p-0">git <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
       <div class="container-xxl">
         <a class="navbar-brand d-lg-none logga py-2 ps-3" href="index.html">Blomstersidan</a>
         <button
@@ -65,9 +66,68 @@
               <a class="nav-link py-lg-4" href="Pages/kontakt.html">Kontakt</a>
             </li>
           </ul>
+=======
+    <header>
+      <a href="#main" class="skip">Hoppa till huvudinnehåll</a>
+      <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-xxl">
+          <a class="navbar-brand d-lg-none logga py-2 ps-3" href="index.html">Blomstersidan</a>
+          <button
+            class="navbar-toggler me-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0 align-items-center">
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link active logga" aria-current="page" href="index.html">Blomstersidan</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="index.html">Hem</a>
+              </li>
+              <li class="nav-item dropdown produkter-dropdown">
+                <a class="nav-link dropdown-toggle py-lg-4 px-lg-4" href="pages/produkter.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produkter
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="pages/produkter.html">Alla produkter</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/produkter.html#buketter">Buketter</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/produkter.html#plants">Krukväxter & Inredning</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/produkter.html#event">Bröllop & Event</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/produkter.html#begravning">Begravningsbinderier</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-lg-4 px-lg-4" href="Pages/nyheter.html">Nyheter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-lg-4 px-lg-4" href="Pages/om%20oss.html">Om oss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-lg-4 px-lg-4" href="Pages/kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+>>>>>>> 34f6aaebd1393bb1810580a93ed84b3ec9f007c7
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main>
       <div class="container-xxl my-5 page-intro">
         <div class="sid-intro-flex">
@@ -98,14 +158,14 @@
           </div>
         </div>
       </div>
-      <div class="kort-container">
+      <div class="kort-container" id="main">
         <div class="container-xxl">
           <article class="kort-flex">
             <h2 class="sektion-intro-titel">
               Våra Produkter
               <span class="underrubrik">Vi säljer allt från buketter till begravningsbinderier.</span>
             </h2>
-            <div class="kort">
+            <div class="kort kort-1">
               <img src="img/index/blommor%20buketter.jpg" alt="En hand som håller i en bukett med röda blommor." />
               <h3>Buketter</h3>
               <p class="kort-text">
@@ -116,7 +176,7 @@
                 <a href="pages/produkter.html#buketter">Handla buketter</a>
               </div>
             </div>
-            <div class="kort">
+            <div class="kort kort-2">
               <img src="img/index/krukväxter%20&%20inredning.png" alt="Tre krukor med olika växter står på en bänk framför en vit vägg." />
               <h3>Krukväxter & Inredning</h3>
               <p class="kort-text">
@@ -127,7 +187,7 @@
                 <a href="pages/produkter.html#plants">Handla krukväxter & inredning</a>
               </div>
             </div>
-            <div class="kort">
+            <div class="kort kort-3">
               <img src="img/index/Bröllop%20blommor.jpg" alt="En person i en bröllopsklänning som håller i en bukett med vita rosor." />
               <h3>Bröllop & Event</h3>
               <p class="kort-text">
@@ -138,7 +198,7 @@
                 <a href="pages/produkter.html#buketter">Handla för bröllop & event</a>
               </div>
             </div>
-            <div class="kort">
+            <div class="kort kort-4">
               <img src="img/index/begravningsbinderier.jpg" alt="En brun kista med flera olika sorters blommor framför." />
               <h3>Begravningsbinderier</h3>
               <p class="kort-text">
