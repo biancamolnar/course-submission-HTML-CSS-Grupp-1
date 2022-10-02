@@ -12,6 +12,7 @@
 - Designade wireframes till footer och navbar som används på alla sidor.
 - Kodade tillsammans med Viggo navbaren som används på alla sidorna.
 - Kodade produktsidan och under konstruktionssidan.
+- Gjorde kontaktsidan.
 
 
 # Bianca 
