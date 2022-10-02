@@ -10935,11 +10935,34 @@ textarea.form-control-lg {
   padding: 0.54rem;
 }
 
-nav.navbar {
-  z-index: 1;
+header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
+}
+header .skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  background-color: #bebebe;
+  color: #1D88EA;
+}
+header .skip:focus {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.5rem;
+  outline: solid 2px #1D88EA;
+  outline-offset: -2px;
+}
+
+nav.navbar {
   background-color: #E6E6E6;
   border-bottom: 1px solid #a0a0a1;
 }
