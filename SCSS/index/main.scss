@@ -1,0 +1,224 @@
+@use "../../node_modules/bootstrap/scss/bootstrap.scss";
+@use "base/typography";
+@use "components/nav";
+@use "../om\ oss/components/footer.scss";
+@use "abstracts/colors.scss" as c;
+@use "abstracts/mixin";
+@use "abstracts/animations";
+
+.sid-intro-flex {
+  @include mixin.flex-center;
+  h1 {
+    @include animations.grow-middle;
+  }
+  .underrubrik {
+    display: block;
+  }
+  .carousel-container {
+    border-radius: 15px;
+    overflow: hidden;
+    @include animations.grow-from-right;
+  }
+}
+
+.kort-container {
+  background-color: c.$dark-page-background;
+  padding: 3rem 0;
+  @include mixin.kort(90%, 45%, 23%);
+  scroll-margin-top: 6.3rem;
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+  }
+  .kort-flex {
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+  .kort {
+    @include animations.grow-middle;
+    transition: transform 0.25s;
+    &:hover {
+      transform: scale(1.04);
+    }
+  }
+}
+
+.inspiration-container {
+  padding: 3rem 0;
+  .inspiration-flex {
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+    padding: 0 1rem;
+  }
+  img {
+    width: 80%;
+    margin: 1rem 0;
+    @include animations.grow-middle;
+  }
+}
+
+.faq-section {
+  background-color: c.$dark-page-background;
+  padding: 3rem 0;
+  .faq-flex {
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+  }
+  .accordion {
+    width: 95%;
+    border: 1px solid c.$border-color;
+    border-radius: 6px;
+    @include animations.grow-middle;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.florist-sektion {
+  padding: 3rem 0;
+  .florist-flex {
+    @include mixin.flex-center;
+    flex-wrap: wrap;
+  }
+  .sektion-intro-titel {
+    @include mixin.intro-titel;
+  }
+  figure {
+    width: 90%;
+    margin: 1rem 0;
+    @include animations.grow-middle;
+    img {
+      border-radius: 50%;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 670px) {
+  .sid-intro-flex {
+    h1 {
+      margin-right: 1vw;
+      font-size: 4rem;
+    }
+  }
+  .kort-container {
+    .kort-flex {
+      justify-content: space-around;
+    }
+    .kort-1 {
+      @include animations.grow-from-left;
+    }
+    .kort-2 {
+      @include animations.grow-from-right;
+    }
+    .kort-3 {
+      @include animations.grow-from-left;
+    }
+    .kort-4 {
+      @include animations.grow-from-right;
+    }
+  }
+  .inspiration-flex {
+    img {
+      width: 29%;
+      margin: 1rem;
+    }
+    img:nth-child(odd) {
+      @include animations.grow-from-right;
+    }
+    img:nth-child(even) {
+      @include animations.grow-from-left;
+    }
+  }
+  .florist-flex {
+    justify-content: center;
+    figure {
+      width: 32%;
+      margin: 1rem;
+    }
+    figure:nth-child(even) {
+      @include animations.grow-from-left;
+    }
+    figure:nth-child(odd) {
+      @include animations.grow-from-right;
+    }
+  }
+}
+
+@media (min-width: 756px) {
+  .inspiration-flex {
+    img:nth-child(3n-1) {
+      @include animations.grow-from-left-2;
+    }
+    img:nth-child(3n) {
+      @include animations.grow-middle-2;
+    }
+    img:nth-child(3n + 1) {
+      @include animations.grow-from-right-2;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sid-intro-flex h1 {
+    @include animations.grow-from-left;
+  }
+}
+
+@media (min-width: 1300px) {
+  .inspiration-flex img {
+    width: 22%;
+    margin: 1rem;
+  }
+  .florist-flex {
+    figure {
+      width: 20%;
+    }
+    figure:nth-child(2),
+    figure:nth-child(3) {
+      @include animations.grow-from-left-2;
+    }
+    figure:nth-child(4),
+    figure:nth-child(5) {
+      @include animations.grow-from-right-2;
+    }
+  }
+  .kort-container {
+    .kort-flex {
+      justify-content: space-around;
+    }
+    .kort-1 {
+      @include animations.grow-from-bot;
+    }
+    .kort-2 {
+      @include animations.grow-from-left;
+    }
+    .kort-3 {
+      @include animations.grow-from-right;
+    }
+    .kort-4 {
+      @include animations.grow-from-bot;
+    }
+  }
+  .inspiration-flex {
+    img:nth-child(4n-2) {
+      @include animations.grow-from-left;
+    }
+    img:nth-child(4n-1) {
+      @include animations.grow-from-left;
+    }
+    img:nth-child(4n) {
+      @include animations.grow-from-right;
+    }
+    img:nth-child(4n + 1) {
+      @include animations.grow-from-right;
+    }
+  }
+}
