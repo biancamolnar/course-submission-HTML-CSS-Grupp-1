@@ -11148,6 +11148,10 @@ section > h2 {
   padding: 2rem;
 }
 
+#Stockholm {
+  margin: 1.5rem 0 0 0;
+}
+
 @media screen and (max-width: 768px) {
   .sida {
     position: relative;
@@ -11172,5 +11176,8 @@ section > h2 {
   #formulär {
     justify-content: center;
     align-items: center;
+  }
+  #Stockholm {
+    margin: 0.8rem 0 0 0;
   }
 }/*# sourceMappingURL=jobb_main.css.map */

@@ -11985,6 +11985,10 @@ h4 {
   background-color: #1D88Ea;
 }
 
+#Stockholm {
+  margin: 1.5rem 0 0 0;
+}
+
 @media (max-width: 768px) {
   #carouselExampleIndicators {
     box-shadow: none;
@@ -12018,5 +12022,9 @@ h4 {
 
   label {
     margin: 0.6rem;
+  }
+
+  #Stockholm {
+    margin: 0.8rem 0 0 0;
   }
 }

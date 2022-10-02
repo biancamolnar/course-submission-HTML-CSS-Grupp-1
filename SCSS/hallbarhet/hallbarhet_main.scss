@@ -2,52 +2,58 @@
 @use '../../SCSS/index/components/nav';
 @use '../../SCSS/om oss/components/footer';
 
-* {
-    box-sizing: border-box;
+*{
+    box-sizing: border-box;   
     margin: 0;
     padding: 0;
 }
-
+  
 h1 {
     font-size: 1.8rem;
     font-weight: normal;
     padding: 1.5rem 0 1rem 0;
     text-align: center;
 }
-
+  
 .hållbarhet {
     background-color: #e6e6e6;
     padding: 2rem;
 }
-
+  
 .newsletter {
     text-align: center;
     padding: 2rem 0 0 0;
 }
-
-h2 {
+  
+h2 {    
     font-size: 1.25rem;
     margin: 0 0 1.2rem 0;
 }
-
+  
 #prenumerera {
     padding: 1px 6px;
     background-color: #1D88Ea;
 }
-
-@media (max-width: 768px) {
+  
+#Stockholm {
+    margin: 1.5rem 0 0 0;
+  }
+  
+  @media (max-width: 768px) {
     fieldset {
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    
-    input[type="submit" i] {
-        margin: 0.6rem;
+    input[type=submit i] {
+      margin: 0.6rem;
     }
-    
     label {
-        margin: 0.6rem;
+      margin: 0.6rem;
     }
-}
+  
+    #Stockholm {
+      margin: 0.8rem 0 0 0;
+    }
+  }

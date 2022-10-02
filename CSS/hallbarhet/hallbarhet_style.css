@@ -11047,7 +11047,7 @@ footer {
   color: #1D88EA;
 }
 
-#stockholm {
+#Stockholm {
   margin: 1.5rem 0 0 0;
 }
 
@@ -11065,7 +11065,7 @@ footer {
     padding: 0rem;
     margin: 0.1rem;
   }
-  #stockholm {
+  #Stockholm {
     margin: 0.8rem 0 0 0;
   }
 }
@@ -11103,7 +11103,7 @@ h2 {
 }
 
 #Stockholm {
-    margin: 1.5rem 0 0 0;
+  margin: 1.5rem 0 0 0;
 }
 
 @media (max-width: 768px) {
@@ -11119,7 +11119,6 @@ h2 {
   label {
     margin: 0.6rem;
   }
-
   #Stockholm {
     margin: 0.8rem 0 0 0;
   }
