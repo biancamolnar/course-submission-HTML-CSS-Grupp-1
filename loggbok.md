@@ -20,5 +20,6 @@
 - Skapade wireframe för om oss, jobbsidan och historiasidan.
 - Kodade footer som används på alla sidorna.
 - Kodade om oss, jobbsidan, historiasidan och hållbarhetssidan.
+- Skrev README.md
 
 # Liban
