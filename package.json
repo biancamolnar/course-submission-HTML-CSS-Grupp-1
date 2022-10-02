@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ViggoValfridsson/6-course-submission-HTML-CSS-Grupp-1-GBG#readme",
   "dependencies": {
     "bootstrap": "^5.2.1",
+    "node": "^18.9.1",
     "sass": "^1.55.0"
   }
 }
