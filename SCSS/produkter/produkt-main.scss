@@ -1,0 +1,477 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss';
+@use '../index/components/_nav.scss';
+@use '../om oss/components/_footer.scss';
+@use 'variabler.scss' as v;
+
+
+.checklist-top {
+    margin: 0px 20px 20px 20px;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rubrik-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    #alla-produkter {
+        margin: 0 1rem 0.25rem 1.5rem;
+        font-size: 30px;
+        scroll-margin-top: 6.3rem;
+    }
+    .search-container {
+        margin-right: 1.5rem;
+        .input {
+            width: 145px;
+            padding: 0.5rem;
+         }
+        
+        ::placeholder {
+            border: 2px;
+         }
+        
+        #search {
+            background-color: v.$background-gray;
+            width: 44px;
+            height: 44px;
+            padding: 8px;
+            &:hover {
+                background-color: v.$background-gray-hover;
+            }
+        }    
+    }    
+}
+
+#produkt-starttext {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+main aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    background-image: url("../../img/produkt/back-aside.jpg");
+    width: 100%;
+    div.back-field {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        justify-content: center;
+    }
+    .fieldset {
+        max-width: 30rem;
+        background-color: transparent;
+        .text-anim {
+            padding: 10px 15px 15px 15px;
+            font-size: 18px;
+            color: red;
+            position: relative;
+            display: inline;
+            animation: move-roll 1.5s linear alternate infinite;
+        }    
+        @keyframes move-roll {
+            0% {left:-9%; color: v.$red-alert;}
+            50% {color: rgb(255, 170, 0);}
+            100% {left:9%; color: v.$red-alert}
+        }    
+        div {
+            padding: 15px;
+            border-radius: 5px;
+            background-color: v.$background-opacity-form2;
+        }
+        h3 {
+            padding-top: 10px;
+        }
+        #p-fyll {
+            font-style: italic;
+            padding: 5px 10px 0px 10px;
+            font-size: 16px;
+        }    
+        .competition-form {
+            padding: 10px 1.5rem 10px 1.5rem;
+            font-size: 18px;
+            img {
+                width: 20rem;
+                border: 2px solid;
+                border-radius: 5px;
+                box-shadow: v.$img-shadow;
+            }
+            div {
+                background-color: transparent;
+                padding: 5px;
+            }
+            .question {
+                font-weight: bold;
+                font-size: 18px;
+                margin: 25px 0 5px 0;
+            }
+            ::placeholder {
+                padding: 10px;
+            }
+            #svar-kommentar {
+                width: 20rem;
+                height: 6rem;
+            }
+            .teknik {
+                margin: 3px;
+            }
+            .check {
+                margin: 10px 3px 10px 10px;
+            }
+            #email {
+                width: 20rem;
+                padding: 3px;
+            }
+            .button-blue {
+                margin: 30px 15px 30px 15px;
+                background-color: v.$background-submit;
+            }
+            .do-fill {
+                color: v.$red-fill;
+            }       
+        }    
+    }    
+}
+
+#produkter, #buketter, #plants, #event, #begravning {
+    padding: 3rem 1.5rem 0rem 1.5rem;
+    scroll-margin-top: 6rem;
+}
+
+#buketter, #plants, #begravning {
+    text-align: center;
+}
+
+.buketter {
+    background-color: v.$background-gray;
+    padding: 0 0.7rem 1rem 0.7rem;
+}
+
+.kort-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    .kort {
+        margin: 15px;
+        border: 2px solid v.$background-gray-hover;
+        width: 250px;
+        min-height: 400px;
+        background-color: white;
+        box-shadow: v.$img-shadow;
+        .zoom-img {
+            overflow: hidden;
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid black;
+                transition: transform 3s ease; 
+                &:hover {
+                    -ms-transform: scale(1.7);
+                    -webkit-transform: scale(1.7);
+                    transform: scale(1.7); 
+                }
+            }
+        }
+        .card-body {
+            display: grid;
+            place-items: center;
+            margin: 15px 15px 20px 15px;
+            p.k-text {
+                margin-bottom: 20px;
+            }
+        }    
+        .buy-btn {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-decoration: none;
+            color: white;
+            background-color: v.$background-buy;
+        }
+        a:hover {
+            background-color: v.$background-buy-hover;
+        }
+    }
+    .bg-gr {
+        background-color: v.$background-gray;
+        width: 345px;
+        min-height: 455px;
+    }
+    .kort-lg {
+        margin: 15px;
+        border: 2px solid v.$background-gray-hover;
+        width: 510px;
+        min-height: 500px;
+        background-color: v.$background-gray;
+        box-shadow: v.$img-shadow;
+        .zoom-img {
+            overflow: hidden;
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid black;
+                transition: transform 3s ease;  
+                &:hover {
+                    -ms-transform: scale(1.7);
+                    -webkit-transform: scale(1.7);
+                    transform: scale(1.7); 
+                }
+            }
+        }
+        .card-body-lg {
+            display: grid;
+            place-items: center;
+            margin: 15px 15px 20px 15px;
+            p.k-text {
+                margin-bottom: 20px;
+            }
+        }    
+        .buy-btn {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-decoration: none;
+            color: white;
+            background-color: v.$background-buy;
+        }
+        a:hover {
+            background-color: v.$background-buy-hover;
+        }
+        .beg-video {
+            min-height: 455px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+article.plants {
+    background-color: white;
+    padding: 0 15px 30px 15px;
+}
+
+#plants {
+    padding-left: 16px;
+}
+
+.event {
+    background-color: v.$background-gray;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.wedding {
+    background-image: url("../../img/produkt/form-background.jpg");
+    border: 2px solid black;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    p, h4 {
+        margin: 1.5rem;
+    }
+    #wedding-inner {
+        display: grid;
+        place-content: end;
+    }
+    div.wedding-inner {
+        padding-bottom: 2rem;
+        background-color: v.$background-opacity-form2;
+        form {
+            padding:0 1.5rem 1.5rem 1.5rem;
+            label, input {
+                display: block;
+            }
+            input, select {
+                margin-bottom: 20px;
+            }
+            textarea, .button-blue {
+                display: inline-flex;
+            }
+            .do-fill {
+                color: v.$red-fill;
+            }
+            .email, #name, #fokus {
+                width: 250px;
+            }
+            #anteckningar {
+                width: 250px;
+                height: 120px;
+            }
+            .button-blue {
+                margin: 5.6rem 0 0 30px;
+                position: absolute;
+                background-color: v.$background-submit;
+            }
+        }
+        div.wedding-inner-gallery {
+            width: 100%;
+            .karusell {
+                margin: 1.5rem;
+                img {
+                    width: 100%;
+                    border: 1px solid black;
+                }
+            }
+            .minibild-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: transparent;
+                margin: 1.5rem;
+                border: none;
+                img.minibild {
+                    border: 1px solid black;
+                    width: 23%;
+                }
+            }
+        }
+    }
+}
+
+.begravning {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    div.kort-container {
+        padding: 1rem;
+    }
+    #gravblomma-mp4 {
+        padding-top: 2rem;
+        display: grid;
+        place-items: center;
+        video {
+            width: 95%;
+            height: 200px;              
+            object-fit: cover;
+        }
+    }
+}
+
+#florist {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: white;
+    form {
+        display: inline-flex;
+        flex-direction: column;
+        .button-blue {
+            margin-bottom: 20px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        .check {
+            width: 25px;
+            height: 25px;
+            position: relative;
+            margin-left: 95px;
+        }
+    }
+}
+
+.link-end {
+    font-weight: bold;
+    a:link {
+        color: v.$link;
+    }
+    a:visited {
+        color: v.$link-visited;
+    }
+    a:hover {
+        color: v.$link-hover;
+    }
+    a:active {
+        color: v.$link-active;
+    }
+}
+
+@media (min-width: 992px) { 
+    .checklist-top {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .input {
+        width: 250px;
+    }
+    #alla-produkter {
+        padding-left: 3rem;
+        font-size: 36px;
+    }
+    .search-container {
+        padding-right: 3rem;
+    }
+    #produkt-starttext {
+        padding: 0 5rem 2rem 5rem;
+    }
+    main {
+        background-color: v.$background-gray;
+        aside {
+            padding-bottom: auto;
+            justify-content: flex-start;
+            align-items: start;
+        }
+        .kort-container {
+            .kort {
+                width: 250px;
+            }
+            .bg-gr {
+                min-width: 350px;
+                min-height: 555px;
+            }
+            .kort-lg {
+                min-height: 555px;
+            }
+            #video-container {
+                display: grid;
+                place-items: center;
+                video.beg-video {
+                    min-height: 500px;
+                }
+            }
+        }
+        .bukett-lg {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 0 4.5rem 0 3rem;
+        }
+        article.plants {
+            padding: 1rem 2rem 3rem 2rem;
+        }
+        .wedding {
+            flex-direction: row;
+            margin: 4.5rem;
+            .wedding-inner {
+                width: 100%;
+            }
+        }
+        .begravning {
+            .kort-container {
+            padding: 0 4.5rem 3rem 4.5rem;
+            }
+            #gravblomma-mp4 video {
+                    width: 90%;
+                    height: 300px;              
+            }
+        }
+        #florist {
+            padding: 4rem 7rem 2rem 7rem;
+        }
+    }
+}
+
