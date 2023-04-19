@@ -1,6 +1,6 @@
 # 6-course-submission-Grupp-1-GBG
 
-Bianca
+#Bianca
 Designade wireframes till footer och navbar som används på alla sidor.
 Skapade wireframe för om oss, jobbsidan och historiasidan.
 Kodade footer som används på alla sidorna.
